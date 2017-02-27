@@ -1,0 +1,2979 @@
+Parameter DATADIR set to ../../dataFiles
+Parameter DELETEDRESWARNINGLOG not set. Using default value deleted_res.txt
+Parameter USEPOISSONBOLTZMANN not set. Using default value false
+Parameter DOSOLVATIONE set to false
+Parameter FORCEFIELD not set. Using default value AMBER
+Parameter DISTDEPDIELECT not set. Using default value true
+Parameter DIELECTCONST not set. Using default value 6.0
+Parameter VDWMULT not set. Using default value 0.95
+Parameter SOLVSCALE not set. Using default value 0.5
+Parameter HELECT not set. Using default value true
+Parameter HVDW not set. Using default value true
+Parameter SHELLDISTCUTOFF not set. Using default value Infinity
+Parameter USEDUNBRACKROTAMERS not set. Using default value false
+Parameter ROTFILE not set. Using default value LovellRotamer.dat
+Parameter GROTFILE0 set to GenericRotamers_4NMP_addrot.dat
+Parameter RESENTROPYFILE not set. Using default value ResEntropy.dat
+Parameter RAMAGLYFILE not set. Using default value rama500-gly-sym.data
+Parameter RAMAPROFILE not set. Using default value rama500-pro.data
+Parameter RAMAGENFILE not set. Using default value rama500-general.data
+Parameter RAMAPREPROFILE not set. Using default value rama500-prepro.data
+Parameter NUMTHREADS set to 12
+
+
+WARNING (for Osprey programmers): energy function-level parallelism probably isn't the fastest tool anymore. Try the new parallel SimpleEnergyMatrixCalculator and parallel/gpu-friendly ConfMinimizer classes instead.
+
+Parameter CCDECONVTOL not set. Using default value 0.001
+Parameter CCDNUMITER not set. Using default value 30
+Parameter ALWAYSIDEALIZESIDECHAINSAFTERMUTATION not set. Using default value false
+Parameter DATADIR set to ../../dataFiles
+Parameter USEPOISSONBOLTZMANN not set. Using default value false
+Parameter DOSOLVATIONE set to false
+Parameter FORCEFIELD not set. Using default value AMBER
+Parameter DISTDEPDIELECT not set. Using default value true
+Parameter DIELECTCONST not set. Using default value 6.0
+Parameter VDWMULT not set. Using default value 0.95
+Parameter SOLVSCALE not set. Using default value 0.5
+Parameter HELECT not set. Using default value true
+Parameter HVDW not set. Using default value true
+Parameter SHELLDISTCUTOFF not set. Using default value Infinity
+Parameter USEDUNBRACKROTAMERS not set. Using default value false
+Parameter ROTFILE not set. Using default value LovellRotamer.dat
+Parameter GROTFILE0 set to GenericRotamers_4NMP_addrot.dat
+Parameter RESENTROPYFILE not set. Using default value ResEntropy.dat
+Parameter RAMAGLYFILE not set. Using default value rama500-gly-sym.data
+Parameter RAMAPROFILE not set. Using default value rama500-pro.data
+Parameter RAMAGENFILE not set. Using default value rama500-general.data
+Parameter RAMAPREPROFILE not set. Using default value rama500-prepro.data
+Parameter EW set to 0
+Parameter IMINDEE set to true
+Parameter IVAL set to 10.0
+Parameter DOMINIMIZE set to true
+Parameter DIHEDFLEXINTERVAL not set. Using default value 9
+Parameter KSTARPFUNCSUPPRESSOUTPUT not set. Using default value false
+Parameter EPSILON set to 0.68
+Parameter KSTARPHASE2METHOD not set. Using default value slow
+Parameter KSTARPFUNCQCAP not set. Using default value 96
+Parameter KSTARPFUNCMETHOD set to parallel2
+Parameter KSTARPFUNCSTABTHRESH not set. Using default value 0
+Parameter KSTARPFUNCCONFSTHREADBUFFER not set. Using default value 4
+Parameter KSTARPFUNCTHREADS set to 12
+Parameter KSTARSAVETOPCONFSASPDB set to true
+Parameter KSTARNUMTOPCONFSTOSAVE set to 500
+Parameter KSTARUSEMAXKSCONFS not set. Using default value false
+Parameter KSTARMAXKSCONFS not set. Using default value 200000
+Parameter KSTARPFUNCTHOTMETHOD not set. Using default value none
+Parameter KSTARPFUNCHOTNUMRES not set. Using default value 3
+Parameter KSTARPFUNCHOTBOUNDPCT not set. Using default value 0.03
+Parameter KSTARPFUNCHOTTOPROTSPCT not set. Using default value 0.0
+Parameter KSTARRUNTIMEOUT not set. Using default value 0
+Parameter KSTARDOCHECKPOINT not set. Using default value false
+Parameter KSTARCHECKPOINTINTERVAL not set. Using default value 100000
+Parameter KSTARUSETIGHTBOUNDS not set. Using default value true
+Parameter KSTARNODEEXPANSION not set. Using default value parallel1
+Parameter STRAND0 set to 284 370
+Parameter STRANDMUTNUMS set to 7 1
+Parameter STRAND1 set to 5 10
+Parameter STRANDMUTNUMS set to 7 1
+Parameter STRANDMUT0 set to 296 297 301 302 317 319 322
+Parameter STRANDMUT1 set to 9
+Parameter RESALLOWED0_0 set to HIE
+Parameter RESALLOWED0_1 set to GLU
+Parameter RESALLOWED0_2 set to ILE
+Parameter RESALLOWED0_3 set to SER
+Parameter RESALLOWED0_4 set to GLU
+Parameter RESALLOWED0_5 set to HIE
+Parameter RESALLOWED0_6 set to GLN
+Parameter RESALLOWED1_0 set to K04
+Parameter NUMMUTATIONS set to 1
+Parameter ALLOWLESSMUTATIONS not set. Using default value false
+Parameter STRANDMUT0 set to 296 297 301 302 317 319 322
+Parameter STRANDMUT1 set to 9
+Parameter DOPERTURBATIONS not set. Using default value false
+Parameter RUNNAME set to 4nmp-addrot-k04
+Parameter SELECTPERTURBATIONS not set. Using default value true
+Parameter STARTINGPERTURBATIONFILE not set. Using default value none
+Parameter ONLYSTARTINGPERTURBATIONS not set. Using default value false
+Parameter MAXSHEARPARAM not set. Using default value 2.5
+Parameter MAXBACKRUBPARAM not set. Using default value 2.5
+Parameter SELECTLCAS not set. Using default value false
+Parameter PDBNAME set to 4nmp_noH.min.pdb
+Parameter DORAMACHECK not set. Using default value true
+Parameter STRANDROTTRANS0 set to false
+Parameter STRANDROTTRANS1 set to false
+Parameter PDBNAME set to 4nmp_noH.min.pdb
+Parameter STRANDMUT0 set to 296 297 301 302 317 319 322
+Parameter STRANDMUT1 set to 9
+Parameter ADDWT set to true
+
+Number of sequences with 1 mutation(s) from wild type: 1
+
+Parameter STRAND0 set to 284 370
+Parameter STRANDMUTNUMS set to 7 1
+Parameter STRAND0 set to 284 370
+Parameter STRANDMUTNUMS set to 7 1
+Parameter STRANDMUT0 set to 296 297 301 302 317 319 322
+Parameter STRAND0 set to 284 370
+Parameter STRANDMUTNUMS set to 7 1
+Parameter STRANDMUT0 set to 296 297 301 302 317 319 322
+Parameter STRAND0 set to 284 370
+Parameter STRANDMUTNUMS set to 7 1
+Parameter STRANDMUT0 set to 296 297 301 302 317 319 322
+Parameter DOPERTURBATIONS not set. Using default value false
+Parameter RUNNAME set to 4nmp-addrot-k04
+Parameter SELECTPERTURBATIONS not set. Using default value true
+Parameter STARTINGPERTURBATIONFILE not set. Using default value none
+Parameter ONLYSTARTINGPERTURBATIONS not set. Using default value false
+Parameter MAXSHEARPARAM not set. Using default value 2.5
+Parameter MAXBACKRUBPARAM not set. Using default value 2.5
+Parameter SELECTLCAS not set. Using default value false
+Parameter PDBNAME set to 4nmp_noH.min.pdb
+Parameter DORAMACHECK not set. Using default value true
+Parameter STRAND0 set to 284 370
+Parameter STRANDMUTNUMS set to 7 1
+Parameter STRANDROTTRANS0 set to false
+Parameter STRANDROTTRANS1 set to false
+Parameter STRAND1 set to 5 10
+Parameter STRANDMUTNUMS set to 7 1
+Parameter STRAND1 set to 5 10
+Parameter STRANDMUTNUMS set to 7 1
+Parameter STRANDMUT1 set to 9
+Parameter STRAND1 set to 5 10
+Parameter STRANDMUTNUMS set to 7 1
+Parameter STRANDMUT1 set to 9
+Parameter STRAND1 set to 5 10
+Parameter STRANDMUTNUMS set to 7 1
+Parameter STRANDMUT1 set to 9
+Parameter DOPERTURBATIONS not set. Using default value false
+Parameter RUNNAME set to 4nmp-addrot-k04
+Parameter SELECTPERTURBATIONS not set. Using default value true
+Parameter STARTINGPERTURBATIONFILE not set. Using default value none
+Parameter ONLYSTARTINGPERTURBATIONS not set. Using default value false
+Parameter MAXSHEARPARAM not set. Using default value 2.5
+Parameter MAXBACKRUBPARAM not set. Using default value 2.5
+Parameter SELECTLCAS not set. Using default value false
+Parameter PDBNAME set to 4nmp_noH.min.pdb
+Parameter DORAMACHECK not set. Using default value true
+Parameter STRAND1 set to 5 10
+Parameter STRANDMUTNUMS set to 7 1
+Parameter STRANDROTTRANS0 set to false
+Parameter STRANDROTTRANS1 set to false
+Parameter MUTFILE not set. Using default value 
+Parameter KSTARMETHOD not set. Using default value linear
+Parameter EW set to 0
+Parameter IVAL set to 10.0
+Parameter PDBNAME set to 4nmp_noH.min.pdb
+Parameter USEEPIC set to false
+Parameter USETUPEXP not set. Using default value false
+Parameter USEELLIPSES not set. Using default value false
+Parameter USEEREF not set. Using default value true
+Parameter ADDRESENTROPY not set. Using default value false
+Parameter ADDWT set to true
+Parameter ADDWTROTS set to false
+Parameter USEPOISSONBOLTZMANN not set. Using default value false
+Parameter STERICTHRESH set to 25.0
+Parameter USEVOXELG not set. Using default value false
+Parameter APRIORIPROVABLEPRUNING not set. Using default value false
+Parameter KSTARSKIPWTCALC not set. Using default value false
+
+Preparing to compute K* for the following sequences:
+0	HIE-296 GLU-297 ILE-301 SER-302 GLU-317 HIE-319 GLN-322 ILE-9
+1	HIE-296 GLU-297 ILE-301 SER-302 GLU-317 HIE-319 GLN-322 K04-9
+
+Parameter KSTAROUTPUTDIR not set. Using default value runName
+Parameter RUNNAME set to 4nmp-addrot-k04
+Parameter KSTAREMATDIR not set. Using default value emat
+Parameter KSTARDELETEEMATDIR not set. Using default value false
+Parameter DOMINIMIZE set to true
+Parameter USEEPIC set to false
+Parameter EPICTHRESH1 not set. Using default value 10
+Parameter EPICTHRESH2 not set. Using default value 25
+Parameter EPICGOALRESID not set. Using default value 0.0001
+Parameter USESAPE not set. Using default value true
+Parameter EPICUSEPC not set. Using default value true
+Parameter MINPARTIALCONFS not set. Using default value true
+Parameter EPICQUADONLY not set. Using default value false
+Parameter USEEPICPRUNING not set. Using default value true
+Parameter USETUPEXP not set. Using default value false
+Parameter LUTEGOALRESID not set. Using default value 0.01
+Parameter LUTERELWT not set. Using default value false
+Parameter LUTETHRESHWT not set. Using default value false
+Parameter STRAND1 set to 5 10
+Parameter STRANDMUTNUMS set to 7 1
+Parameter EMATTHREADS set to 32
+Parameter USEEPIC set to false
+Parameter EPICTHRESH1 not set. Using default value 10
+Parameter EPICTHRESH2 not set. Using default value 25
+Parameter EPICGOALRESID not set. Using default value 0.0001
+Parameter USESAPE not set. Using default value true
+Parameter EPICUSEPC not set. Using default value true
+Parameter MINPARTIALCONFS not set. Using default value true
+Parameter EPICQUADONLY not set. Using default value false
+Parameter USEEPICPRUNING not set. Using default value true
+Parameter USETUPEXP not set. Using default value false
+Parameter LUTEGOALRESID not set. Using default value 0.01
+Parameter LUTERELWT not set. Using default value false
+Parameter LUTETHRESHWT not set. Using default value false
+Parameter STRAND0 set to 284 370
+Parameter STRANDMUTNUMS set to 7 1
+Parameter EMATTHREADS set to 32
+Parameter USEEPIC set to false
+Parameter EPICTHRESH1 not set. Using default value 10
+Parameter EPICTHRESH2 not set. Using default value 25
+Parameter EPICGOALRESID not set. Using default value 0.0001
+Parameter USESAPE not set. Using default value true
+Parameter EPICUSEPC not set. Using default value true
+Parameter MINPARTIALCONFS not set. Using default value true
+Parameter EPICQUADONLY not set. Using default value false
+Parameter USEEPICPRUNING not set. Using default value true
+Parameter USETUPEXP not set. Using default value false
+Parameter LUTEGOALRESID not set. Using default value 0.01
+Parameter LUTERELWT not set. Using default value false
+Parameter LUTETHRESHWT not set. Using default value false
+Parameter EMATTHREADS set to 32
+
+Creating and pruning pan energy matrices
+
+Parameter TYPEDEP set to true
+Parameter BOUNDSTHRESH not set. Using default value 100
+Parameter ALGOPTION not set. Using default value 1
+Parameter USEFLAGS not set. Using default value true
+Parameter USETRIPLES not set. Using default value false
+Parameter STERICTHRESH set to 25.0
+
+BEGINNING PRUNING.  PRUNING INTERVAL: 10.0
+
+Starting steric pruning.
+Pruned 17 in 1-body steric pruning
+Pruned 45 in 2-body steric pruning
+Starting DEE cycle run: 0
+Starting pruning with GOLDSTEIN FOR 1 POSITION(S)
+Num pruned rot this run: 7
+Num pruned pairs this run: 0
+
+Starting DEE cycle run: 1
+Starting pruning with GOLDSTEIN FOR 1 POSITION(S)
+Num pruned rot this run: 0
+Num pruned pairs this run: 0
+
+Pruning time: 132 ms
+
+Parameter TYPEDEP set to true
+Parameter BOUNDSTHRESH not set. Using default value 100
+Parameter ALGOPTION not set. Using default value 1
+Parameter USEFLAGS not set. Using default value true
+Parameter USETRIPLES not set. Using default value false
+Parameter STERICTHRESH set to 25.0
+
+BEGINNING PRUNING.  PRUNING INTERVAL: 10.0
+
+Starting steric pruning.
+Pruned 18 in 1-body steric pruning
+Pruned 49 in 2-body steric pruning
+Starting DEE cycle run: 0
+Starting pruning with GOLDSTEIN FOR 1 POSITION(S)
+Num pruned rot this run: 7
+Num pruned pairs this run: 0
+
+Starting DEE cycle run: 1
+Starting pruning with GOLDSTEIN FOR 1 POSITION(S)
+Num pruned rot this run: 0
+Num pruned pairs this run: 0
+
+Pruning time: 104 ms
+
+Parameter TYPEDEP set to true
+Parameter BOUNDSTHRESH not set. Using default value 100
+Parameter ALGOPTION not set. Using default value 1
+Parameter USEFLAGS not set. Using default value true
+Parameter USETRIPLES not set. Using default value false
+Parameter STERICTHRESH set to 25.0
+
+BEGINNING PRUNING.  PRUNING INTERVAL: 10.0
+
+Starting steric pruning.
+Pruned 0 in 1-body steric pruning
+Pruned 0 in 2-body steric pruning
+Starting DEE cycle run: 0
+Starting pruning with GOLDSTEIN FOR 1 POSITION(S)
+Num pruned rot this run: 0
+Num pruned pairs this run: 0
+
+Pruning time: 2 ms
+
+
+Finished creating and pruning energy matrices
+Running time: 0 seconds
+
+Parameter KSTARPFUNCMETHOD set to parallel2
+Parameter DOMINIMIZE set to true
+Parameter KSTARCHECKPOINTDIR not set. Using default value checkpoint
+
+Parallel2: Initializing partition function for ILE-9 (continuous)
+using p* calculator
+
+Parallel2: Computing partition function for ILE-9 (continuous)
+A* tree empty...returning empty signal
+A* tree empty...returning empty signal
+A* tree empty...returning empty signal
+q' confTree complete. # enumerated: 7. # remaining: 0. p* confTree complete. # enumerated: 7. # remaining: 0. % q': 1.00000000
+% p*: 1.00000000
+error	energy	epsilon	#processed	#un-enum	#buf	time(sec)
+-0.0000	-6.6753	0.6383	1	0	0	0
+
+Writing top 1 conformation(s) for sequence: ILE-9
+
+Saving: 0.pdb	minE:-6.675293299227833
+
+
+Parallel2: Completed partition function for ILE-9 (continuous)
+
+
+Parallel2: Initializing partition function for HIE-296 GLU-297 ILE-301 SER-302 GLU-317 HIE-319 GLN-322 (continuous)
+using p* calculator
+p* confTree complete. # enumerated: 1. # remaining: 311039. 
+Parallel2: Computing partition function for HIE-296 GLU-297 ILE-301 SER-302 GLU-317 HIE-319 GLN-322 (continuous)
+% p*: 1
+error	energy	epsilon	#processed	#un-enum	#buf	time(sec)
+-4.5999	-99.6189	0.9977	12	22932	96	1
+-3.8430	-99.6633	0.9955	24	22920	96	2
+q' confTree complete. # enumerated: 20161. # remaining: 2879. % q': 1.00000000
+-4.3427	-98.8841	0.9932	36	22908	96	3
+-3.4413	-99.4964	0.9905	48	22896	96	5
+-4.9654	-97.7679	0.9873	60	22884	96	6
+-4.3066	-98.3120	0.9829	72	22872	96	7
+-4.7745	-97.6224	0.9775	84	22860	96	9
+-3.7942	-98.4627	0.9707	96	22848	96	10
+-5.8414	-96.1939	0.9622	108	22836	96	12
+-4.6165	-97.2719	0.9525	120	22824	96	13
+-4.5774	-97.1361	0.9415	132	22812	96	14
+-3.5656	-97.9568	0.9288	144	22800	96	15
+-5.4075	-95.9333	0.9156	156	22788	96	17
+-4.6410	-96.5544	0.9021	168	22776	96	18
+-4.3669	-96.7157	0.8873	180	22764	96	19
+-6.1064	-94.8841	0.8710	192	22752	96	20
+-6.1283	-94.7108	0.8543	204	22740	96	21
+-5.4867	-95.2526	0.8370	216	22728	96	23
+-5.7715	-94.8738	0.8185	228	22716	96	23
+-3.8310	-96.7229	0.7992	240	22704	96	24
+-5.4655	-94.9889	0.7794	252	22692	96	26
+-5.3938	-94.9865	0.7587	264	22680	96	27
+-5.0067	-95.3035	0.7370	276	22668	96	28
+-4.3581	-95.8570	0.7141	288	22656	96	30
+-4.6764	-95.4356	0.6917	300	22644	96	31
+-4.4548	-95.6298	0.6786	307	22632	96	32
+
+Writing top 307 conformation(s) for sequence: HIE-296 GLU-297 ILE-301 SER-302 GLU-317 HIE-319 GLN-322
+
+Saving: 306.pdb	minE:-67.71075485005353
+Saving: 305.pdb	minE:-68.05051026071614
+Saving: 304.pdb	minE:-68.93847406773538
+Saving: 303.pdb	minE:-69.27820148081659
+Saving: 302.pdb	minE:-69.52864859424186
+Saving: 301.pdb	minE:-70.14659936287897
+Saving: 300.pdb	minE:-70.33190281422102
+Saving: 299.pdb	minE:-70.7510704723639
+Saving: 298.pdb	minE:-94.08256065170063
+Saving: 297.pdb	minE:-94.14422808274901
+Saving: 296.pdb	minE:-94.192745875659
+Saving: 295.pdb	minE:-94.22127819932895
+Saving: 294.pdb	minE:-94.32093917797388
+Saving: 293.pdb	minE:-94.37606980842321
+Saving: 292.pdb	minE:-94.71082621686088
+Saving: 291.pdb	minE:-94.74552552535198
+Saving: 290.pdb	minE:-94.75468549988196
+Saving: 289.pdb	minE:-94.76145846640576
+Saving: 288.pdb	minE:-94.79271906220028
+Saving: 287.pdb	minE:-94.87382370868141
+Saving: 286.pdb	minE:-94.88414249499269
+Saving: 285.pdb	minE:-94.9586908609259
+Saving: 284.pdb	minE:-94.98654061754252
+Saving: 283.pdb	minE:-94.98894328088625
+Saving: 282.pdb	minE:-95.01647043839273
+Saving: 281.pdb	minE:-95.01914959080403
+Saving: 280.pdb	minE:-95.04288848074894
+Saving: 279.pdb	minE:-95.10972372843952
+Saving: 278.pdb	minE:-95.15794284188624
+Saving: 277.pdb	minE:-95.21067190561288
+Saving: 276.pdb	minE:-95.2148706422387
+Saving: 275.pdb	minE:-95.22473212381065
+Saving: 274.pdb	minE:-95.25261029588854
+Saving: 273.pdb	minE:-95.27969079286297
+Saving: 272.pdb	minE:-95.29980253617319
+Saving: 271.pdb	minE:-95.30349277152791
+Saving: 270.pdb	minE:-95.31346671037248
+Saving: 269.pdb	minE:-95.37096355997741
+Saving: 268.pdb	minE:-95.37789808369499
+Saving: 267.pdb	minE:-95.38281164106537
+Saving: 266.pdb	minE:-95.38340385663038
+Saving: 265.pdb	minE:-95.40086087438524
+Saving: 264.pdb	minE:-95.4312101568592
+Saving: 263.pdb	minE:-95.43564421671992
+Saving: 262.pdb	minE:-95.50834379672415
+Saving: 261.pdb	minE:-95.51016147943864
+Saving: 260.pdb	minE:-95.52067607730012
+Saving: 259.pdb	minE:-95.54070099975455
+Saving: 258.pdb	minE:-95.56029070101532
+Saving: 257.pdb	minE:-95.58872294494338
+Saving: 256.pdb	minE:-95.58969476960893
+Saving: 255.pdb	minE:-95.61321540398787
+Saving: 254.pdb	minE:-95.61428369642628
+Saving: 253.pdb	minE:-95.62981571860858
+Saving: 252.pdb	minE:-95.65737325635395
+Saving: 251.pdb	minE:-95.66123951489861
+Saving: 250.pdb	minE:-95.66501615938421
+Saving: 249.pdb	minE:-95.67771652087619
+Saving: 248.pdb	minE:-95.68984327923553
+Saving: 247.pdb	minE:-95.70798456358857
+Saving: 246.pdb	minE:-95.71768768292003
+Saving: 245.pdb	minE:-95.7212277228007
+Saving: 244.pdb	minE:-95.72395520074947
+Saving: 243.pdb	minE:-95.81032945173708
+Saving: 242.pdb	minE:-95.8150946233389
+Saving: 241.pdb	minE:-95.84926276585138
+Saving: 240.pdb	minE:-95.85696884964182
+Saving: 239.pdb	minE:-95.87052301576352
+Saving: 238.pdb	minE:-95.87805800645347
+Saving: 237.pdb	minE:-95.88183187644255
+Saving: 236.pdb	minE:-95.88323822677287
+Saving: 235.pdb	minE:-95.90156797255833
+Saving: 234.pdb	minE:-95.91852688696449
+Saving: 233.pdb	minE:-95.93333779629715
+Saving: 232.pdb	minE:-95.94543986675079
+Saving: 231.pdb	minE:-95.98259434344524
+Saving: 230.pdb	minE:-95.99109210841866
+Saving: 229.pdb	minE:-96.00080623947073
+Saving: 228.pdb	minE:-96.00502801878847
+Saving: 227.pdb	minE:-96.01089360474043
+Saving: 226.pdb	minE:-96.0158437620954
+Saving: 225.pdb	minE:-96.02943847945163
+Saving: 224.pdb	minE:-96.0310854690102
+Saving: 223.pdb	minE:-96.04451751833344
+Saving: 222.pdb	minE:-96.04480405955884
+Saving: 221.pdb	minE:-96.04899577528901
+Saving: 220.pdb	minE:-96.05246462944437
+Saving: 219.pdb	minE:-96.07146468616033
+Saving: 218.pdb	minE:-96.09825186615282
+Saving: 217.pdb	minE:-96.09973055668569
+Saving: 216.pdb	minE:-96.11565277550616
+Saving: 215.pdb	minE:-96.12401708249398
+Saving: 214.pdb	minE:-96.1464975569469
+Saving: 213.pdb	minE:-96.1634187279881
+Saving: 212.pdb	minE:-96.17432124007613
+Saving: 211.pdb	minE:-96.1938900649235
+Saving: 210.pdb	minE:-96.19634120234714
+Saving: 209.pdb	minE:-96.22587347832373
+Saving: 208.pdb	minE:-96.23257465526495
+Saving: 207.pdb	minE:-96.23360143784852
+Saving: 206.pdb	minE:-96.23482524303508
+Saving: 205.pdb	minE:-96.2372754594009
+Saving: 204.pdb	minE:-96.25474743786985
+Saving: 203.pdb	minE:-96.27317719754926
+Saving: 202.pdb	minE:-96.28448683200877
+Saving: 201.pdb	minE:-96.28532993577375
+Saving: 200.pdb	minE:-96.30540381177737
+Saving: 199.pdb	minE:-96.31175543629439
+Saving: 198.pdb	minE:-96.32951807050223
+Saving: 197.pdb	minE:-96.34189608577087
+Saving: 196.pdb	minE:-96.36392899223598
+Saving: 195.pdb	minE:-96.38434645282598
+Saving: 194.pdb	minE:-96.39911433829607
+Saving: 193.pdb	minE:-96.4112379830917
+Saving: 192.pdb	minE:-96.44641375309244
+Saving: 191.pdb	minE:-96.44698439372993
+Saving: 190.pdb	minE:-96.45237845642721
+Saving: 189.pdb	minE:-96.45594366149281
+Saving: 188.pdb	minE:-96.4602423523127
+Saving: 187.pdb	minE:-96.4900989950301
+Saving: 186.pdb	minE:-96.499678959262
+Saving: 185.pdb	minE:-96.51802523337908
+Saving: 184.pdb	minE:-96.5300006395859
+Saving: 183.pdb	minE:-96.53171981008195
+Saving: 182.pdb	minE:-96.53732638503566
+Saving: 181.pdb	minE:-96.54111908753828
+Saving: 180.pdb	minE:-96.54124588874768
+Saving: 179.pdb	minE:-96.54150988771039
+Saving: 178.pdb	minE:-96.5544341961816
+Saving: 177.pdb	minE:-96.56845189739424
+Saving: 176.pdb	minE:-96.60207567123184
+Saving: 175.pdb	minE:-96.61588869563036
+Saving: 174.pdb	minE:-96.6265266508038
+Saving: 173.pdb	minE:-96.64135956210495
+Saving: 172.pdb	minE:-96.66253995230858
+Saving: 171.pdb	minE:-96.66783693674633
+Saving: 170.pdb	minE:-96.67245017729648
+Saving: 169.pdb	minE:-96.67541770501447
+Saving: 168.pdb	minE:-96.68999225060912
+Saving: 167.pdb	minE:-96.71565294579074
+Saving: 166.pdb	minE:-96.71757317512306
+Saving: 165.pdb	minE:-96.72290853410668
+Saving: 164.pdb	minE:-96.75598960844678
+Saving: 163.pdb	minE:-96.76842725073163
+Saving: 162.pdb	minE:-96.79062423574108
+Saving: 161.pdb	minE:-96.8108797944583
+Saving: 160.pdb	minE:-96.8209964295702
+Saving: 159.pdb	minE:-96.82605222464018
+Saving: 158.pdb	minE:-96.82753434659412
+Saving: 157.pdb	minE:-96.82812135670109
+Saving: 156.pdb	minE:-96.83359833843572
+Saving: 155.pdb	minE:-96.8502825663291
+Saving: 154.pdb	minE:-96.88539858594575
+Saving: 153.pdb	minE:-96.89017278951225
+Saving: 152.pdb	minE:-96.90217673042586
+Saving: 151.pdb	minE:-96.90387506746536
+Saving: 150.pdb	minE:-96.9115407714228
+Saving: 149.pdb	minE:-96.94143301057625
+Saving: 148.pdb	minE:-96.95850923988121
+Saving: 147.pdb	minE:-96.96536998838204
+Saving: 146.pdb	minE:-96.979648748427
+Saving: 145.pdb	minE:-97.00996943962612
+Saving: 144.pdb	minE:-97.02737370045452
+Saving: 143.pdb	minE:-97.04647024915243
+Saving: 142.pdb	minE:-97.04799599287033
+Saving: 141.pdb	minE:-97.0480032282876
+Saving: 140.pdb	minE:-97.05507539658858
+Saving: 139.pdb	minE:-97.11803979744136
+Saving: 138.pdb	minE:-97.13613701144264
+Saving: 137.pdb	minE:-97.15971231507885
+Saving: 136.pdb	minE:-97.16079992077998
+Saving: 135.pdb	minE:-97.16094190699268
+Saving: 134.pdb	minE:-97.16992733788105
+Saving: 133.pdb	minE:-97.17171108514533
+Saving: 132.pdb	minE:-97.17238882461713
+Saving: 131.pdb	minE:-97.17473684505782
+Saving: 130.pdb	minE:-97.18760439762261
+Saving: 129.pdb	minE:-97.20600794642193
+Saving: 128.pdb	minE:-97.22060454607703
+Saving: 127.pdb	minE:-97.23507786736121
+Saving: 126.pdb	minE:-97.24456039039448
+Saving: 125.pdb	minE:-97.2517552734968
+Saving: 124.pdb	minE:-97.25275227144728
+Saving: 123.pdb	minE:-97.27193367415592
+Saving: 122.pdb	minE:-97.27272529874689
+Saving: 121.pdb	minE:-97.28137726668342
+Saving: 120.pdb	minE:-97.30549574868074
+Saving: 119.pdb	minE:-97.30876518950467
+Saving: 118.pdb	minE:-97.30941009639612
+Saving: 117.pdb	minE:-97.31911100971669
+Saving: 116.pdb	minE:-97.3296868144093
+Saving: 115.pdb	minE:-97.35152250343347
+Saving: 114.pdb	minE:-97.35618555548442
+Saving: 113.pdb	minE:-97.35908624293464
+Saving: 112.pdb	minE:-97.37846565056661
+Saving: 111.pdb	minE:-97.38916106401987
+Saving: 110.pdb	minE:-97.39347127533979
+Saving: 109.pdb	minE:-97.40884632015941
+Saving: 108.pdb	minE:-97.4141814025539
+Saving: 107.pdb	minE:-97.41510845916028
+Saving: 106.pdb	minE:-97.43228840346734
+Saving: 105.pdb	minE:-97.47240702384163
+Saving: 104.pdb	minE:-97.52381145362928
+Saving: 103.pdb	minE:-97.52506774721724
+Saving: 102.pdb	minE:-97.52692594334701
+Saving: 101.pdb	minE:-97.55794754917198
+Saving: 100.pdb	minE:-97.56908942842993
+Saving: 99.pdb	minE:-97.57674736171653
+Saving: 98.pdb	minE:-97.59552445297805
+Saving: 97.pdb	minE:-97.59768374119932
+Saving: 96.pdb	minE:-97.61259535271897
+Saving: 95.pdb	minE:-97.62241835818247
+Saving: 94.pdb	minE:-97.62744208199238
+Saving: 93.pdb	minE:-97.64826951754199
+Saving: 92.pdb	minE:-97.65929611828388
+Saving: 91.pdb	minE:-97.67332495498505
+Saving: 90.pdb	minE:-97.69128855595419
+Saving: 89.pdb	minE:-97.74595556775321
+Saving: 88.pdb	minE:-97.76793618021439
+Saving: 87.pdb	minE:-97.77706800599037
+Saving: 86.pdb	minE:-97.79006716515875
+Saving: 85.pdb	minE:-97.84023063123628
+Saving: 84.pdb	minE:-97.84716599936806
+Saving: 83.pdb	minE:-97.85820232676018
+Saving: 82.pdb	minE:-97.8606583807902
+Saving: 81.pdb	minE:-97.8651024784385
+Saving: 80.pdb	minE:-97.90544473944763
+Saving: 79.pdb	minE:-97.95177198896789
+Saving: 78.pdb	minE:-97.95550784649964
+Saving: 77.pdb	minE:-97.95678907126458
+Saving: 76.pdb	minE:-97.9672739754904
+Saving: 75.pdb	minE:-97.97858045281829
+Saving: 74.pdb	minE:-97.98931101357475
+Saving: 73.pdb	minE:-97.99033287217861
+Saving: 72.pdb	minE:-98.02482379536171
+Saving: 71.pdb	minE:-98.06077857450138
+Saving: 70.pdb	minE:-98.12445479615893
+Saving: 69.pdb	minE:-98.17272047293437
+Saving: 68.pdb	minE:-98.18120943269676
+Saving: 67.pdb	minE:-98.19110434188349
+Saving: 66.pdb	minE:-98.23539358924734
+Saving: 65.pdb	minE:-98.24919162660441
+Saving: 64.pdb	minE:-98.24919819450515
+Saving: 63.pdb	minE:-98.25120536290574
+Saving: 62.pdb	minE:-98.31200762656826
+Saving: 61.pdb	minE:-98.3177996923958
+Saving: 60.pdb	minE:-98.32193666247599
+Saving: 59.pdb	minE:-98.3444427115919
+Saving: 58.pdb	minE:-98.35907842621219
+Saving: 57.pdb	minE:-98.376723642665
+Saving: 56.pdb	minE:-98.41358492017113
+Saving: 55.pdb	minE:-98.42090188840216
+Saving: 54.pdb	minE:-98.44893904318657
+Saving: 53.pdb	minE:-98.46265944911615
+Saving: 52.pdb	minE:-98.4626782058994
+Saving: 51.pdb	minE:-98.46466854251534
+Saving: 50.pdb	minE:-98.55249948344866
+Saving: 49.pdb	minE:-98.55293152253122
+Saving: 48.pdb	minE:-98.56288841621759
+Saving: 47.pdb	minE:-98.56504657698738
+Saving: 46.pdb	minE:-98.59936915053228
+Saving: 45.pdb	minE:-98.6422695238067
+Saving: 44.pdb	minE:-98.64937758133263
+Saving: 43.pdb	minE:-98.65931514040815
+Saving: 42.pdb	minE:-98.66167609317233
+Saving: 41.pdb	minE:-98.66963325390216
+Saving: 40.pdb	minE:-98.74263370006352
+Saving: 39.pdb	minE:-98.82331259930145
+Saving: 38.pdb	minE:-98.83973329141159
+Saving: 37.pdb	minE:-98.8514783838941
+Saving: 36.pdb	minE:-98.88407885846073
+Saving: 35.pdb	minE:-98.89265952168074
+Saving: 34.pdb	minE:-98.9050428029422
+Saving: 33.pdb	minE:-98.96553766608302
+Saving: 32.pdb	minE:-98.97222868896071
+Saving: 31.pdb	minE:-98.98311881744205
+Saving: 30.pdb	minE:-99.085580940419
+Saving: 29.pdb	minE:-99.14261005695957
+Saving: 28.pdb	minE:-99.22301641844514
+Saving: 27.pdb	minE:-99.23499624871607
+Saving: 26.pdb	minE:-99.26386451548423
+Saving: 25.pdb	minE:-99.28538477216462
+Saving: 24.pdb	minE:-99.43312061091909
+Saving: 23.pdb	minE:-99.46698406362009
+Saving: 22.pdb	minE:-99.4963811812924
+Saving: 21.pdb	minE:-99.53064129816582
+Saving: 20.pdb	minE:-99.54054957888881
+Saving: 19.pdb	minE:-99.55757813121889
+Saving: 18.pdb	minE:-99.56871873732885
+Saving: 17.pdb	minE:-99.61891357582027
+Saving: 16.pdb	minE:-99.6633305976874
+Saving: 15.pdb	minE:-99.70891583294143
+Saving: 14.pdb	minE:-99.76754459983218
+Saving: 13.pdb	minE:-99.84732834833669
+Saving: 12.pdb	minE:-99.85836049600194
+Saving: 11.pdb	minE:-99.95316536975817
+Saving: 10.pdb	minE:-100.0355005151175
+Saving: 9.pdb	minE:-100.11831658530485
+Saving: 8.pdb	minE:-100.17942654661506
+Saving: 7.pdb	minE:-100.18663581543342
+Saving: 6.pdb	minE:-100.18855906182372
+Saving: 5.pdb	minE:-100.26536178390415
+Saving: 4.pdb	minE:-100.33556429054045
+Saving: 3.pdb	minE:-100.8661437010015
+Saving: 2.pdb	minE:-101.01461700924189
+Saving: 1.pdb	minE:-101.48296948594813
+Saving: 0.pdb	minE:-101.63193316408777
+
+
+Parallel2: Completed partition function for HIE-296 GLU-297 ILE-301 SER-302 GLU-317 HIE-319 GLN-322 (continuous)
+
+
+Parallel2: Initializing partition function for HIE-296 GLU-297 ILE-301 SER-302 GLU-317 HIE-319 GLN-322 ILE-9 (continuous)
+using p* calculator
+p* confTree complete. # enumerated: 1. # remaining: 2903039. % p*: 1
+
+Parallel2: Computing partition function for HIE-296 GLU-297 ILE-301 SER-302 GLU-317 HIE-319 GLN-322 ILE-9 (continuous)
+error	energy	epsilon	#processed	#un-enum	#buf	time(sec)
+-6.8447	-118.6989	0.9999	12	128916	96	1
+-7.0906	-117.9886	0.9998	24	128904	96	2
+-6.6612	-118.1477	0.9995	36	128892	96	3
+-5.2270	-119.2885	0.9992	48	128880	96	5
+-6.2744	-118.0573	0.9987	60	128868	96	6
+-6.2677	-117.7679	0.9981	72	128856	96	7
+-7.3073	-116.4094	0.9973	84	128844	96	9
+-6.5679	-116.9121	0.9963	96	128832	96	11
+-6.2602	-117.0045	0.9951	108	128820	96	12
+-31.9604	-91.0129	0.9938	120	128808	96	13
+-5.9473	-116.9033	0.9922	132	128796	96	14
+-4.0455	-118.5966	0.9906	144	128784	96	16
+-6.0788	-116.4268	0.9889	156	128772	96	18
+-4.6614	-117.6890	0.9869	168	128760	96	19
+-7.3419	-114.8661	0.9848	180	128748	96	20
+-6.1853	-115.9367	0.9826	192	128736	96	24
+q' confTree complete. # enumerated: 111745. # remaining: 17279. % q': 1.00000000
+-5.8383	-116.1193	0.9802	204	128724	96	27
+-5.5015	-116.3416	0.9779	216	128712	96	28
+-5.9750	-115.7558	0.9756	228	128700	96	29
+-5.6505	-115.9910	0.9732	240	128688	96	30
+-5.9588	-115.5225	0.9708	252	128676	96	32
+-31.1086	-90.2943	0.9686	264	128664	96	33
+-6.0540	-115.3204	0.9662	276	128652	96	35
+-5.3047	-115.9754	0.9638	288	128640	96	37
+-8.3416	-112.8639	0.9613	300	128628	96	42
+-6.2481	-114.9110	0.9588	312	128616	96	44
+-6.1771	-114.8940	0.9562	324	128604	96	46
+-3.3678	-117.6401	0.9537	336	128592	96	47
+-3.7971	-117.1751	0.9511	348	128580	96	49
+-30.4034	-90.5258	0.9484	360	128568	96	50
+-4.7215	-116.1860	0.9456	372	128556	96	51
+-3.5829	-117.2702	0.9426	384	128544	96	52
+-5.4908	-115.3131	0.9396	396	128532	96	53
+-6.4383	-114.3311	0.9365	408	128520	96	55
+-9.1805	-111.5456	0.9333	420	128508	96	56
+-6.3831	-114.3143	0.9300	432	128496	96	57
+-5.0089	-115.6452	0.9265	444	128484	96	59
+-31.9736	-88.6212	0.9230	456	128472	96	60
+-8.1881	-112.3790	0.9195	468	128460	96	61
+-4.2042	-116.3335	0.9158	480	128448	96	63
+-4.3552	-116.1566	0.9120	492	128436	96	64
+-5.6506	-114.8319	0.9080	504	128424	96	65
+-6.0135	-114.4436	0.9038	516	128412	96	66
+-31.3718	-89.0612	0.8995	528	128400	96	68
+-5.7575	-114.6445	0.8949	540	128388	96	69
+-5.6560	-114.7117	0.8902	552	128376	96	70
+-30.2825	-90.0593	0.8853	564	128364	96	72
+-7.6945	-112.6139	0.8803	576	128352	96	73
+-5.4158	-114.8676	0.8750	588	128340	96	74
+-4.6655	-115.5914	0.8696	600	128328	96	75
+-6.0793	-114.1445	0.8640	612	128316	96	76
+-5.1087	-115.0940	0.8581	624	128304	96	78
+-7.4924	-112.6818	0.8520	636	128292	96	79
+-5.7363	-114.3891	0.8458	648	128280	96	80
+-6.7220	-113.3765	0.8394	660	128268	96	82
+-30.5955	-89.4768	0.8328	672	128256	96	83
+-6.0268	-114.0208	0.8260	684	128244	96	84
+-6.4826	-113.5407	0.8188	696	128232	96	86
+-5.6119	-114.3927	0.8114	708	128220	96	87
+-4.7268	-115.2465	0.8037	720	128208	96	88
+-5.2273	-114.7249	0.7958	732	128196	96	90
+-3.3279	-116.5968	0.7875	744	128184	96	91
+-6.3291	-113.5571	0.7790	756	128172	96	93
+-4.7748	-115.0886	0.7703	768	128160	96	94
+-4.9931	-114.8324	0.7613	780	128148	96	95
+-4.8663	-114.9347	0.7522	792	128136	96	96
+-3.6913	-116.0852	0.7427	804	128124	96	98
+-6.9183	-112.8322	0.7329	816	128112	96	100
+-3.8948	-115.8217	0.7228	828	128100	96	101
+-6.4090	-113.2718	0.7126	840	128088	96	102
+-7.3162	-112.3217	0.7025	852	128076	96	104
+-5.0416	-114.5666	0.6923	864	128064	96	105
+-5.5496	-114.0324	0.6818	876	128052	96	107
+-4.6654	-114.9151	0.6800	878	128040	96	109
+
+Writing top 500 conformation(s) for sequence: HIE-296 GLU-297 ILE-301 SER-302 GLU-317 HIE-319 GLN-322 ILE-9
+
+Saving: 499.pdb	minE:-115.00729862276985
+Saving: 498.pdb	minE:-115.01243003654015
+Saving: 497.pdb	minE:-115.0141344230811
+Saving: 496.pdb	minE:-115.02640271072717
+Saving: 495.pdb	minE:-115.04602750596966
+Saving: 494.pdb	minE:-115.06202959200175
+Saving: 493.pdb	minE:-115.06350969798397
+Saving: 492.pdb	minE:-115.06435514420323
+Saving: 491.pdb	minE:-115.07454109311361
+Saving: 490.pdb	minE:-115.07535035098105
+Saving: 489.pdb	minE:-115.07991487963858
+Saving: 488.pdb	minE:-115.08601880230931
+Saving: 487.pdb	minE:-115.08739550674215
+Saving: 486.pdb	minE:-115.08862872574657
+Saving: 485.pdb	minE:-115.09395268518301
+Saving: 484.pdb	minE:-115.10138040895713
+Saving: 483.pdb	minE:-115.10940248442726
+Saving: 482.pdb	minE:-115.11594137615093
+Saving: 481.pdb	minE:-115.12439663828863
+Saving: 480.pdb	minE:-115.12906306630074
+Saving: 479.pdb	minE:-115.13063608476587
+Saving: 478.pdb	minE:-115.13446238232233
+Saving: 477.pdb	minE:-115.13787026804171
+Saving: 476.pdb	minE:-115.1457603056681
+Saving: 475.pdb	minE:-115.15135169805517
+Saving: 474.pdb	minE:-115.15654316425766
+Saving: 473.pdb	minE:-115.15925809360384
+Saving: 472.pdb	minE:-115.16421003494924
+Saving: 471.pdb	minE:-115.17062303671102
+Saving: 470.pdb	minE:-115.17610237406683
+Saving: 469.pdb	minE:-115.18443885207273
+Saving: 468.pdb	minE:-115.18805769374984
+Saving: 467.pdb	minE:-115.19311914042311
+Saving: 466.pdb	minE:-115.21882633392295
+Saving: 465.pdb	minE:-115.22989981093605
+Saving: 464.pdb	minE:-115.23335328600436
+Saving: 463.pdb	minE:-115.23395455628426
+Saving: 462.pdb	minE:-115.24442836531908
+Saving: 461.pdb	minE:-115.24649122463356
+Saving: 460.pdb	minE:-115.24944942719637
+Saving: 459.pdb	minE:-115.25056454364923
+Saving: 458.pdb	minE:-115.25390183935761
+Saving: 457.pdb	minE:-115.25611014598474
+Saving: 456.pdb	minE:-115.25679881516314
+Saving: 455.pdb	minE:-115.26256790032006
+Saving: 454.pdb	minE:-115.26938098890538
+Saving: 453.pdb	minE:-115.27256551200131
+Saving: 452.pdb	minE:-115.28200211060366
+Saving: 451.pdb	minE:-115.2827924195236
+Saving: 450.pdb	minE:-115.28354135085887
+Saving: 449.pdb	minE:-115.29081469596298
+Saving: 448.pdb	minE:-115.29647261871028
+Saving: 447.pdb	minE:-115.31214786236967
+Saving: 446.pdb	minE:-115.3130876800812
+Saving: 445.pdb	minE:-115.32035726104822
+Saving: 444.pdb	minE:-115.32131445901936
+Saving: 443.pdb	minE:-115.32911099663444
+Saving: 442.pdb	minE:-115.33322956958499
+Saving: 441.pdb	minE:-115.33796096790505
+Saving: 440.pdb	minE:-115.34352182737938
+Saving: 439.pdb	minE:-115.34433628897719
+Saving: 438.pdb	minE:-115.35144631936053
+Saving: 437.pdb	minE:-115.35349369038889
+Saving: 436.pdb	minE:-115.3569639331093
+Saving: 435.pdb	minE:-115.36040834010271
+Saving: 434.pdb	minE:-115.36260219281316
+Saving: 433.pdb	minE:-115.37118420579338
+Saving: 432.pdb	minE:-115.37517248912522
+Saving: 431.pdb	minE:-115.3784344588231
+Saving: 430.pdb	minE:-115.38218702889553
+Saving: 429.pdb	minE:-115.39347397628198
+Saving: 428.pdb	minE:-115.39885487299709
+Saving: 427.pdb	minE:-115.39940398569468
+Saving: 426.pdb	minE:-115.39952849272308
+Saving: 425.pdb	minE:-115.40672209615629
+Saving: 424.pdb	minE:-115.412211296918
+Saving: 423.pdb	minE:-115.42777756547176
+Saving: 422.pdb	minE:-115.43948158750463
+Saving: 421.pdb	minE:-115.4419021773487
+Saving: 420.pdb	minE:-115.4456985207775
+Saving: 419.pdb	minE:-115.46788667650634
+Saving: 418.pdb	minE:-115.47056597110985
+Saving: 417.pdb	minE:-115.47581982696374
+Saving: 416.pdb	minE:-115.481558532544
+Saving: 415.pdb	minE:-115.483256402803
+Saving: 414.pdb	minE:-115.48735212139637
+Saving: 413.pdb	minE:-115.49367849152833
+Saving: 412.pdb	minE:-115.49764039668617
+Saving: 411.pdb	minE:-115.49974226888203
+Saving: 410.pdb	minE:-115.50615479670773
+Saving: 409.pdb	minE:-115.51024833630304
+Saving: 408.pdb	minE:-115.51588776054028
+Saving: 407.pdb	minE:-115.52249211549017
+Saving: 406.pdb	minE:-115.52361719690455
+Saving: 405.pdb	minE:-115.52731888244656
+Saving: 404.pdb	minE:-115.53660064009802
+Saving: 403.pdb	minE:-115.53789039639682
+Saving: 402.pdb	minE:-115.53850737405648
+Saving: 401.pdb	minE:-115.53973454024596
+Saving: 400.pdb	minE:-115.54120746313173
+Saving: 399.pdb	minE:-115.54375450745108
+Saving: 398.pdb	minE:-115.55657668117337
+Saving: 397.pdb	minE:-115.56102036966914
+Saving: 396.pdb	minE:-115.56550737693759
+Saving: 395.pdb	minE:-115.56575252610236
+Saving: 394.pdb	minE:-115.56656144352984
+Saving: 393.pdb	minE:-115.56997406926082
+Saving: 392.pdb	minE:-115.57464930182202
+Saving: 391.pdb	minE:-115.57524478551419
+Saving: 390.pdb	minE:-115.5771672652902
+Saving: 389.pdb	minE:-115.58002442784846
+Saving: 388.pdb	minE:-115.58035718979959
+Saving: 387.pdb	minE:-115.58546116755141
+Saving: 386.pdb	minE:-115.58736712294053
+Saving: 385.pdb	minE:-115.59137417950005
+Saving: 384.pdb	minE:-115.59348031686882
+Saving: 383.pdb	minE:-115.60266006888085
+Saving: 382.pdb	minE:-115.61291590618555
+Saving: 381.pdb	minE:-115.6130628006981
+Saving: 380.pdb	minE:-115.61920737143589
+Saving: 379.pdb	minE:-115.622262144957
+Saving: 378.pdb	minE:-115.62521466850676
+Saving: 377.pdb	minE:-115.63720896246662
+Saving: 376.pdb	minE:-115.64042440659433
+Saving: 375.pdb	minE:-115.64154895366494
+Saving: 374.pdb	minE:-115.64524935052529
+Saving: 373.pdb	minE:-115.65082069512208
+Saving: 372.pdb	minE:-115.65179682085694
+Saving: 371.pdb	minE:-115.65424689731
+Saving: 370.pdb	minE:-115.67061351180554
+Saving: 369.pdb	minE:-115.67818316335664
+Saving: 368.pdb	minE:-115.68009792921688
+Saving: 367.pdb	minE:-115.68232200044739
+Saving: 366.pdb	minE:-115.68301892763112
+Saving: 365.pdb	minE:-115.68324033305355
+Saving: 364.pdb	minE:-115.68693734964711
+Saving: 363.pdb	minE:-115.68894905418678
+Saving: 362.pdb	minE:-115.71377098449591
+Saving: 361.pdb	minE:-115.71628206284367
+Saving: 360.pdb	minE:-115.7211135815711
+Saving: 359.pdb	minE:-115.73363529440265
+Saving: 358.pdb	minE:-115.73456883747616
+Saving: 357.pdb	minE:-115.73882958549669
+Saving: 356.pdb	minE:-115.74250082916926
+Saving: 355.pdb	minE:-115.74834114370711
+Saving: 354.pdb	minE:-115.75374218434389
+Saving: 353.pdb	minE:-115.75578102578152
+Saving: 352.pdb	minE:-115.758261797874
+Saving: 351.pdb	minE:-115.75996020279527
+Saving: 350.pdb	minE:-115.77476139529547
+Saving: 349.pdb	minE:-115.78894237145684
+Saving: 348.pdb	minE:-115.78955291253962
+Saving: 347.pdb	minE:-115.7903672689405
+Saving: 346.pdb	minE:-115.8034131744542
+Saving: 345.pdb	minE:-115.82168986063857
+Saving: 344.pdb	minE:-115.83683626003541
+Saving: 343.pdb	minE:-115.84143868848632
+Saving: 342.pdb	minE:-115.85956937046993
+Saving: 341.pdb	minE:-115.86610948636881
+Saving: 340.pdb	minE:-115.87274664892463
+Saving: 339.pdb	minE:-115.87908456054815
+Saving: 338.pdb	minE:-115.8792282584888
+Saving: 337.pdb	minE:-115.88356045109701
+Saving: 336.pdb	minE:-115.89401740886704
+Saving: 335.pdb	minE:-115.8961926732092
+Saving: 334.pdb	minE:-115.90096734628823
+Saving: 333.pdb	minE:-115.91346843519368
+Saving: 332.pdb	minE:-115.918155271788
+Saving: 331.pdb	minE:-115.92253518615739
+Saving: 330.pdb	minE:-115.93048051498461
+Saving: 329.pdb	minE:-115.93671211700956
+Saving: 328.pdb	minE:-115.93800842848466
+Saving: 327.pdb	minE:-115.93887112079706
+Saving: 326.pdb	minE:-115.93947440084746
+Saving: 325.pdb	minE:-115.94117032607949
+Saving: 324.pdb	minE:-115.94877524367809
+Saving: 323.pdb	minE:-115.95086219004114
+Saving: 322.pdb	minE:-115.95103553118001
+Saving: 321.pdb	minE:-115.9559606014243
+Saving: 320.pdb	minE:-115.95612497732887
+Saving: 319.pdb	minE:-115.95952332182264
+Saving: 318.pdb	minE:-115.97291421460686
+Saving: 317.pdb	minE:-115.97362092840366
+Saving: 316.pdb	minE:-115.97461789986093
+Saving: 315.pdb	minE:-115.97539241786727
+Saving: 314.pdb	minE:-115.9762951778423
+Saving: 313.pdb	minE:-115.97718717288016
+Saving: 312.pdb	minE:-115.9834965829549
+Saving: 311.pdb	minE:-115.99009520276792
+Saving: 310.pdb	minE:-115.99103211096683
+Saving: 309.pdb	minE:-115.99734063430057
+Saving: 308.pdb	minE:-115.99994738384171
+Saving: 307.pdb	minE:-116.0032723056702
+Saving: 306.pdb	minE:-116.01476487251175
+Saving: 305.pdb	minE:-116.01766295024865
+Saving: 304.pdb	minE:-116.0206161604464
+Saving: 303.pdb	minE:-116.02140541190298
+Saving: 302.pdb	minE:-116.02442989275922
+Saving: 301.pdb	minE:-116.0335283609962
+Saving: 300.pdb	minE:-116.04346450370198
+Saving: 299.pdb	minE:-116.05066591047144
+Saving: 298.pdb	minE:-116.0513364399734
+Saving: 297.pdb	minE:-116.06435716799163
+Saving: 296.pdb	minE:-116.07961718668221
+Saving: 295.pdb	minE:-116.08156530511702
+Saving: 294.pdb	minE:-116.08517408151128
+Saving: 293.pdb	minE:-116.08616407727223
+Saving: 292.pdb	minE:-116.09043502777082
+Saving: 291.pdb	minE:-116.09416025470792
+Saving: 290.pdb	minE:-116.11320797775387
+Saving: 289.pdb	minE:-116.11795227947613
+Saving: 288.pdb	minE:-116.11933703815778
+Saving: 287.pdb	minE:-116.13584474895968
+Saving: 286.pdb	minE:-116.15659987263498
+Saving: 285.pdb	minE:-116.16607270461182
+Saving: 284.pdb	minE:-116.17038995580762
+Saving: 283.pdb	minE:-116.1790405361835
+Saving: 282.pdb	minE:-116.17928650452039
+Saving: 281.pdb	minE:-116.18574025217553
+Saving: 280.pdb	minE:-116.18595728193357
+Saving: 279.pdb	minE:-116.19312211823917
+Saving: 278.pdb	minE:-116.19891868247547
+Saving: 277.pdb	minE:-116.20527633444057
+Saving: 276.pdb	minE:-116.20710685060429
+Saving: 275.pdb	minE:-116.20734821403408
+Saving: 274.pdb	minE:-116.20831663185604
+Saving: 273.pdb	minE:-116.22554773740187
+Saving: 272.pdb	minE:-116.23000001110107
+Saving: 271.pdb	minE:-116.23406713482247
+Saving: 270.pdb	minE:-116.23592374610747
+Saving: 269.pdb	minE:-116.24766475349257
+Saving: 268.pdb	minE:-116.25115726501068
+Saving: 267.pdb	minE:-116.26739854156497
+Saving: 266.pdb	minE:-116.29028166969847
+Saving: 265.pdb	minE:-116.30521599307201
+Saving: 264.pdb	minE:-116.31354641483169
+Saving: 263.pdb	minE:-116.31804316395511
+Saving: 262.pdb	minE:-116.32494974548148
+Saving: 261.pdb	minE:-116.32804095867039
+Saving: 260.pdb	minE:-116.33158572300569
+Saving: 259.pdb	minE:-116.3334588633768
+Saving: 258.pdb	minE:-116.33600318076863
+Saving: 257.pdb	minE:-116.34156781280834
+Saving: 256.pdb	minE:-116.35333541604682
+Saving: 255.pdb	minE:-116.358793508086
+Saving: 254.pdb	minE:-116.36694603207732
+Saving: 253.pdb	minE:-116.36759192913713
+Saving: 252.pdb	minE:-116.37161163510038
+Saving: 251.pdb	minE:-116.37462483602903
+Saving: 250.pdb	minE:-116.37538429464331
+Saving: 249.pdb	minE:-116.37545281429989
+Saving: 248.pdb	minE:-116.38260275086151
+Saving: 247.pdb	minE:-116.3842284634288
+Saving: 246.pdb	minE:-116.3931530515613
+Saving: 245.pdb	minE:-116.3972739192329
+Saving: 244.pdb	minE:-116.40174835517958
+Saving: 243.pdb	minE:-116.40192573681742
+Saving: 242.pdb	minE:-116.40941702234446
+Saving: 241.pdb	minE:-116.41204406287332
+Saving: 240.pdb	minE:-116.42675866845035
+Saving: 239.pdb	minE:-116.43859579422299
+Saving: 238.pdb	minE:-116.44057221212869
+Saving: 237.pdb	minE:-116.44142905906813
+Saving: 236.pdb	minE:-116.45464108208739
+Saving: 235.pdb	minE:-116.45497771484838
+Saving: 234.pdb	minE:-116.45647641537803
+Saving: 233.pdb	minE:-116.46460015642087
+Saving: 232.pdb	minE:-116.46852708207012
+Saving: 231.pdb	minE:-116.46994343729536
+Saving: 230.pdb	minE:-116.47010030882413
+Saving: 229.pdb	minE:-116.47533202981738
+Saving: 228.pdb	minE:-116.48985495986192
+Saving: 227.pdb	minE:-116.50283070233013
+Saving: 226.pdb	minE:-116.52716519894167
+Saving: 225.pdb	minE:-116.5283913020643
+Saving: 224.pdb	minE:-116.54108831006049
+Saving: 223.pdb	minE:-116.5415148626033
+Saving: 222.pdb	minE:-116.54252731891503
+Saving: 221.pdb	minE:-116.54409816759821
+Saving: 220.pdb	minE:-116.54574585425769
+Saving: 219.pdb	minE:-116.5504701915689
+Saving: 218.pdb	minE:-116.56473231231952
+Saving: 217.pdb	minE:-116.57681159341527
+Saving: 216.pdb	minE:-116.58971128463129
+Saving: 215.pdb	minE:-116.59679444582693
+Saving: 214.pdb	minE:-116.6175118788761
+Saving: 213.pdb	minE:-116.62007040957259
+Saving: 212.pdb	minE:-116.62223025052275
+Saving: 211.pdb	minE:-116.6401819518429
+Saving: 210.pdb	minE:-116.64652991667323
+Saving: 209.pdb	minE:-116.64908347266193
+Saving: 208.pdb	minE:-116.68888218975363
+Saving: 207.pdb	minE:-116.69410969376112
+Saving: 206.pdb	minE:-116.70918875222746
+Saving: 205.pdb	minE:-116.70932984917425
+Saving: 204.pdb	minE:-116.72253306633556
+Saving: 203.pdb	minE:-116.74138643022035
+Saving: 202.pdb	minE:-116.74564292804925
+Saving: 201.pdb	minE:-116.75067359700242
+Saving: 200.pdb	minE:-116.75522301745882
+Saving: 199.pdb	minE:-116.75945821471521
+Saving: 198.pdb	minE:-116.78123283118187
+Saving: 197.pdb	minE:-116.78503876092176
+Saving: 196.pdb	minE:-116.78882759285108
+Saving: 195.pdb	minE:-116.79106440298789
+Saving: 194.pdb	minE:-116.79535290384095
+Saving: 193.pdb	minE:-116.80705874395717
+Saving: 192.pdb	minE:-116.82322388633474
+Saving: 191.pdb	minE:-116.83184210151138
+Saving: 190.pdb	minE:-116.84966467714365
+Saving: 189.pdb	minE:-116.84987604153996
+Saving: 188.pdb	minE:-116.85276091238487
+Saving: 187.pdb	minE:-116.86051586333281
+Saving: 186.pdb	minE:-116.8712135542035
+Saving: 185.pdb	minE:-116.87275950089101
+Saving: 184.pdb	minE:-116.88032705387434
+Saving: 183.pdb	minE:-116.88482820356184
+Saving: 182.pdb	minE:-116.88623230023661
+Saving: 181.pdb	minE:-116.88640681500793
+Saving: 180.pdb	minE:-116.89308334640342
+Saving: 179.pdb	minE:-116.90326298933228
+Saving: 178.pdb	minE:-116.91010235973697
+Saving: 177.pdb	minE:-116.91212796543607
+Saving: 176.pdb	minE:-116.91344882972126
+Saving: 175.pdb	minE:-116.92097227320065
+Saving: 174.pdb	minE:-116.93634357541785
+Saving: 173.pdb	minE:-116.94737388553875
+Saving: 172.pdb	minE:-116.95079288526327
+Saving: 171.pdb	minE:-116.95164987762492
+Saving: 170.pdb	minE:-116.96228149440405
+Saving: 169.pdb	minE:-116.9767712072628
+Saving: 168.pdb	minE:-116.9822087401557
+Saving: 167.pdb	minE:-116.9824183303759
+Saving: 166.pdb	minE:-117.00447734224461
+Saving: 165.pdb	minE:-117.00752707489067
+Saving: 164.pdb	minE:-117.02386566359093
+Saving: 163.pdb	minE:-117.02596641685616
+Saving: 162.pdb	minE:-117.03512178837607
+Saving: 161.pdb	minE:-117.05362211624164
+Saving: 160.pdb	minE:-117.05409834259225
+Saving: 159.pdb	minE:-117.06929949414372
+Saving: 158.pdb	minE:-117.08252016808551
+Saving: 157.pdb	minE:-117.08483500801816
+Saving: 156.pdb	minE:-117.11759038134346
+Saving: 155.pdb	minE:-117.12616259746959
+Saving: 154.pdb	minE:-117.12826769235178
+Saving: 153.pdb	minE:-117.16624233772286
+Saving: 152.pdb	minE:-117.17505230169192
+Saving: 151.pdb	minE:-117.18186525824629
+Saving: 150.pdb	minE:-117.19105809052287
+Saving: 149.pdb	minE:-117.23441223508833
+Saving: 148.pdb	minE:-117.24041021152969
+Saving: 147.pdb	minE:-117.24585190265338
+Saving: 146.pdb	minE:-117.26673866183103
+Saving: 145.pdb	minE:-117.27019149374874
+Saving: 144.pdb	minE:-117.28617918337216
+Saving: 143.pdb	minE:-117.29559105649588
+Saving: 142.pdb	minE:-117.29999017484144
+Saving: 141.pdb	minE:-117.30112171357945
+Saving: 140.pdb	minE:-117.30395781141337
+Saving: 139.pdb	minE:-117.30402832086638
+Saving: 138.pdb	minE:-117.3064482891797
+Saving: 137.pdb	minE:-117.3211567867152
+Saving: 136.pdb	minE:-117.34136668191184
+Saving: 135.pdb	minE:-117.35332316653951
+Saving: 134.pdb	minE:-117.35956873685637
+Saving: 133.pdb	minE:-117.36083938104773
+Saving: 132.pdb	minE:-117.3631964265782
+Saving: 131.pdb	minE:-117.38482177295174
+Saving: 130.pdb	minE:-117.38588465027493
+Saving: 129.pdb	minE:-117.38662082585562
+Saving: 128.pdb	minE:-117.40141832260461
+Saving: 127.pdb	minE:-117.42152515616117
+Saving: 126.pdb	minE:-117.42519636106555
+Saving: 125.pdb	minE:-117.4430446803363
+Saving: 124.pdb	minE:-117.4471001064612
+Saving: 123.pdb	minE:-117.44884734235369
+Saving: 122.pdb	minE:-117.49534858712182
+Saving: 121.pdb	minE:-117.54885897056874
+Saving: 120.pdb	minE:-117.55848999010868
+Saving: 119.pdb	minE:-117.57697982380814
+Saving: 118.pdb	minE:-117.61595685470384
+Saving: 117.pdb	minE:-117.64009582711496
+Saving: 116.pdb	minE:-117.64234545142804
+Saving: 115.pdb	minE:-117.65208232760384
+Saving: 114.pdb	minE:-117.66617657856017
+Saving: 113.pdb	minE:-117.66656582296645
+Saving: 112.pdb	minE:-117.66928927921415
+Saving: 111.pdb	minE:-117.67584738331135
+Saving: 110.pdb	minE:-117.68897991380561
+Saving: 109.pdb	minE:-117.68953050134978
+Saving: 108.pdb	minE:-117.68974700040023
+Saving: 107.pdb	minE:-117.69203940491334
+Saving: 106.pdb	minE:-117.69215221355175
+Saving: 105.pdb	minE:-117.7039112962012
+Saving: 104.pdb	minE:-117.70724535245613
+Saving: 103.pdb	minE:-117.71150089679979
+Saving: 102.pdb	minE:-117.71309035492177
+Saving: 101.pdb	minE:-117.73217255273127
+Saving: 100.pdb	minE:-117.73274180963062
+Saving: 99.pdb	minE:-117.75787313921093
+Saving: 98.pdb	minE:-117.76794232713225
+Saving: 97.pdb	minE:-117.78744468412715
+Saving: 96.pdb	minE:-117.80146898663814
+Saving: 95.pdb	minE:-117.81178148212005
+Saving: 94.pdb	minE:-117.82889914675063
+Saving: 93.pdb	minE:-117.83375888048128
+Saving: 92.pdb	minE:-117.84826124894589
+Saving: 91.pdb	minE:-117.86453159108102
+Saving: 90.pdb	minE:-117.86864981048541
+Saving: 89.pdb	minE:-117.8863365302857
+Saving: 88.pdb	minE:-117.911738757133
+Saving: 87.pdb	minE:-117.9289057998236
+Saving: 86.pdb	minE:-117.95425528993542
+Saving: 85.pdb	minE:-117.98220717371237
+Saving: 84.pdb	minE:-117.98860757547787
+Saving: 83.pdb	minE:-117.98988425998208
+Saving: 82.pdb	minE:-118.04571163220021
+Saving: 81.pdb	minE:-118.04763999214228
+Saving: 80.pdb	minE:-118.05729691108968
+Saving: 79.pdb	minE:-118.06602430278585
+Saving: 78.pdb	minE:-118.09659357564259
+Saving: 77.pdb	minE:-118.10290142761924
+Saving: 76.pdb	minE:-118.12979048261775
+Saving: 75.pdb	minE:-118.14772174454826
+Saving: 74.pdb	minE:-118.16729670681977
+Saving: 73.pdb	minE:-118.17873108677023
+Saving: 72.pdb	minE:-118.19433092567839
+Saving: 71.pdb	minE:-118.21120875166996
+Saving: 70.pdb	minE:-118.2134168117974
+Saving: 69.pdb	minE:-118.22477838762256
+Saving: 68.pdb	minE:-118.26307174742158
+Saving: 67.pdb	minE:-118.26611182546792
+Saving: 66.pdb	minE:-118.27722179739627
+Saving: 65.pdb	minE:-118.27734130325062
+Saving: 64.pdb	minE:-118.29218973105841
+Saving: 63.pdb	minE:-118.29988608851644
+Saving: 62.pdb	minE:-118.31456585376789
+Saving: 61.pdb	minE:-118.35593858136896
+Saving: 60.pdb	minE:-118.37139675005751
+Saving: 59.pdb	minE:-118.37845085164251
+Saving: 58.pdb	minE:-118.40881290039445
+Saving: 57.pdb	minE:-118.43704395632392
+Saving: 56.pdb	minE:-118.46935458049043
+Saving: 55.pdb	minE:-118.50296179402929
+Saving: 54.pdb	minE:-118.50471455506768
+Saving: 53.pdb	minE:-118.5965877359997
+Saving: 52.pdb	minE:-118.60279071237876
+Saving: 51.pdb	minE:-118.6036046198018
+Saving: 50.pdb	minE:-118.63533296924489
+Saving: 49.pdb	minE:-118.66829248507754
+Saving: 48.pdb	minE:-118.66955625112476
+Saving: 47.pdb	minE:-118.6825763189209
+Saving: 46.pdb	minE:-118.69892429370667
+Saving: 45.pdb	minE:-118.72736223551756
+Saving: 44.pdb	minE:-118.7485201563929
+Saving: 43.pdb	minE:-118.8499010428249
+Saving: 42.pdb	minE:-118.88785555616846
+Saving: 41.pdb	minE:-118.97899403351339
+Saving: 40.pdb	minE:-119.00175345107867
+Saving: 39.pdb	minE:-119.00398368101594
+Saving: 38.pdb	minE:-119.00458575078584
+Saving: 37.pdb	minE:-119.00676404451247
+Saving: 36.pdb	minE:-119.02686796091716
+Saving: 35.pdb	minE:-119.06726077029872
+Saving: 34.pdb	minE:-119.10537157775816
+Saving: 33.pdb	minE:-119.18541478526326
+Saving: 32.pdb	minE:-119.2126981444691
+Saving: 31.pdb	minE:-119.22464225975692
+Saving: 30.pdb	minE:-119.24680785885464
+Saving: 29.pdb	minE:-119.27714359394687
+Saving: 28.pdb	minE:-119.28854939001909
+Saving: 27.pdb	minE:-119.28885347184998
+Saving: 26.pdb	minE:-119.34074412991232
+Saving: 25.pdb	minE:-119.43829904461268
+Saving: 24.pdb	minE:-119.4782973798576
+Saving: 23.pdb	minE:-119.52756765033796
+Saving: 22.pdb	minE:-119.55018867234027
+Saving: 21.pdb	minE:-119.57704755687507
+Saving: 20.pdb	minE:-119.60525094380746
+Saving: 19.pdb	minE:-119.6092157625692
+Saving: 18.pdb	minE:-119.65531858976539
+Saving: 17.pdb	minE:-119.66486571495989
+Saving: 16.pdb	minE:-119.68409071877441
+Saving: 15.pdb	minE:-119.71977449370856
+Saving: 14.pdb	minE:-119.77042190469206
+Saving: 13.pdb	minE:-119.80399295740166
+Saving: 12.pdb	minE:-119.80499945415923
+Saving: 11.pdb	minE:-119.81368749173781
+Saving: 10.pdb	minE:-119.89516066826913
+Saving: 9.pdb	minE:-120.16314059010023
+Saving: 8.pdb	minE:-120.20069403522311
+Saving: 7.pdb	minE:-120.4818951475429
+Saving: 6.pdb	minE:-120.58460262401572
+Saving: 5.pdb	minE:-120.7345906952827
+Saving: 4.pdb	minE:-120.82324231314124
+Saving: 3.pdb	minE:-120.86002747499138
+Saving: 2.pdb	minE:-120.96487723220265
+Saving: 1.pdb	minE:-121.11370325683599
+Saving: 0.pdb	minE:-121.2045396234396
+
+
+Parallel2: Completed partition function for HIE-296 GLU-297 ILE-301 SER-302 GLU-317 HIE-319 GLN-322 ILE-9 (continuous)
+
+
+Computing K* for sequence 1/1: HIE-296 GLU-297 ILE-301 SER-302 GLU-317 HIE-319 GLN-322 K04-9
+
+
+Parallel2: Initializing partition function for K04-9 (continuous)
+using p* calculator
+
+Parallel2: Computing partition function for K04-9 (continuous)
+A* tree empty...returning empty signal
+p* confTree complete. # enumerated: 28. # remaining: 0. % p*: 1.00000000
+A* tree empty...returning empty signal
+A* tree empty...returning empty signal
+q' confTree complete. # enumerated: 28. # remaining: 0. % q': 1.00000000
+error	energy	epsilon	#processed	#un-enum	#buf	time(sec)
+0.0000	-12.4479	0.6629	2	0	16	0
+
+Writing top 2 conformation(s) for sequence: K04-9
+
+Saving: 1.pdb	minE:-12.447867528947787
+Saving: 0.pdb	minE:-12.862867800700418
+
+
+Parallel2: Completed partition function for K04-9 (continuous)
+
+
+Parallel2: Initializing partition function for HIE-296 GLU-297 ILE-301 SER-302 GLU-317 HIE-319 GLN-322 K04-9 (continuous)
+using p* calculator
+p* confTree complete. # enumerated: 1. # remaining: 3317759. % p*: 1
+
+Parallel2: Computing partition function for HIE-296 GLU-297 ILE-301 SER-302 GLU-317 HIE-319 GLN-322 K04-9 (continuous)
+error	energy	epsilon	#processed	#un-enum	#buf	time(sec)
+-14.8751	-126.3821	1.0000	12	368532	96	84
+-13.5046	-127.0095	1.0000	24	368520	96	106
+-14.4175	-125.6909	1.0000	36	368508	96	122
+-12.6831	-127.2442	1.0000	48	368496	96	134
+-12.3686	-127.0974	1.0000	60	368484	96	146
+-13.0091	-126.1392	1.0000	72	368472	96	159
+q' confTree complete. # enumerated: 345809. # remaining: 22831. % q': 1.00000000
+-12.3667	-126.5600	1.0000	84	368460	96	171
+-11.5629	-127.1888	1.0000	96	368448	96	182
+-12.4619	-126.1209	1.0000	108	368436	96	192
+-14.2572	-124.1499	1.0000	120	368424	96	204
+-12.3238	-125.8328	1.0000	132	368412	96	215
+-13.7246	-124.2844	1.0000	144	368400	96	226
+-12.4239	-125.4201	1.0000	156	368388	96	237
+-13.8902	-123.8171	1.0000	168	368376	96	250
+-39.4935	-98.0915	1.0000	180	368364	96	261
+-13.2917	-124.1708	1.0000	192	368352	96	274
+-12.7796	-124.5971	1.0000	204	368340	96	286
+-12.6700	-124.5772	1.0000	216	368328	96	296
+-13.4133	-123.7327	1.0000	228	368316	96	308
+-14.0433	-123.0452	1.0000	240	368304	96	320
+-12.2539	-124.7247	1.0000	252	368292	96	332
+-13.3332	-123.5558	1.0000	264	368280	96	343
+-13.6357	-123.1672	1.0000	276	368268	96	355
+-11.4572	-125.2725	1.0000	288	368256	96	366
+-12.7418	-123.8950	1.0000	300	368244	96	378
+-13.2008	-123.3755	1.0000	312	368232	96	388
+-11.5169	-125.0254	1.0000	324	368220	96	400
+-13.3080	-123.1503	1.0000	336	368208	96	412
+-13.0197	-123.4060	1.0000	348	368196	96	423
+-13.3102	-123.0749	1.0000	360	368184	96	434
+-13.1057	-123.1890	1.0000	372	368172	96	451
+-13.0280	-123.2112	1.0000	384	368160	96	463
+-13.2365	-122.9334	1.0000	396	368148	96	475
+-39.2457	-96.8974	1.0000	408	368136	96	486
+-11.2885	-124.7758	1.0000	420	368124	96	498
+-11.9257	-124.1102	1.0000	432	368112	96	509
+-13.1392	-122.8504	1.0000	444	368100	96	520
+-12.2124	-123.7242	1.0000	456	368088	96	530
+-14.0071	-121.8755	1.0000	468	368076	96	541
+-6.8778	-128.9448	1.0000	480	368064	96	552
+-38.0590	-97.7007	1.0000	492	368052	96	563
+-10.5457	-125.1716	1.0000	504	368040	96	575
+-12.6914	-122.9800	1.0000	516	368028	96	587
+-14.2646	-121.3643	1.0000	528	368016	96	598
+-12.4978	-123.0839	1.0000	540	368004	96	609
+-13.0451	-122.4951	1.0000	552	367992	96	621
+-15.0871	-120.4094	1.0000	564	367980	96	632
+-35.5586	-99.9038	1.0000	576	367968	96	644
+-13.5062	-121.9209	1.0000	588	367956	96	655
+-12.3018	-123.0767	1.0000	600	367944	96	666
+-11.4093	-123.9261	1.0000	612	367932	96	678
+-13.1488	-122.1387	1.0000	624	367920	96	689
+-11.8555	-123.4013	1.0000	636	367908	96	701
+-12.9800	-122.2347	1.0000	648	367896	96	713
+-13.4132	-121.7836	1.0000	660	367884	96	726
+-12.9971	-122.1661	1.0000	672	367872	96	737
+-13.7645	-121.3698	1.0000	684	367860	96	749
+-13.0470	-122.0385	1.0000	696	367848	96	764
+-10.6952	-124.3603	1.0000	708	367836	96	783
+-11.6827	-123.3302	1.0000	720	367824	96	795
+-10.7415	-124.2197	1.0000	732	367812	96	806
+-11.5740	-123.3438	1.0000	744	367800	96	817
+-11.4371	-123.4454	1.0000	756	367788	96	827
+-12.0436	-122.8049	1.0000	768	367776	96	839
+-13.0507	-121.7749	1.0000	780	367764	96	849
+-12.6919	-122.1175	1.0000	792	367752	96	861
+-12.2367	-122.5421	1.0000	804	367740	96	872
+-37.3089	-97.4326	1.0000	816	367728	96	884
+-12.1669	-122.5474	1.0000	828	367716	96	895
+-12.7527	-121.9251	1.0000	840	367704	96	906
+-11.8957	-122.7550	1.0000	852	367692	96	916
+-12.0051	-122.6149	1.0000	864	367680	96	927
+-13.8866	-120.7095	1.0000	876	367668	96	939
+-14.4819	-120.0841	1.0000	888	367656	96	950
+-13.5745	-120.9531	1.0000	900	367644	96	961
+-10.7768	-123.7259	1.0000	912	367632	96	972
+-11.5904	-122.8864	1.0000	924	367620	96	984
+-12.9226	-121.5390	1.0000	936	367608	96	995
+-13.0769	-121.3531	1.0000	948	367596	96	1005
+-16.3312	-118.0750	1.0000	960	367584	96	1016
+-14.2038	-120.1812	1.0000	972	367572	96	1027
+-10.8625	-123.4719	1.0000	984	367560	96	1038
+-12.9518	-121.3600	1.0000	996	367548	96	1049
+-13.6988	-120.5807	1.0000	1008	367536	96	1060
+-16.3021	-117.9533	1.0000	1020	367524	96	1070
+-21.5126	-112.7162	1.0000	1032	367512	96	1080
+-13.7065	-120.4990	1.0000	1044	367500	96	1092
+-11.1653	-123.0096	1.0000	1056	367488	96	1103
+-11.3072	-122.8456	1.0000	1068	367476	96	1114
+-13.8610	-120.2727	1.0000	1080	367464	96	1125
+-11.9883	-122.1262	1.0000	1092	367452	96	1136
+-12.9077	-121.1792	1.0000	1104	367440	96	1148
+-11.3894	-122.6831	1.0000	1116	367428	96	1159
+-11.8456	-122.2093	1.0000	1128	367416	96	1171
+-35.1311	-98.8972	1.0000	1140	367404	96	1182
+-12.7494	-121.2556	1.0000	1152	367392	96	1193
+-34.6479	-99.3266	1.0000	1164	367380	96	1204
+-13.1130	-120.8383	1.0000	1176	367368	96	1215
+-12.3559	-121.5731	1.0000	1188	367356	96	1226
+-12.4230	-121.4924	1.0000	1200	367344	96	1237
+-11.8350	-122.0609	1.0000	1212	367332	96	1248
+-12.4142	-121.4607	1.0000	1224	367320	96	1260
+-12.6753	-121.1687	1.0000	1236	367308	96	1271
+-12.4080	-121.4134	1.0000	1248	367296	96	1281
+-11.8502	-121.9505	1.0000	1260	367284	96	1292
+-12.1043	-121.6763	1.0000	1272	367272	96	1304
+-7.7339	-126.0142	1.0000	1284	367260	96	1313
+-18.9438	-114.7781	1.0000	1296	367248	96	1322
+-10.9096	-122.7910	1.0000	1308	367236	96	1332
+-37.3509	-96.3309	1.0000	1320	367224	96	1344
+-11.5366	-122.1201	1.0000	1332	367212	96	1356
+-12.5025	-121.1301	1.0000	1344	367200	96	1367
+-7.6955	-125.9173	1.0000	1356	367188	96	1378
+-8.5596	-125.0331	1.0000	1368	367176	96	1390
+-14.7637	-118.8173	0.9999	1380	367164	96	1401
+-7.2171	-126.3431	0.9999	1392	367152	96	1412
+-9.1039	-124.4339	0.9999	1404	367140	96	1423
+-7.7988	-125.7158	0.9999	1416	367128	96	1434
+-11.6870	-121.8167	0.9999	1428	367116	96	1444
+-12.6043	-120.8800	0.9999	1440	367104	96	1456
+-16.2014	-117.2629	0.9999	1452	367092	96	1465
+-13.6136	-119.8228	0.9999	1464	367080	96	1477
+-10.5811	-122.8319	0.9999	1476	367068	96	1486
+-7.4755	-125.9167	0.9999	1488	367056	96	1497
+-7.9970	-125.3652	0.9999	1500	367044	96	1508
+-13.3161	-120.0232	0.9999	1512	367032	96	1520
+-13.1458	-120.1663	0.9999	1524	367020	96	1531
+-16.3318	-116.9590	0.9999	1536	367008	96	1542
+-21.0825	-112.1905	0.9999	1548	366996	96	1553
+-10.1493	-123.1107	0.9999	1560	366984	96	1564
+-11.2786	-121.9664	0.9999	1572	366972	96	1573
+-16.3725	-116.8552	0.9999	1584	366960	96	1583
+-12.6402	-120.5688	0.9999	1596	366948	96	1593
+-13.1425	-120.0380	0.9999	1608	366936	96	1603
+-12.0189	-121.1345	0.9999	1620	366924	96	1613
+-35.9886	-97.1421	0.9999	1632	366912	96	1623
+-7.8482	-125.2651	0.9999	1644	366900	96	1634
+-8.0520	-125.0396	0.9999	1656	366888	96	1646
+-14.2961	-118.7745	0.9999	1668	366876	96	1657
+-10.5021	-122.5514	0.9999	1680	366864	96	1667
+-11.6889	-121.3477	0.9999	1692	366852	96	1678
+-35.1042	-97.9009	0.9999	1704	366840	96	1687
+-10.6974	-122.2927	0.9999	1716	366828	96	1698
+-38.1966	-94.7786	0.9999	1728	366816	96	1709
+-12.8188	-120.1368	0.9999	1740	366804	96	1720
+-16.5689	-116.3750	0.9999	1752	366792	96	1730
+-11.5079	-121.4238	0.9999	1764	366780	96	1740
+-37.7435	-95.1689	0.9999	1776	366768	96	1752
+-37.5924	-95.3007	0.9999	1788	366756	96	1763
+-36.6932	-96.1880	0.9999	1800	366744	96	1773
+-12.3740	-120.4915	0.9999	1812	366732	96	1783
+-35.8316	-97.0203	0.9999	1824	366720	96	1793
+-12.6417	-120.1901	0.9999	1836	366708	96	1804
+-37.1611	-95.6552	0.9999	1848	366696	96	1814
+-16.9709	-115.8229	0.9999	1860	366684	96	1824
+-31.8273	-100.9494	0.9999	1872	366672	96	1833
+-11.7913	-120.9722	0.9998	1884	366660	96	1844
+-11.2530	-121.4935	0.9998	1896	366648	96	1855
+-10.6028	-122.1234	0.9998	1908	366636	96	1866
+-12.2824	-120.4264	0.9998	1920	366624	96	1875
+-12.4243	-120.2653	0.9998	1932	366612	96	1885
+-12.5828	-120.0916	0.9998	1944	366600	96	1895
+-11.0298	-121.6327	0.9998	1956	366588	96	1906
+-14.7004	-117.9424	0.9998	1968	366576	96	1917
+-6.8964	-125.7280	0.9998	1980	366564	96	1927
+-15.4531	-117.1525	0.9998	1992	366552	96	1938
+-38.9835	-93.5984	0.9998	2004	366540	96	1949
+-14.3055	-118.2631	0.9998	2016	366528	96	1959
+-7.4189	-125.1401	0.9998	2028	366516	96	1969
+-12.8055	-119.7436	0.9998	2040	366504	96	1978
+-36.7291	-95.8118	0.9998	2052	366492	96	1989
+-12.9542	-119.5751	0.9998	2064	366480	96	1999
+-5.4388	-127.0756	0.9998	2076	366468	96	2009
+-38.3787	-94.1185	0.9998	2088	366456	96	2020
+-11.5194	-120.9556	0.9998	2100	366444	96	2030
+-6.1384	-126.3292	0.9998	2112	366432	96	2041
+-9.7388	-122.7118	0.9998	2124	366420	96	2052
+-36.8645	-95.5731	0.9998	2136	366408	96	2061
+-7.3097	-125.1104	0.9998	2148	366396	96	2072
+-10.6463	-121.7598	0.9998	2160	366384	96	2082
+-11.5949	-120.7969	0.9998	2172	366372	96	2092
+-5.5664	-126.8084	0.9998	2184	366360	96	2102
+-13.6501	-118.7131	0.9997	2196	366348	96	2114
+-12.6197	-119.7242	0.9997	2208	366336	96	2125
+-10.5481	-121.7903	0.9997	2220	366324	96	2133
+-6.2856	-126.0392	0.9997	2232	366312	96	2147
+-38.0519	-94.2590	0.9997	2244	366300	96	2157
+-6.3959	-125.9038	0.9997	2256	366288	96	2166
+-12.1717	-120.1231	0.9997	2268	366276	96	2175
+-6.2103	-126.0732	0.9997	2280	366264	96	2184
+-12.0745	-120.2013	0.9997	2292	366252	96	2194
+-37.2085	-95.0556	0.9997	2304	366240	96	2204
+-13.3308	-118.9205	0.9997	2316	366228	96	2215
+-14.3250	-117.9131	0.9997	2328	366216	96	2225
+-13.0956	-119.1268	0.9997	2340	366204	96	2235
+-12.9331	-119.2775	0.9997	2352	366192	96	2244
+-11.1933	-121.0020	0.9997	2364	366180	96	2255
+-10.0163	-122.1685	0.9997	2376	366168	96	2265
+-13.1342	-119.0429	0.9997	2388	366156	96	2275
+-37.5773	-94.5868	0.9997	2400	366144	96	2284
+-8.1157	-124.0383	0.9997	2412	366132	96	2294
+-10.5152	-121.6243	0.9996	2424	366120	96	2306
+-7.2180	-124.9139	0.9996	2436	366108	96	2316
+-10.2959	-121.8201	0.9996	2448	366096	96	2327
+-6.3718	-125.7292	0.9996	2460	366084	96	2337
+-14.7694	-117.3155	0.9996	2472	366072	96	2349
+-6.3379	-125.7318	0.9996	2484	366060	96	2359
+-16.7230	-115.3388	0.9996	2496	366048	96	2370
+-11.6255	-120.4286	0.9996	2508	366036	96	2381
+-13.2372	-118.8112	0.9996	2520	366024	96	2391
+-11.7640	-120.2716	0.9996	2532	366012	96	2402
+-8.1042	-123.9253	0.9996	2544	366000	96	2412
+-14.6319	-117.3826	0.9996	2556	365988	96	2422
+-11.8645	-120.1370	0.9996	2568	365976	96	2433
+-14.2842	-117.7093	0.9996	2580	365964	96	2445
+-6.6285	-125.3548	0.9996	2592	365952	96	2455
+-16.1040	-115.8611	0.9996	2604	365940	96	2466
+-12.0060	-119.9519	0.9995	2616	365928	96	2478
+-11.3919	-120.5560	0.9995	2628	365916	96	2489
+-7.2239	-124.7141	0.9995	2640	365904	96	2497
+-13.7533	-118.1715	0.9995	2652	365892	96	2506
+-4.6048	-127.3102	0.9995	2664	365880	96	2514
+-36.0740	-95.8310	0.9995	2676	365868	96	2524
+-11.3375	-120.5603	0.9995	2688	365856	96	2535
+-13.5655	-118.3152	0.9995	2700	365844	96	2546
+-9.5847	-122.2854	0.9995	2712	365832	96	2558
+-13.4441	-118.4190	0.9995	2724	365820	96	2568
+-12.9200	-118.9358	0.9995	2736	365808	96	2579
+-11.5428	-120.3056	0.9995	2748	365796	96	2590
+-10.4693	-121.3678	0.9995	2760	365784	96	2602
+-8.2773	-123.5488	0.9994	2772	365772	96	2610
+-10.5428	-121.2733	0.9994	2784	365760	96	2621
+-5.4832	-126.3205	0.9994	2796	365748	96	2632
+-12.8354	-118.9600	0.9994	2808	365736	96	2641
+-13.2982	-118.4847	0.9994	2820	365724	96	2652
+-36.8811	-94.8894	0.9994	2832	365712	96	2663
+-13.1502	-118.6111	0.9994	2844	365700	96	2674
+-10.3942	-121.3585	0.9994	2856	365688	96	2684
+-9.1031	-122.6411	0.9994	2868	365676	96	2694
+-9.7872	-121.9453	0.9994	2880	365664	96	2704
+-6.7736	-124.9498	0.9994	2892	365652	96	2713
+-15.7575	-115.9511	0.9993	2904	365640	96	2725
+-12.7547	-118.9455	0.9993	2916	365628	96	2735
+-6.0864	-125.6022	0.9993	2928	365616	96	2746
+-11.9401	-119.7395	0.9993	2940	365604	96	2757
+-12.5949	-119.0734	0.9993	2952	365592	96	2766
+-8.5091	-123.1500	0.9993	2964	365580	96	2777
+-6.4568	-125.1943	0.9993	2976	365568	96	2787
+-12.7084	-118.9293	0.9993	2988	365556	96	2798
+-8.5627	-123.0680	0.9993	3000	365544	96	2809
+-8.6937	-122.9245	0.9993	3012	365532	96	2820
+-15.1595	-116.4444	0.9992	3024	365520	96	2831
+-10.5071	-121.0891	0.9992	3036	365508	96	2841
+-5.3195	-126.2608	0.9992	3048	365496	96	2851
+-7.2720	-124.2937	0.9992	3060	365484	96	2862
+-6.4734	-125.0852	0.9992	3072	365472	96	2872
+-11.1297	-120.4208	0.9992	3084	365460	96	2884
+-7.1708	-124.3645	0.9992	3096	365448	96	2895
+-8.1944	-123.3337	0.9992	3108	365436	96	2907
+-4.9567	-126.5599	0.9991	3120	365424	96	2918
+-3.8212	-127.6874	0.9991	3132	365412	96	2928
+-11.4609	-120.0403	0.9991	3144	365400	96	2939
+-10.6530	-120.8395	0.9991	3156	365388	96	2950
+-36.4827	-94.9976	0.9991	3168	365376	96	2961
+-12.9421	-118.5311	0.9991	3180	365364	96	2971
+-7.5168	-123.9506	0.9991	3192	365352	96	2983
+-10.7186	-120.7420	0.9991	3204	365340	96	2993
+-8.7101	-122.7388	0.9990	3216	365328	96	3004
+-11.8339	-119.6055	0.9990	3228	365316	96	3015
+-33.7516	-97.6770	0.9990	3240	365304	96	3025
+-36.3016	-95.1176	0.9990	3252	365292	96	3037
+-10.1578	-121.2532	0.9990	3264	365280	96	3048
+-6.0705	-125.3263	0.9990	3276	365268	96	3058
+-37.5681	-93.8191	0.9990	3288	365256	96	3069
+-11.4589	-119.9139	0.9990	3300	365244	96	3080
+-12.8467	-118.5162	0.9989	3312	365232	96	3092
+-11.2293	-120.1293	0.9989	3324	365220	96	3102
+-11.1989	-120.1509	0.9989	3336	365208	96	3115
+-9.9821	-121.3623	0.9989	3348	365196	96	3126
+-11.9089	-119.4244	0.9989	3360	365184	96	3137
+-11.0909	-120.2366	0.9989	3372	365172	96	3148
+-11.3292	-119.9876	0.9989	3384	365160	96	3158
+-13.7312	-117.5698	0.9988	3396	365148	96	3169
+-13.7694	-117.5226	0.9988	3408	365136	96	3179
+-13.2969	-117.9878	0.9988	3420	365124	96	3190
+-11.7438	-119.5336	0.9988	3432	365112	96	3200
+-13.1354	-118.1286	0.9988	3444	365100	96	3211
+-4.9944	-126.2629	0.9988	3456	365088	96	3222
+-12.1682	-119.0799	0.9987	3468	365076	96	3233
+-10.2014	-121.0344	0.9987	3480	365064	96	3244
+-11.5975	-119.6300	0.9987	3492	365052	96	3255
+-12.2321	-118.9901	0.9987	3504	365040	96	3266
+-11.3767	-119.8347	0.9987	3516	365028	96	3277
+-37.9472	-93.2590	0.9987	3528	365016	96	3288
+-10.4514	-120.7487	0.9986	3540	365004	96	3297
+-34.1123	-97.0776	0.9986	3552	364992	96	3309
+-38.5728	-92.6092	0.9986	3564	364980	96	3320
+-8.8821	-122.2883	0.9986	3576	364968	96	3331
+-12.4251	-118.7340	0.9986	3588	364956	96	3341
+-7.2526	-123.8964	0.9986	3600	364944	96	3352
+-8.1094	-123.0317	0.9985	3612	364932	96	3362
+-36.3163	-94.8078	0.9985	3624	364920	96	3373
+-14.4972	-116.6127	0.9985	3636	364908	96	3384
+-11.4413	-119.6612	0.9985	3648	364896	96	3394
+-10.6737	-120.4221	0.9985	3660	364884	96	3405
+-10.4350	-120.6550	0.9985	3672	364872	96	3416
+-12.1139	-118.9708	0.9984	3684	364860	96	3427
+-15.4461	-115.6323	0.9984	3696	364848	96	3438
+-33.3719	-97.6944	0.9984	3708	364836	96	3449
+-14.5820	-116.4706	0.9984	3720	364824	96	3460
+-12.5549	-118.4842	0.9984	3732	364812	96	3469
+-11.4725	-119.5601	0.9983	3744	364800	96	3480
+-6.5222	-124.5004	0.9983	3756	364788	96	3491
+-11.7812	-119.2324	0.9983	3768	364776	96	3502
+-36.4933	-94.5152	0.9983	3780	364764	96	3514
+-10.2145	-120.7846	0.9983	3792	364752	96	3525
+-14.7273	-116.2665	0.9982	3804	364740	96	3536
+-19.6025	-111.3793	0.9982	3816	364728	96	3546
+-6.0550	-124.9225	0.9982	3828	364716	96	3556
+-10.9315	-120.0402	0.9982	3840	364704	96	3568
+-6.0574	-124.9013	0.9982	3852	364692	96	3580
+-7.2106	-123.7341	0.9981	3864	364680	96	3591
+-9.5583	-121.3762	0.9981	3876	364668	96	3603
+-14.9207	-116.0031	0.9981	3888	364656	96	3614
+-4.9713	-125.9404	0.9981	3900	364644	96	3625
+-31.4052	-99.4984	0.9981	3912	364632	96	3637
+-12.2135	-118.6819	0.9980	3924	364620	96	3648
+-12.2696	-118.6208	0.9980	3936	364608	96	3659
+-16.4152	-114.4642	0.9980	3948	364596	96	3670
+-17.7614	-113.1128	0.9980	3960	364584	96	3682
+-10.0771	-120.7915	0.9979	3972	364572	96	3692
+-12.8501	-118.0084	0.9979	3984	364560	96	3703
+-5.8918	-124.9548	0.9979	3996	364548	96	3714
+-8.1454	-122.6969	0.9979	4008	364536	96	3725
+-7.3764	-123.4590	0.9979	4020	364524	96	3735
+-34.7619	-96.0664	0.9978	4032	364512	96	3747
+-13.2007	-117.6205	0.9978	4044	364500	96	3758
+-6.2877	-124.5263	0.9978	4056	364488	96	3768
+-9.0524	-121.7561	0.9978	4068	364476	96	3779
+-6.1099	-124.6887	0.9977	4080	364464	96	3789
+-6.9081	-123.8829	0.9977	4092	364452	96	3800
+-34.8215	-95.9603	0.9977	4104	364440	96	3812
+-5.7660	-125.0077	0.9977	4116	364428	96	3823
+-11.3197	-119.4430	0.9976	4128	364416	96	3834
+-32.5671	-98.1896	0.9976	4140	364404	96	3845
+-13.5915	-117.1597	0.9976	4152	364392	96	3856
+-12.8710	-117.8742	0.9976	4164	364380	96	3867
+-14.8425	-115.8965	0.9975	4176	364368	96	3878
+-11.6130	-119.1181	0.9975	4188	364356	96	3889
+-14.4000	-116.3252	0.9975	4200	364344	96	3899
+-35.6760	-95.0425	0.9975	4212	364332	96	3910
+-14.0805	-116.6308	0.9974	4224	364320	96	3921
+-9.4043	-121.3009	0.9974	4236	364308	96	3932
+-34.2785	-96.4208	0.9974	4248	364296	96	3943
+-37.0096	-93.6832	0.9973	4260	364284	96	3955
+-13.8762	-116.8080	0.9973	4272	364272	96	3966
+-7.2223	-123.4524	0.9973	4284	364260	96	3977
+-13.0940	-117.5735	0.9973	4296	364248	96	3989
+-10.4315	-120.2236	0.9972	4308	364236	96	4000
+-17.5810	-113.0682	0.9972	4320	364224	96	4010
+-14.0612	-116.5824	0.9972	4332	364212	96	4019
+-32.3351	-98.3022	0.9972	4344	364200	96	4030
+-11.1630	-119.4699	0.9971	4356	364188	96	4041
+-13.7091	-116.9172	0.9971	4368	364176	96	4051
+-10.0198	-120.6032	0.9971	4380	364164	96	4062
+-11.5972	-119.0200	0.9970	4392	364152	96	4073
+-7.3430	-123.2683	0.9970	4404	364140	96	4084
+-5.6590	-124.9465	0.9970	4416	364128	96	4094
+-9.9961	-120.6014	0.9969	4428	364116	96	4104
+-32.4421	-98.1454	0.9969	4440	364104	96	4115
+-13.4624	-117.1168	0.9969	4452	364092	96	4126
+-10.5606	-120.0113	0.9969	4464	364080	96	4136
+-13.5675	-116.9975	0.9968	4476	364068	96	4149
+-12.9059	-117.6541	0.9968	4488	364056	96	4160
+-10.5030	-120.0481	0.9968	4500	364044	96	4170
+-36.3094	-94.2349	0.9967	4512	364032	96	4182
+-4.8097	-125.7296	0.9967	4524	364020	96	4192
+-5.4545	-125.0782	0.9967	4536	364008	96	4203
+-12.7911	-117.7354	0.9966	4548	363996	96	4211
+-13.1194	-117.3996	0.9966	4560	363984	96	4219
+-11.9982	-118.5161	0.9966	4572	363972	96	4230
+-7.9563	-122.5536	0.9965	4584	363960	96	4241
+-4.7072	-125.7889	0.9965	4596	363948	96	4252
+-8.0265	-122.4624	0.9965	4608	363936	96	4262
+-15.5930	-114.8906	0.9964	4620	363924	96	4272
+-10.2491	-120.2247	0.9964	4632	363912	96	4284
+-4.3306	-126.1382	0.9963	4644	363900	96	4296
+-4.4034	-126.0602	0.9963	4656	363888	96	4307
+-10.9414	-119.5169	0.9963	4668	363876	96	4318
+-6.6244	-123.8273	0.9962	4680	363864	96	4329
+-11.4546	-118.9924	0.9962	4692	363852	96	4340
+-14.9941	-115.4480	0.9962	4704	363840	96	4351
+-10.5916	-119.8444	0.9961	4716	363828	96	4362
+-11.9816	-118.4462	0.9961	4728	363816	96	4372
+-13.0160	-117.4031	0.9961	4740	363804	96	4384
+-12.0722	-118.3396	0.9960	4752	363792	96	4395
+-6.8800	-123.5274	0.9960	4764	363780	96	4405
+-11.4164	-118.9855	0.9959	4776	363768	96	4416
+-11.3314	-119.0654	0.9959	4788	363756	96	4427
+-8.0996	-122.2891	0.9959	4800	363744	96	4437
+-8.5258	-121.8579	0.9958	4812	363732	96	4449
+-35.8833	-94.4953	0.9958	4824	363720	96	4459
+-34.6556	-95.7150	0.9957	4836	363708	96	4470
+-5.8826	-124.4801	0.9957	4848	363696	96	4481
+-12.7922	-117.5652	0.9957	4860	363684	96	4494
+-10.5789	-119.7731	0.9956	4872	363672	96	4504
+-10.4460	-119.9001	0.9956	4884	363660	96	4514
+-6.3371	-124.0026	0.9955	4896	363648	96	4526
+-11.9403	-118.3937	0.9955	4908	363636	96	4536
+-15.4902	-114.8372	0.9954	4920	363624	96	4545
+-33.4664	-96.8524	0.9954	4932	363612	96	4556
+-7.3472	-122.9655	0.9954	4944	363600	96	4567
+-13.2187	-117.0839	0.9953	4956	363588	96	4579
+-11.5461	-118.7523	0.9953	4968	363576	96	4590
+-11.5462	-118.7444	0.9952	4980	363564	96	4602
+-4.5726	-125.7131	0.9952	4992	363552	96	4612
+-5.8572	-124.4220	0.9951	5004	363540	96	4623
+-10.8087	-119.4645	0.9951	5016	363528	96	4633
+-11.0623	-119.2050	0.9950	5028	363516	96	4644
+-10.3593	-119.8996	0.9950	5040	363504	96	4654
+-5.4347	-124.8187	0.9950	5052	363492	96	4664
+-12.4495	-117.7966	0.9949	5064	363480	96	4674
+-11.0783	-119.1624	0.9949	5076	363468	96	4685
+-11.8408	-118.3934	0.9948	5088	363456	96	4695
+-6.1371	-124.0888	0.9948	5100	363444	96	4706
+-37.1196	-93.0982	0.9947	5112	363432	96	4716
+-33.0088	-97.2040	0.9947	5124	363420	96	4726
+-5.7163	-124.4889	0.9946	5136	363408	96	4738
+-9.9286	-120.2720	0.9946	5148	363396	96	4748
+-13.3865	-116.8093	0.9945	5160	363384	96	4758
+-13.9534	-116.2383	0.9945	5172	363372	96	4770
+-6.6533	-123.5328	0.9944	5184	363360	96	4781
+-11.6785	-118.5006	0.9944	5196	363348	96	4792
+-7.1388	-123.0368	0.9943	5208	363336	96	4802
+-15.5927	-114.5766	0.9943	5220	363324	96	4812
+-13.5951	-116.5710	0.9942	5232	363312	96	4822
+-34.8869	-95.2729	0.9942	5244	363300	96	4833
+-33.3520	-96.8015	0.9941	5256	363288	96	4844
+-11.1135	-119.0335	0.9940	5268	363276	96	4855
+-37.8514	-92.2901	0.9940	5280	363264	96	4867
+-13.1051	-117.0292	0.9939	5292	363252	96	4877
+-5.9691	-124.1614	0.9939	5304	363240	96	4888
+-5.6254	-124.5001	0.9938	5316	363228	96	4898
+-6.0722	-124.0477	0.9938	5328	363216	96	4907
+-12.0482	-118.0677	0.9937	5340	363204	96	4919
+-4.7320	-125.3784	0.9937	5352	363192	96	4929
+-6.7883	-123.3167	0.9936	5364	363180	96	4941
+-12.8363	-117.2596	0.9935	5376	363168	96	4950
+-11.7668	-118.3236	0.9935	5388	363156	96	4960
+-5.2458	-124.8353	0.9934	5400	363144	96	4972
+-8.0730	-121.9999	0.9934	5412	363132	96	4982
+-6.4957	-123.5727	0.9933	5424	363120	96	4993
+-12.1533	-117.9102	0.9932	5436	363108	96	5005
+-6.8979	-123.1613	0.9932	5448	363096	96	5015
+-8.2622	-121.7919	0.9931	5460	363084	96	5026
+-34.3507	-95.6983	0.9931	5472	363072	96	5038
+-8.1062	-121.9354	0.9930	5484	363060	96	5048
+-36.2385	-93.7952	0.9929	5496	363048	96	5059
+-8.8408	-121.1860	0.9929	5508	363036	96	5070
+-7.8421	-122.1780	0.9928	5520	363024	96	5080
+-11.0944	-118.9211	0.9927	5532	363012	96	5092
+-13.1245	-116.8851	0.9927	5544	363000	96	5102
+-11.7904	-118.2159	0.9926	5556	362988	96	5113
+-35.6260	-94.3718	0.9925	5568	362976	96	5124
+-12.0714	-117.9207	0.9925	5580	362964	96	5134
+-6.3465	-123.6429	0.9924	5592	362952	96	5145
+-12.3804	-117.6027	0.9923	5604	362940	96	5154
+-36.4055	-93.5731	0.9923	5616	362928	96	5164
+-35.9483	-94.0228	0.9922	5628	362916	96	5175
+-6.8030	-123.1621	0.9921	5640	362904	96	5186
+-6.3088	-123.6518	0.9921	5652	362892	96	5197
+-37.3603	-92.5929	0.9920	5664	362880	96	5208
+-12.5079	-117.4391	0.9919	5676	362868	96	5219
+-36.6994	-93.2414	0.9918	5688	362856	96	5229
+-36.1911	-93.7420	0.9918	5700	362844	96	5239
+-6.9491	-122.9794	0.9917	5712	362832	96	5249
+-10.1929	-119.7252	0.9916	5724	362820	96	5260
+-12.7620	-117.1502	0.9916	5736	362808	96	5270
+-33.6852	-96.2176	0.9915	5748	362796	96	5282
+-6.0640	-123.8345	0.9914	5760	362784	96	5292
+-11.9147	-117.9768	0.9913	5772	362772	96	5301
+-4.1726	-125.7107	0.9913	5784	362760	96	5311
+-7.0518	-122.8273	0.9912	5796	362748	96	5322
+-11.9961	-117.8715	0.9911	5808	362736	96	5331
+-35.7607	-94.1025	0.9910	5820	362724	96	5342
+-8.0566	-121.8023	0.9910	5832	362712	96	5352
+-5.1392	-124.7152	0.9909	5844	362700	96	5363
+-10.3885	-119.4623	0.9908	5856	362688	96	5372
+-10.9650	-118.8806	0.9907	5868	362676	96	5383
+-12.8920	-116.9495	0.9906	5880	362664	96	5394
+-11.7667	-118.0659	0.9906	5892	362652	96	5403
+-6.0653	-123.7612	0.9905	5904	362640	96	5413
+-7.2338	-122.5845	0.9904	5916	362628	96	5424
+-14.5880	-115.2220	0.9903	5928	362616	96	5433
+-39.1093	-90.6945	0.9902	5940	362604	96	5443
+-6.0450	-123.7531	0.9902	5952	362592	96	5454
+-8.2584	-121.5344	0.9901	5964	362580	96	5465
+-11.9925	-117.7975	0.9900	5976	362568	96	5475
+-12.4357	-117.3487	0.9899	5988	362556	96	5487
+-10.0546	-119.7245	0.9898	6000	362544	96	5499
+-37.7700	-92.0040	0.9897	6012	362532	96	5511
+-15.7263	-114.0424	0.9896	6024	362520	96	5521
+-12.1345	-117.6297	0.9896	6036	362508	96	5533
+-11.9996	-117.7567	0.9895	6048	362496	96	5544
+-10.1715	-119.5792	0.9894	6060	362484	96	5554
+-4.6545	-125.0885	0.9893	6072	362472	96	5566
+-13.7175	-116.0237	0.9892	6084	362460	96	5576
+-12.0691	-117.6678	0.9891	6096	362448	96	5587
+-12.2384	-117.4903	0.9890	6108	362436	96	5598
+-15.5938	-114.1292	0.9889	6120	362424	96	5609
+-12.6233	-117.0937	0.9888	6132	362412	96	5620
+-12.3280	-117.3846	0.9887	6144	362400	96	5629
+-34.6882	-95.0168	0.9887	6156	362388	96	5639
+-11.3418	-118.3558	0.9886	6168	362376	96	5651
+-10.8839	-118.8087	0.9885	6180	362364	96	5660
+-8.4072	-121.2821	0.9884	6192	362352	96	5671
+-12.0522	-117.6325	0.9883	6204	362340	96	5681
+-8.0411	-121.6373	0.9882	6216	362328	96	5693
+-35.2520	-94.4209	0.9881	6228	362316	96	5703
+-8.2247	-121.4431	0.9880	6240	362304	96	5713
+-38.2207	-91.4425	0.9879	6252	362292	96	5723
+-11.9769	-117.6816	0.9878	6264	362280	96	5732
+-10.3121	-119.3412	0.9877	6276	362268	96	5743
+-11.0705	-118.5739	0.9876	6288	362256	96	5753
+-13.3027	-116.3365	0.9875	6300	362244	96	5765
+-8.0189	-121.6137	0.9874	6312	362232	96	5776
+-7.2879	-122.3370	0.9873	6324	362220	96	5786
+-10.2664	-119.3501	0.9872	6336	362208	96	5797
+-11.9114	-117.6986	0.9871	6348	362196	96	5808
+-4.2105	-125.3938	0.9870	6360	362184	96	5818
+-11.8922	-117.7073	0.9869	6372	362172	96	5827
+-5.2920	-124.3015	0.9868	6384	362160	96	5838
+-10.6946	-118.8943	0.9867	6396	362148	96	5848
+-12.1382	-117.4460	0.9865	6408	362136	96	5859
+-6.5029	-123.0750	0.9864	6420	362124	96	5869
+-11.1463	-118.4252	0.9863	6432	362112	96	5880
+-7.1417	-122.4257	0.9862	6444	362100	96	5891
+-14.2430	-115.3196	0.9861	6456	362088	96	5902
+-7.1855	-122.3679	0.9860	6468	362076	96	5912
+-10.7741	-118.7728	0.9859	6480	362064	96	5922
+-6.4886	-123.0539	0.9858	6492	362052	96	5932
+-12.0143	-117.5231	0.9857	6504	362040	96	5943
+-12.1013	-117.4321	0.9856	6516	362028	96	5953
+-12.1928	-117.3362	0.9854	6528	362016	96	5962
+-7.7112	-121.8130	0.9853	6540	362004	96	5972
+-4.2481	-125.2702	0.9852	6552	361992	96	5982
+-20.3780	-109.1331	0.9851	6564	361980	96	5990
+-35.8712	-93.6349	0.9850	6576	361968	96	6000
+-13.6114	-115.8876	0.9849	6588	361956	96	6010
+-37.1672	-92.3250	0.9847	6600	361944	96	6021
+-36.7771	-92.7061	0.9846	6612	361932	96	6032
+-13.9737	-115.5052	0.9845	6624	361920	96	6042
+-36.9828	-92.4895	0.9844	6636	361908	96	6053
+-10.1849	-119.2838	0.9843	6648	361896	96	6062
+-12.6986	-116.7650	0.9842	6660	361884	96	6073
+-5.9504	-123.5070	0.9840	6672	361872	96	6084
+-6.8112	-122.6409	0.9839	6684	361860	96	6094
+-11.4731	-117.9725	0.9838	6696	361848	96	6105
+-9.0394	-120.4031	0.9837	6708	361836	96	6115
+-5.8708	-123.5650	0.9835	6720	361824	96	6126
+-4.1425	-125.2881	0.9834	6732	361812	96	6136
+-10.7280	-118.6979	0.9833	6744	361800	96	6147
+-13.9667	-115.4544	0.9832	6756	361788	96	6157
+-13.4648	-115.9524	0.9830	6768	361776	96	6167
+-35.8699	-93.5409	0.9829	6780	361764	96	6178
+-14.8573	-114.5490	0.9828	6792	361752	96	6188
+-12.3004	-117.1021	0.9826	6804	361740	96	6198
+-12.3719	-117.0262	0.9825	6816	361728	96	6208
+-9.6289	-119.7665	0.9824	6828	361716	96	6217
+-3.8806	-125.5074	0.9822	6840	361704	96	6229
+-11.0725	-118.3109	0.9821	6852	361692	96	6240
+-9.0675	-120.3100	0.9820	6864	361680	96	6251
+-4.1023	-125.2709	0.9818	6876	361668	96	6262
+-6.5581	-122.8090	0.9817	6888	361656	96	6273
+-10.9456	-118.4148	0.9816	6900	361644	96	6283
+-12.4655	-116.8887	0.9814	6912	361632	96	6295
+-12.2137	-117.1344	0.9813	6924	361620	96	6306
+-10.7860	-118.5587	0.9811	6936	361608	96	6316
+-12.9286	-116.4105	0.9810	6948	361596	96	6326
+-14.4249	-114.9107	0.9809	6960	361584	96	6336
+-4.9211	-124.4091	0.9807	6972	361572	96	6346
+-37.1099	-92.2152	0.9806	6984	361560	96	6357
+-11.1920	-118.1280	0.9804	6996	361548	96	6367
+-12.3421	-116.9742	0.9803	7008	361536	96	6376
+-10.7150	-118.5956	0.9801	7020	361524	96	6387
+-17.1089	-112.1969	0.9800	7032	361512	96	6396
+-14.8665	-114.4325	0.9799	7044	361500	96	6408
+-13.7179	-115.5764	0.9797	7056	361488	96	6418
+-7.3551	-121.9334	0.9796	7068	361476	96	6429
+-12.8516	-116.4319	0.9794	7080	361464	96	6438
+-10.0925	-119.1863	0.9792	7092	361452	96	6449
+-12.8355	-116.4394	0.9791	7104	361440	96	6461
+-6.9022	-122.3678	0.9789	7116	361428	96	6472
+-12.1095	-117.1537	0.9788	7128	361416	96	6483
+-6.8899	-122.3676	0.9786	7140	361404	96	6494
+-4.9865	-124.2664	0.9785	7152	361392	96	6504
+-5.4091	-123.8396	0.9783	7164	361380	96	6514
+-6.6353	-122.6066	0.9782	7176	361368	96	6522
+-5.9674	-123.2671	0.9780	7188	361356	96	6532
+-8.1909	-121.0389	0.9778	7200	361344	96	6544
+-19.9748	-109.2488	0.9777	7212	361332	96	6553
+-37.0870	-92.1330	0.9775	7224	361320	96	6564
+-36.1119	-93.1021	0.9774	7236	361308	96	6574
+-7.4731	-121.7334	0.9772	7248	361296	96	6584
+-9.8267	-119.3734	0.9770	7260	361284	96	6594
+-11.8822	-117.3136	0.9769	7272	361272	96	6605
+-5.0039	-124.1863	0.9767	7284	361260	96	6617
+-6.1009	-123.0836	0.9765	7296	361248	96	6627
+-7.7098	-121.4684	0.9764	7308	361236	96	6639
+-10.9262	-118.2474	0.9762	7320	361224	96	6649
+-5.9546	-123.2141	0.9760	7332	361212	96	6660
+-6.3023	-122.8599	0.9759	7344	361200	96	6671
+-8.0317	-121.1247	0.9757	7356	361188	96	6681
+-10.5685	-118.5815	0.9755	7368	361176	96	6693
+-9.7341	-119.4093	0.9754	7380	361164	96	6704
+-5.2358	-123.9024	0.9752	7392	361152	96	6715
+-4.7771	-124.3560	0.9750	7404	361140	96	6723
+-23.6344	-105.4965	0.9749	7416	361128	96	6735
+-6.1418	-122.9848	0.9747	7428	361116	96	6746
+-7.3495	-121.7720	0.9745	7440	361104	96	6757
+-11.8279	-117.2895	0.9743	7452	361092	96	6767
+-12.2758	-116.8365	0.9741	7464	361080	96	6776
+-35.3292	-93.7806	0.9740	7476	361068	96	6788
+-12.6994	-116.4063	0.9738	7488	361056	96	6799
+-4.1648	-124.9365	0.9736	7500	361044	96	6809
+-6.9904	-122.1031	0.9734	7512	361032	96	6820
+-12.4895	-116.5982	0.9732	7524	361020	96	6830
+-12.8056	-116.2770	0.9731	7536	361008	96	6841
+-12.3053	-116.7722	0.9729	7548	360996	96	6851
+-16.1530	-112.9197	0.9727	7560	360984	96	6862
+-6.6854	-122.3827	0.9725	7572	360972	96	6872
+-15.8644	-113.1991	0.9723	7584	360960	96	6881
+-12.7444	-116.3133	0.9721	7596	360948	96	6891
+-32.9134	-96.1398	0.9719	7608	360936	96	6901
+-37.3505	-91.6975	0.9717	7620	360924	96	6911
+-13.5263	-115.5187	0.9716	7632	360912	96	6921
+-7.1880	-121.8540	0.9714	7644	360900	96	6931
+-13.2586	-115.7797	0.9712	7656	360888	96	6941
+-7.2604	-121.7718	0.9710	7668	360876	96	6952
+-10.5849	-118.4408	0.9708	7680	360864	96	6962
+-11.7917	-117.2317	0.9706	7692	360852	96	6973
+-10.8166	-118.2040	0.9704	7704	360840	96	6984
+-12.6705	-116.3446	0.9702	7716	360828	96	6995
+-6.6470	-122.3610	0.9700	7728	360816	96	7006
+-31.9166	-97.0872	0.9698	7740	360804	96	7016
+-6.6576	-122.3408	0.9696	7752	360792	96	7026
+-35.6471	-93.3440	0.9694	7764	360780	96	7036
+-7.4731	-121.5127	0.9692	7776	360768	96	7046
+-6.4162	-122.5659	0.9690	7788	360756	96	7058
+-35.5258	-93.4517	0.9688	7800	360744	96	7070
+-10.7797	-118.1930	0.9686	7812	360732	96	7081
+-11.6849	-117.2842	0.9683	7824	360720	96	7091
+-5.0482	-123.9153	0.9681	7836	360708	96	7101
+-11.1673	-117.7920	0.9679	7848	360696	96	7112
+-13.3612	-115.5942	0.9677	7860	360684	96	7124
+-11.0897	-117.8604	0.9675	7872	360672	96	7132
+-37.3316	-91.6154	0.9673	7884	360660	96	7142
+-11.3859	-117.5552	0.9671	7896	360648	96	7154
+-13.7378	-115.1997	0.9668	7908	360636	96	7164
+-5.3426	-123.5914	0.9666	7920	360624	96	7175
+-12.0063	-116.9213	0.9664	7932	360612	96	7185
+-32.8391	-96.0842	0.9662	7944	360600	96	7196
+-11.2606	-117.6587	0.9660	7956	360588	96	7207
+-6.6630	-122.2530	0.9657	7968	360576	96	7218
+-5.7502	-123.1626	0.9655	7980	360564	96	7226
+-7.4359	-121.4738	0.9653	7992	360552	96	7236
+-5.5576	-123.3449	0.9651	8004	360540	96	7247
+-12.1741	-116.7241	0.9648	8016	360528	96	7258
+-11.6232	-117.2719	0.9646	8028	360516	96	7267
+-11.7848	-117.1041	0.9644	8040	360504	96	7277
+-11.6110	-117.2738	0.9641	8052	360492	96	7288
+-18.5736	-110.3013	0.9639	8064	360480	96	7298
+-38.2674	-90.6050	0.9637	8076	360468	96	7310
+-11.1694	-117.7004	0.9634	8088	360456	96	7321
+-13.1780	-115.6885	0.9632	8100	360444	96	7332
+-11.4133	-117.4500	0.9630	8112	360432	96	7343
+-5.7593	-123.1007	0.9627	8124	360420	96	7355
+-16.0764	-112.7793	0.9625	8136	360408	96	7365
+-36.0815	-92.7677	0.9622	8148	360396	96	7375
+-8.0369	-120.8082	0.9620	8160	360384	96	7387
+-6.3228	-122.5176	0.9618	8172	360372	96	7398
+-6.4476	-122.3883	0.9615	8184	360360	96	7408
+-21.2489	-107.5799	0.9613	8196	360348	96	7419
+-13.4146	-115.4115	0.9610	8208	360336	96	7429
+-12.5063	-116.3166	0.9608	8220	360324	96	7439
+-31.4059	-97.4137	0.9605	8232	360312	96	7450
+-4.3073	-124.5070	0.9603	8244	360300	96	7462
+-6.5668	-122.2420	0.9600	8256	360288	96	7473
+-20.2418	-108.5627	0.9597	8268	360276	96	7485
+-11.8690	-116.9300	0.9595	8280	360264	96	7495
+-11.9853	-116.8086	0.9592	8292	360252	96	7504
+-35.4648	-93.3235	0.9590	8304	360240	96	7514
+-6.0968	-122.6865	0.9587	8316	360228	96	7524
+-6.2645	-122.5146	0.9584	8328	360216	96	7534
+-13.8090	-114.9661	0.9582	8340	360204	96	7544
+-8.9845	-119.7873	0.9579	8352	360192	96	7553
+-14.2770	-114.4903	0.9577	8364	360180	96	7564
+-7.1896	-121.5697	0.9574	8376	360168	96	7576
+-7.4489	-121.3049	0.9571	8388	360156	96	7587
+-5.4426	-123.3072	0.9569	8400	360144	96	7599
+-16.3634	-112.3824	0.9566	8412	360132	96	7608
+-10.5472	-118.1932	0.9563	8424	360120	96	7620
+-8.2462	-120.4870	0.9560	8436	360108	96	7631
+-11.8886	-116.8407	0.9558	8448	360096	96	7642
+-15.1778	-113.5479	0.9555	8460	360084	96	7653
+-6.3609	-122.3583	0.9552	8472	360072	96	7664
+-37.7434	-90.9704	0.9550	8484	360060	96	7675
+-36.0417	-92.6681	0.9547	8496	360048	96	7686
+-5.5068	-123.2002	0.9544	8508	360036	96	7696
+-7.3205	-121.3828	0.9541	8520	360024	96	7706
+-11.6390	-117.0609	0.9538	8532	360012	96	7717
+-4.5202	-124.1756	0.9536	8544	360000	96	7726
+-6.7289	-121.9620	0.9533	8556	359988	96	7736
+-13.2661	-115.4201	0.9530	8568	359976	96	7748
+-31.0882	-97.5932	0.9527	8580	359964	96	7757
+-5.5763	-123.0971	0.9524	8592	359952	96	7767
+-6.3464	-122.3217	0.9521	8604	359940	96	7778
+-30.2828	-98.3818	0.9518	8616	359928	96	7789
+-12.7700	-115.8878	0.9515	8628	359916	96	7799
+-4.7460	-123.9067	0.9513	8640	359904	96	7810
+-8.2602	-120.3854	0.9510	8652	359892	96	7821
+-5.4611	-123.1827	0.9507	8664	359880	96	7831
+-7.5063	-121.1328	0.9504	8676	359868	96	7842
+-6.7657	-121.8702	0.9501	8688	359856	96	7852
+-37.2146	-91.4174	0.9498	8700	359844	96	7862
+-10.1012	-118.5274	0.9495	8712	359832	96	7873
+-12.7157	-115.9099	0.9492	8724	359820	96	7883
+-15.8320	-112.7876	0.9489	8736	359808	96	7894
+-10.1127	-118.5015	0.9486	8748	359796	96	7906
+-11.0002	-117.6120	0.9483	8760	359784	96	7917
+-12.0068	-116.6020	0.9480	8772	359772	96	7927
+-4.4619	-124.1424	0.9477	8784	359760	96	7936
+-13.7854	-114.8154	0.9473	8796	359748	96	7946
+-4.8404	-123.7544	0.9470	8808	359736	96	7957
+-7.2779	-121.3117	0.9467	8820	359724	96	7967
+-5.7421	-122.8452	0.9464	8832	359712	96	7977
+-8.1164	-120.4670	0.9461	8844	359700	96	7986
+-11.9568	-116.6222	0.9458	8856	359688	96	7996
+-32.0681	-96.5066	0.9455	8868	359676	96	8006
+-18.9703	-109.6020	0.9451	8880	359664	96	8016
+-12.3345	-116.2340	0.9448	8892	359652	96	8027
+-10.0163	-118.5475	0.9445	8904	359640	96	8038
+-13.7562	-114.8026	0.9442	8916	359628	96	8049
+-5.4536	-123.0994	0.9438	8928	359616	96	8059
+-15.3898	-113.1611	0.9435	8940	359604	96	8069
+-18.4900	-110.0581	0.9432	8952	359592	96	8080
+-36.7001	-91.8448	0.9428	8964	359580	96	8091
+-8.6220	-119.9205	0.9425	8976	359568	96	8103
+-13.5818	-114.9571	0.9422	8988	359556	96	8115
+-16.1833	-112.3512	0.9418	9000	359544	96	8127
+-11.0905	-117.4388	0.9415	9012	359532	96	8138
+-6.5859	-121.9378	0.9412	9024	359520	96	8148
+-5.8374	-122.6792	0.9408	9036	359508	96	8159
+-12.4747	-116.0383	0.9405	9048	359496	96	8170
+-11.3950	-117.1127	0.9401	9060	359484	96	8181
+-5.4823	-123.0220	0.9398	9072	359472	96	8192
+-11.9476	-116.5548	0.9394	9084	359460	96	8203
+-12.8816	-115.6180	0.9391	9096	359448	96	8212
+-11.8373	-116.6552	0.9387	9108	359436	96	8223
+-7.5516	-120.9356	0.9384	9120	359424	96	8234
+-6.3742	-122.1073	0.9380	9132	359412	96	8243
+-7.2968	-121.1802	0.9377	9144	359400	96	8253
+-9.4771	-118.9937	0.9373	9156	359388	96	8263
+-13.9808	-114.4856	0.9370	9168	359376	96	8275
+-12.2963	-116.1659	0.9366	9180	359364	96	8286
+-5.3725	-123.0817	0.9363	9192	359352	96	8297
+-6.4226	-122.0269	0.9359	9204	359340	96	8308
+-5.8808	-122.5639	0.9356	9216	359328	96	8318
+-4.7011	-123.7386	0.9352	9228	359316	96	8329
+-12.2645	-116.1713	0.9348	9240	359304	96	8339
+-11.0795	-117.3497	0.9345	9252	359292	96	8350
+-10.5244	-117.9006	0.9341	9264	359280	96	8359
+-14.3671	-114.0541	0.9337	9276	359268	96	8368
+-17.9824	-110.4340	0.9334	9288	359256	96	8379
+-30.4204	-97.9914	0.9330	9300	359244	96	8391
+-6.3697	-122.0379	0.9327	9312	359232	96	8403
+-7.5379	-120.8658	0.9323	9324	359220	96	8412
+-5.7866	-122.6137	0.9319	9336	359208	96	8423
+-10.9250	-117.4716	0.9315	9348	359196	96	8433
+-5.0671	-123.3249	0.9312	9360	359184	96	8445
+-5.2538	-123.1357	0.9308	9372	359172	96	8455
+-8.0123	-120.3738	0.9304	9384	359160	96	8466
+-13.5373	-114.8451	0.9300	9396	359148	96	8476
+-36.3448	-92.0347	0.9297	9408	359136	96	8486
+-3.9783	-124.3966	0.9293	9420	359124	96	8497
+-7.2571	-121.1140	0.9289	9432	359112	96	8507
+-34.8207	-93.5470	0.9285	9444	359100	96	8517
+-8.3002	-120.0642	0.9281	9456	359088	96	8529
+-6.2915	-122.0686	0.9277	9468	359076	96	8540
+-5.0569	-123.2960	0.9273	9480	359064	96	8551
+-10.6668	-117.6832	0.9270	9492	359052	96	8561
+-8.4740	-119.8725	0.9266	9504	359040	96	8573
+-12.2257	-116.1135	0.9262	9516	359028	96	8583
+-12.4157	-115.9174	0.9258	9528	359016	96	8594
+-5.9152	-122.4135	0.9254	9540	359004	96	8605
+-7.3643	-120.9607	0.9250	9552	358992	96	8617
+-36.5012	-91.8208	0.9246	9564	358980	96	8629
+-38.8006	-89.5174	0.9242	9576	358968	96	8639
+-10.0821	-118.2322	0.9238	9588	358956	96	8650
+-14.8959	-113.4151	0.9234	9600	358944	96	8661
+-10.8167	-117.4905	0.9230	9612	358932	96	8672
+-11.6259	-116.6786	0.9226	9624	358920	96	8683
+-6.6469	-121.6521	0.9222	9636	358908	96	8694
+-34.6944	-93.6011	0.9218	9648	358896	96	8704
+-10.6017	-117.6908	0.9213	9660	358884	96	8716
+-12.1207	-116.1676	0.9209	9672	358872	96	8727
+-8.0144	-120.2708	0.9205	9684	358860	96	8738
+-8.5439	-119.7376	0.9201	9696	358848	96	8748
+-6.2808	-121.9961	0.9197	9708	358836	96	8760
+-8.3417	-119.9310	0.9193	9720	358824	96	8771
+-15.5842	-112.6838	0.9188	9732	358812	96	8783
+-36.0514	-92.2112	0.9184	9744	358800	96	8793
+-4.3557	-123.9033	0.9180	9756	358788	96	8805
+-9.4898	-118.7654	0.9176	9768	358776	96	8816
+-13.6238	-114.6249	0.9172	9780	358764	96	8826
+-12.8332	-115.4111	0.9167	9792	358752	96	8837
+-5.1545	-123.0867	0.9163	9804	358740	96	8847
+-6.4458	-121.7910	0.9159	9816	358728	96	8858
+-8.7986	-119.4367	0.9154	9828	358716	96	8869
+-6.7145	-121.5178	0.9150	9840	358704	96	8881
+-33.1308	-95.0985	0.9146	9852	358692	96	8893
+-10.9862	-117.2411	0.9141	9864	358680	96	8905
+-15.2177	-113.0027	0.9137	9876	358668	96	8917
+-20.2943	-107.9216	0.9133	9888	358656	96	8927
+-5.1343	-123.0779	0.9128	9900	358644	96	8938
+-12.5984	-115.6093	0.9124	9912	358632	96	8949
+-6.4141	-121.7863	0.9119	9924	358620	96	8960
+-11.5786	-116.6188	0.9115	9936	358608	96	8971
+-34.9408	-93.2522	0.9110	9948	358596	96	8983
+-12.9079	-115.2795	0.9106	9960	358584	96	8994
+-12.1730	-116.0106	0.9101	9972	358572	96	9005
+-6.9854	-121.1940	0.9097	9984	358560	96	9017
+-6.5246	-121.6509	0.9092	9996	358548	96	9029
+-7.8134	-120.3579	0.9088	10008	358536	96	9039
+-7.1129	-121.0559	0.9083	10020	358524	96	9049
+-32.9080	-95.2585	0.9079	10032	358512	96	9059
+-9.3507	-118.8125	0.9074	10044	358500	96	9069
+-10.9352	-117.2269	0.9070	10056	358488	96	9080
+-32.5653	-95.5902	0.9065	10068	358476	96	9091
+-12.4364	-115.7147	0.9060	10080	358464	96	9102
+-7.6836	-120.4614	0.9056	10092	358452	96	9114
+-5.5497	-122.5922	0.9051	10104	358440	96	9124
+-37.7609	-90.3763	0.9046	10116	358428	96	9134
+-10.2391	-117.8925	0.9042	10128	358416	96	9145
+-36.6963	-91.4315	0.9037	10140	358404	96	9156
+-6.5823	-121.5427	0.9032	10152	358392	96	9166
+-10.1901	-117.9315	0.9028	10164	358380	96	9177
+-14.5567	-113.5614	0.9023	10176	358368	96	9187
+-31.9383	-96.1745	0.9018	10188	358356	96	9198
+-8.5451	-119.5636	0.9014	10200	358344	96	9209
+-12.0405	-116.0651	0.9009	10212	358332	96	9219
+-4.8329	-123.2684	0.9004	10224	358320	96	9230
+-10.6130	-117.4844	0.8999	10236	358308	96	9240
+-36.5838	-91.5105	0.8994	10248	358296	96	9250
+-11.2149	-116.8757	0.8990	10260	358284	96	9261
+-13.7956	-114.2921	0.8985	10272	358272	96	9273
+-10.8523	-117.2315	0.8980	10284	358260	96	9285
+-10.4353	-117.6436	0.8975	10296	358248	96	9295
+-9.5021	-118.5743	0.8970	10308	358236	96	9306
+-33.7936	-94.2791	0.8965	10320	358224	96	9317
+-11.0892	-116.9786	0.8960	10332	358212	96	9329
+-10.8504	-117.2148	0.8955	10344	358200	96	9339
+-36.1518	-91.9089	0.8950	10356	358188	96	9349
+-13.1801	-114.8770	0.8945	10368	358176	96	9358
+-10.8258	-117.2280	0.8940	10380	358164	96	9369
+-6.6405	-121.4103	0.8935	10392	358152	96	9380
+-5.2838	-122.7639	0.8930	10404	358140	96	9389
+-8.7665	-119.2773	0.8925	10416	358128	96	9399
+-12.7192	-115.3216	0.8920	10428	358116	96	9409
+-11.5800	-116.4579	0.8915	10440	358104	96	9419
+-6.0768	-121.9570	0.8910	10452	358092	96	9431
+-6.3750	-121.6549	0.8905	10464	358080	96	9442
+-4.1858	-123.8405	0.8900	10476	358068	96	9452
+-4.7723	-123.2478	0.8895	10488	358056	96	9464
+-6.0893	-121.9281	0.8889	10500	358044	96	9473
+-11.5019	-116.5117	0.8884	10512	358032	96	9485
+-6.4031	-121.6060	0.8879	10524	358020	96	9495
+-5.2071	-122.7999	0.8874	10536	358008	96	9505
+-13.6886	-114.3155	0.8869	10548	357996	96	9515
+-14.0380	-113.9640	0.8863	10560	357984	96	9526
+-6.3700	-121.6285	0.8858	10572	357972	96	9538
+-37.2971	-90.6961	0.8853	10584	357960	96	9549
+-12.0623	-115.9275	0.8848	10596	357948	96	9560
+-32.7644	-95.2220	0.8842	10608	357936	96	9571
+-6.2118	-121.7704	0.8837	10620	357924	96	9580
+-12.8239	-115.1534	0.8832	10632	357912	96	9591
+-32.3821	-95.5907	0.8826	10644	357900	96	9602
+-5.8405	-122.1268	0.8821	10656	357888	96	9612
+-3.9679	-123.9954	0.8816	10668	357876	96	9624
+-34.1437	-93.8135	0.8810	10680	357864	96	9634
+-6.8656	-121.0884	0.8805	10692	357852	96	9645
+-34.3369	-93.6147	0.8799	10704	357840	96	9657
+-6.4280	-121.5194	0.8794	10716	357828	96	9668
+-11.2088	-116.7360	0.8789	10728	357816	96	9678
+-13.5960	-114.3452	0.8783	10740	357804	96	9688
+-11.1355	-116.8024	0.8778	10752	357792	96	9699
+-34.9699	-92.9648	0.8772	10764	357780	96	9709
+-34.0039	-93.9273	0.8767	10776	357768	96	9717
+-32.6530	-95.2693	0.8761	10788	357756	96	9729
+-34.1767	-93.7415	0.8756	10800	357744	96	9740
+-16.5963	-111.3188	0.8750	10812	357732	96	9751
+-5.2375	-122.6740	0.8745	10824	357720	96	9762
+-9.8466	-118.0602	0.8739	10836	357708	96	9774
+-12.6197	-115.2837	0.8734	10848	357696	96	9786
+-13.0435	-114.8570	0.8728	10860	357684	96	9797
+-5.7779	-122.1174	0.8723	10872	357672	96	9807
+-33.8229	-94.0680	0.8717	10884	357660	96	9817
+-12.8717	-115.0163	0.8711	10896	357648	96	9828
+-13.8449	-114.0379	0.8706	10908	357636	96	9840
+-4.5351	-123.3448	0.8700	10920	357624	96	9851
+-14.4744	-113.4027	0.8695	10932	357612	96	9860
+-6.6094	-121.2653	0.8689	10944	357600	96	9870
+-6.3710	-121.5016	0.8683	10956	357588	96	9880
+-12.9241	-114.9450	0.8678	10968	357576	96	9892
+-14.4378	-113.4288	0.8672	10980	357564	96	9903
+-34.7770	-93.0863	0.8666	10992	357552	96	9915
+-10.8691	-116.9918	0.8660	11004	357540	96	9925
+-14.0134	-113.8440	0.8655	11016	357528	96	9937
+-8.7215	-119.1337	0.8649	11028	357516	96	9947
+-35.8107	-92.0405	0.8643	11040	357504	96	9959
+-5.4057	-122.4431	0.8637	11052	357492	96	9970
+-5.0963	-122.7480	0.8631	11064	357480	96	9981
+-5.7696	-122.0713	0.8625	11076	357468	96	9993
+-33.6125	-94.2256	0.8620	11088	357456	96	10003
+-10.6441	-117.1905	0.8614	11100	357444	96	10013
+-32.1722	-95.6604	0.8608	11112	357432	96	10023
+-7.5738	-120.2553	0.8602	11124	357420	96	10033
+-6.2588	-121.5669	0.8596	11136	357408	96	10044
+-15.9824	-111.8394	0.8590	11148	357396	96	10053
+-34.0368	-93.7823	0.8584	11160	357384	96	10065
+-37.2893	-90.5264	0.8578	11172	357372	96	10076
+-27.4554	-100.3562	0.8572	11184	357360	96	10085
+-31.7035	-96.1039	0.8566	11196	357348	96	10096
+-12.8877	-114.9167	0.8560	11208	357336	96	10107
+-5.3152	-122.4837	0.8554	11220	357324	96	10118
+-14.7774	-113.0196	0.8548	11232	357312	96	10129
+-15.8170	-111.9757	0.8541	11244	357300	96	10140
+-36.0203	-91.7685	0.8535	11256	357288	96	10152
+-34.6490	-93.1377	0.8529	11268	357276	96	10164
+-15.0441	-112.7395	0.8523	11280	357264	96	10175
+-6.6175	-121.1625	0.8517	11292	357252	96	10186
+-12.6944	-115.0826	0.8511	11304	357240	96	10195
+-35.2227	-92.5512	0.8505	11316	357228	96	10205
+-14.1897	-113.5797	0.8498	11328	357216	96	10216
+-5.7696	-121.9962	0.8492	11340	357204	96	10226
+-8.4712	-119.2920	0.8486	11352	357192	96	10238
+-5.8678	-121.8920	0.8480	11364	357180	96	10249
+-4.5209	-123.2346	0.8473	11376	357168	96	10259
+-10.8488	-116.9034	0.8467	11388	357156	96	10270
+-8.8682	-118.8802	0.8461	11400	357144	96	10280
+-5.6458	-122.0997	0.8454	11412	357132	96	10290
+-36.8141	-90.9269	0.8448	11424	357120	96	10301
+-11.5074	-116.2306	0.8442	11436	357108	96	10311
+-13.7176	-114.0169	0.8435	11448	357096	96	10322
+-12.2747	-115.4564	0.8429	11460	357084	96	10333
+-35.5755	-92.1497	0.8423	11472	357072	96	10344
+-7.9652	-119.7574	0.8416	11484	357060	96	10355
+-33.3785	-94.3416	0.8410	11496	357048	96	10366
+-10.3914	-117.3261	0.8404	11508	357036	96	10377
+-6.3401	-121.3742	0.8397	11520	357024	96	10389
+-32.4787	-95.2329	0.8391	11532	357012	96	10398
+-36.0565	-91.6524	0.8384	11544	357000	96	10408
+-4.7916	-122.9123	0.8378	11556	356988	96	10418
+-13.1331	-114.5668	0.8371	11568	356976	96	10429
+-7.6883	-120.0088	0.8365	11580	356964	96	10439
+-36.4678	-91.2259	0.8358	11592	356952	96	10450
+-10.2954	-117.3948	0.8352	11604	356940	96	10460
+-8.1632	-119.5233	0.8345	11616	356928	96	10472
+-4.6494	-123.0328	0.8338	11628	356916	96	10483
+-37.9035	-89.7754	0.8332	11640	356904	96	10495
+-6.0587	-121.6178	0.8325	11652	356892	96	10504
+-35.3651	-92.3065	0.8319	11664	356880	96	10515
+-11.3113	-116.3573	0.8312	11676	356868	96	10526
+-12.4882	-115.1768	0.8305	11688	356856	96	10536
+-34.4933	-93.1689	0.8299	11700	356844	96	10547
+-31.6725	-95.9853	0.8292	11712	356832	96	10558
+-7.8534	-119.8003	0.8285	11724	356820	96	10567
+-5.4195	-122.2297	0.8279	11736	356808	96	10578
+-8.4832	-119.1611	0.8272	11748	356796	96	10588
+-4.6711	-122.9699	0.8265	11760	356784	96	10599
+-19.5205	-108.1171	0.8259	11772	356772	96	10610
+-6.0881	-121.5468	0.8252	11784	356760	96	10621
+-6.6190	-121.0119	0.8245	11796	356748	96	10633
+-11.4517	-116.1764	0.8239	11808	356736	96	10643
+-12.5536	-115.0719	0.8232	11820	356724	96	10655
+-7.1434	-120.4808	0.8225	11832	356712	96	10665
+-7.6679	-119.9537	0.8218	11844	356700	96	10676
+-14.8336	-112.7855	0.8211	11856	356688	96	10688
+-7.7827	-119.8321	0.8205	11868	356676	96	10699
+-35.1577	-92.4551	0.8198	11880	356664	96	10709
+-14.4587	-113.1507	0.8191	11892	356652	96	10720
+-15.7396	-111.8657	0.8184	11904	356640	96	10731
+-16.3493	-111.2518	0.8177	11916	356628	96	10740
+-13.7196	-113.8788	0.8170	11928	356616	96	10750
+-12.7230	-114.8708	0.8163	11940	356604	96	10761
+-5.7507	-121.8394	0.8156	11952	356592	96	10772
+-6.4411	-121.1464	0.8149	11964	356580	96	10783
+-11.8557	-115.7278	0.8142	11976	356568	96	10794
+-5.5811	-121.9993	0.8136	11988	356556	96	10805
+-4.7633	-122.8151	0.8129	12000	356544	96	10815
+-14.1314	-113.4437	0.8122	12012	356532	96	10826
+-4.5906	-122.9817	0.8115	12024	356520	96	10837
+-14.7050	-112.8636	0.8107	12036	356508	96	10848
+-11.1675	-116.3982	0.8100	12048	356496	96	10859
+-16.9650	-110.5980	0.8093	12060	356484	96	10869
+-13.4988	-114.0613	0.8086	12072	356472	96	10879
+-10.7111	-116.8461	0.8079	12084	356460	96	10890
+-6.0876	-121.4670	0.8072	12096	356448	96	10900
+-6.6156	-120.9363	0.8065	12108	356436	96	10911
+-9.5564	-117.9921	0.8058	12120	356424	96	10922
+-13.5256	-114.0197	0.8051	12132	356412	96	10932
+-12.3652	-115.1769	0.8043	12144	356400	96	10944
+-13.6812	-113.8578	0.8036	12156	356388	96	10954
+-7.3763	-120.1601	0.8029	12168	356376	96	10964
+-6.0840	-121.4483	0.8022	12180	356364	96	10976
+-5.9368	-121.5941	0.8015	12192	356352	96	10987
+-6.4669	-121.0619	0.8007	12204	356340	96	10999
+-36.2537	-91.2721	0.8000	12216	356328	96	11010
+-7.8567	-119.6661	0.7993	12228	356316	96	11021
+-4.4671	-123.0536	0.7985	12240	356304	96	11031
+-14.5996	-112.9194	0.7978	12252	356292	96	11041
+-6.9868	-120.5299	0.7971	12264	356280	96	11051
+-6.9465	-120.5648	0.7963	12276	356268	96	11062
+-12.6963	-114.8124	0.7956	12288	356256	96	11072
+-8.1754	-119.3304	0.7948	12300	356244	96	11082
+-33.1009	-94.4028	0.7941	12312	356232	96	11093
+-9.5168	-117.9833	0.7933	12324	356220	96	11104
+-32.7280	-94.7681	0.7926	12336	356208	96	11115
+-37.7628	-89.7304	0.7918	12348	356196	96	11126
+-5.5461	-121.9439	0.7911	12360	356184	96	11136
+-34.2949	-93.1922	0.7903	12372	356172	96	11147
+-11.5514	-115.9334	0.7896	12384	356160	96	11157
+-38.3331	-89.1479	0.7888	12396	356148	96	11169
+-13.5535	-113.9252	0.7881	12408	356136	96	11177
+-11.3516	-116.1242	0.7873	12420	356124	96	11188
+-14.9886	-112.4841	0.7866	12432	356112	96	11199
+-32.3539	-95.1148	0.7858	12444	356100	96	11210
+-34.2381	-93.2276	0.7850	12456	356088	96	11221
+-11.8044	-115.6590	0.7843	12468	356076	96	11233
+-5.6204	-121.8382	0.7835	12480	356064	96	11244
+-38.2504	-89.2056	0.7827	12492	356052	96	11253
+-13.9358	-113.5162	0.7820	12504	356040	96	11264
+-31.8914	-95.5582	0.7812	12516	356028	96	11275
+-32.9609	-94.4869	0.7804	12528	356016	96	11286
+-13.2911	-114.1526	0.7797	12540	356004	96	11296
+-13.6104	-113.8299	0.7789	12552	355992	96	11307
+-31.8401	-95.5964	0.7781	12564	355980	96	11317
+-15.7290	-111.7045	0.7773	12576	355968	96	11328
+-6.9537	-120.4764	0.7766	12588	355956	96	11337
+-35.2067	-92.2213	0.7758	12600	355944	96	11348
+-32.4899	-94.9350	0.7750	12612	355932	96	11360
+-10.6167	-116.8050	0.7742	12624	355920	96	11372
+-11.5593	-115.8593	0.7734	12636	355908	96	11382
+-14.7311	-112.6836	0.7727	12648	355896	96	11393
+-5.6323	-121.7777	0.7719	12660	355884	96	11405
+-5.7107	-121.6967	0.7711	12672	355872	96	11415
+-11.4341	-115.9710	0.7703	12684	355860	96	11425
+-10.1750	-117.2273	0.7695	12696	355848	96	11437
+-4.6801	-122.7196	0.7687	12708	355836	96	11450
+-13.2477	-114.1499	0.7679	12720	355824	96	11461
+-12.8431	-114.5526	0.7671	12732	355812	96	11471
+-35.9013	-91.4914	0.7663	12744	355800	96	11482
+-7.2074	-120.1827	0.7656	12756	355788	96	11493
+-9.6657	-117.7218	0.7648	12768	355776	96	11504
+-12.0639	-115.3219	0.7639	12780	355764	96	11512
+-13.5269	-113.8572	0.7631	12792	355752	96	11523
+-31.7643	-95.6157	0.7623	12804	355740	96	11534
+-5.5305	-121.8461	0.7615	12816	355728	96	11545
+-5.5908	-121.7839	0.7607	12828	355716	96	11555
+-20.2396	-107.1315	0.7599	12840	355704	96	11566
+-11.9178	-115.4500	0.7591	12852	355692	96	11577
+-8.1265	-119.2374	0.7583	12864	355680	96	11587
+-12.0104	-115.3492	0.7575	12876	355668	96	11598
+-32.4251	-94.9297	0.7567	12888	355656	96	11608
+-12.0967	-115.2551	0.7558	12900	355644	96	11619
+-8.1389	-119.2102	0.7550	12912	355632	96	11631
+-12.2117	-115.1347	0.7542	12924	355620	96	11641
+-7.5936	-119.7495	0.7534	12936	355608	96	11653
+-12.0854	-115.2554	0.7526	12948	355596	96	11663
+-34.0047	-93.3334	0.7518	12960	355584	96	11674
+-7.6537	-119.6811	0.7509	12972	355572	96	11684
+-4.8305	-122.5017	0.7501	12984	355560	96	11694
+-6.7794	-120.5494	0.7493	12996	355548	96	11706
+-12.5621	-114.7624	0.7485	13008	355536	96	11716
+-15.9628	-111.3578	0.7477	13020	355524	96	11727
+-4.8465	-122.4709	0.7468	13032	355512	96	11737
+-7.3493	-119.9653	0.7460	13044	355500	96	11749
+-9.7038	-117.6075	0.7452	13056	355488	96	11760
+-6.6351	-120.6731	0.7444	13068	355476	96	11771
+-10.6290	-116.6747	0.7435	13080	355464	96	11782
+-32.8734	-94.4274	0.7427	13092	355452	96	11792
+-11.4958	-115.8019	0.7419	13104	355440	96	11802
+-7.3060	-119.9879	0.7410	13116	355428	96	11813
+-6.2842	-121.0068	0.7402	13128	355416	96	11823
+-7.0381	-120.2504	0.7394	13140	355404	96	11834
+-38.8504	-88.4361	0.7385	13152	355392	96	11844
+-8.2024	-119.0810	0.7377	13164	355380	96	11855
+-34.2040	-93.0769	0.7369	13176	355368	96	11866
+-37.0938	-90.1847	0.7360	13188	355356	96	11876
+-12.4496	-114.8261	0.7352	13200	355344	96	11887
+-6.3174	-120.9558	0.7344	13212	355332	96	11899
+-32.0734	-95.1974	0.7335	13224	355320	96	11910
+-12.5325	-114.7355	0.7327	13236	355308	96	11922
+-5.4307	-121.8344	0.7318	13248	355296	96	11932
+-36.2528	-91.0087	0.7310	13260	355284	96	11943
+-11.4271	-115.8309	0.7301	13272	355272	96	11954
+-11.8133	-115.4417	0.7293	13284	355260	96	11965
+-8.6624	-118.5883	0.7284	13296	355248	96	11975
+-6.3728	-120.8737	0.7276	13308	355236	96	11986
+-7.9308	-119.3134	0.7267	13320	355224	96	11997
+-5.9647	-121.2772	0.7259	13332	355212	96	12008
+-15.1417	-112.0977	0.7250	13344	355200	96	12018
+-12.6442	-114.5919	0.7242	13356	355188	96	12029
+-5.8199	-121.4121	0.7233	13368	355176	96	12039
+-6.6151	-120.6122	0.7225	13380	355164	96	12049
+-9.8271	-117.3974	0.7216	13392	355152	96	12060
+-4.9005	-122.3213	0.7208	13404	355140	96	12070
+-5.6798	-121.5380	0.7199	13416	355128	96	12082
+-32.6085	-94.6063	0.7191	13428	355116	96	12093
+-7.1513	-120.0611	0.7182	13440	355104	96	12102
+-32.4385	-94.7709	0.7174	13452	355092	96	12113
+-6.8413	-120.3669	0.7165	13464	355080	96	12125
+-7.3466	-119.8584	0.7156	13476	355068	96	12136
+-6.7112	-120.4910	0.7148	13488	355056	96	12148
+-7.8737	-119.3258	0.7139	13500	355044	96	12159
+-4.9717	-122.2241	0.7131	13512	355032	96	12170
+-37.2607	-89.9320	0.7122	13524	355020	96	12179
+-5.4055	-121.7833	0.7113	13536	355008	96	12190
+-31.2656	-95.9207	0.7105	13548	354996	96	12201
+-5.0121	-122.1695	0.7096	13560	354984	96	12213
+-28.8163	-98.3634	0.7087	13572	354972	96	12222
+-7.5507	-119.6263	0.7079	13584	354960	96	12233
+-39.3492	-87.8251	0.7070	13596	354948	96	12244
+-36.3791	-90.7920	0.7062	13608	354936	96	12255
+-37.8104	-89.3578	0.7053	13620	354924	96	12266
+-5.9621	-121.2040	0.7044	13632	354912	96	12276
+-5.5281	-121.6359	0.7035	13644	354900	96	12285
+-9.0639	-118.0984	0.7027	13656	354888	96	12296
+-9.5851	-117.5749	0.7018	13668	354876	96	12308
+-11.8703	-115.2876	0.7009	13680	354864	96	12318
+-6.5724	-120.5830	0.7000	13692	354852	96	12328
+-13.5099	-113.6411	0.6992	13704	354840	96	12338
+-36.3131	-90.8354	0.6983	13716	354828	96	12349
+-5.5886	-121.5552	0.6974	13728	354816	96	12360
+-9.6151	-117.5266	0.6965	13740	354804	96	12372
+-6.2542	-120.8852	0.6956	13752	354792	96	12382
+-5.5545	-121.5806	0.6948	13764	354780	96	12393
+-5.3942	-121.7371	0.6939	13776	354768	96	12404
+-6.6944	-120.4327	0.6930	13788	354756	96	12415
+-34.3854	-92.7388	0.6921	13800	354744	96	12426
+-38.1612	-88.9597	0.6912	13812	354732	96	12437
+-12.4795	-114.6391	0.6904	13824	354720	96	12447
+-5.1751	-121.9419	0.6895	13836	354708	96	12458
+-7.1980	-119.9177	0.6886	13848	354696	96	12469
+-30.5172	-96.5947	0.6877	13860	354684	96	12481
+-9.7287	-117.3806	0.6868	13872	354672	96	12490
+-10.2838	-116.8236	0.6859	13884	354660	96	12501
+-15.7695	-111.3347	0.6850	13896	354648	96	12511
+-13.8279	-113.2735	0.6841	13908	354636	96	12522
+-9.1521	-117.9473	0.6832	13920	354624	96	12531
+-8.0492	-119.0485	0.6824	13932	354612	96	12542
+-7.0171	-120.0781	0.6815	13944	354600	96	12553
+-9.6655	-117.4263	0.6806	13956	354588	96	12563
+-7.7073	-119.3827	0.6800	13964	354576	96	12574
+
+Writing top 500 conformation(s) for sequence: HIE-296 GLU-297 ILE-301 SER-302 GLU-317 HIE-319 GLN-322 K04-9
+
+Saving: 499.pdb	minE:-125.51024046088875
+Saving: 498.pdb	minE:-125.51535907738835
+Saving: 497.pdb	minE:-125.51736391011025
+Saving: 496.pdb	minE:-125.51740269891582
+Saving: 495.pdb	minE:-125.51887843210429
+Saving: 494.pdb	minE:-125.51906300933484
+Saving: 493.pdb	minE:-125.53113236233486
+Saving: 492.pdb	minE:-125.54025696433166
+Saving: 491.pdb	minE:-125.54266200092374
+Saving: 490.pdb	minE:-125.54414480871091
+Saving: 489.pdb	minE:-125.55238630686472
+Saving: 488.pdb	minE:-125.55547058904776
+Saving: 487.pdb	minE:-125.56752812906436
+Saving: 486.pdb	minE:-125.57127587192639
+Saving: 485.pdb	minE:-125.5732045583384
+Saving: 484.pdb	minE:-125.57505390023482
+Saving: 483.pdb	minE:-125.57509965890134
+Saving: 482.pdb	minE:-125.5803214101748
+Saving: 481.pdb	minE:-125.59286115944741
+Saving: 480.pdb	minE:-125.59779660661889
+Saving: 479.pdb	minE:-125.59815184629625
+Saving: 478.pdb	minE:-125.59881750314571
+Saving: 477.pdb	minE:-125.60187562482164
+Saving: 476.pdb	minE:-125.60222217477116
+Saving: 475.pdb	minE:-125.6049346107803
+Saving: 474.pdb	minE:-125.60636470859643
+Saving: 473.pdb	minE:-125.60909911758978
+Saving: 472.pdb	minE:-125.60947401362569
+Saving: 471.pdb	minE:-125.61138059770639
+Saving: 470.pdb	minE:-125.61298814217494
+Saving: 469.pdb	minE:-125.61855715270204
+Saving: 468.pdb	minE:-125.61935259143488
+Saving: 467.pdb	minE:-125.62244475383193
+Saving: 466.pdb	minE:-125.62335004247123
+Saving: 465.pdb	minE:-125.62592241094521
+Saving: 464.pdb	minE:-125.62640902288894
+Saving: 463.pdb	minE:-125.62745968589306
+Saving: 462.pdb	minE:-125.629688679021
+Saving: 461.pdb	minE:-125.63111859594324
+Saving: 460.pdb	minE:-125.63149766535736
+Saving: 459.pdb	minE:-125.64105539639687
+Saving: 458.pdb	minE:-125.6457993316555
+Saving: 457.pdb	minE:-125.64914430404926
+Saving: 456.pdb	minE:-125.65297223039369
+Saving: 455.pdb	minE:-125.6531963745974
+Saving: 454.pdb	minE:-125.65665523198928
+Saving: 453.pdb	minE:-125.66390079220906
+Saving: 452.pdb	minE:-125.66532035888542
+Saving: 451.pdb	minE:-125.66849004075587
+Saving: 450.pdb	minE:-125.66889783647423
+Saving: 449.pdb	minE:-125.66943330026879
+Saving: 448.pdb	minE:-125.66987636442025
+Saving: 447.pdb	minE:-125.67066386297677
+Saving: 446.pdb	minE:-125.67114661072952
+Saving: 445.pdb	minE:-125.67436862222584
+Saving: 444.pdb	minE:-125.67773532951799
+Saving: 443.pdb	minE:-125.68111930004306
+Saving: 442.pdb	minE:-125.68213801982236
+Saving: 441.pdb	minE:-125.68412867235506
+Saving: 440.pdb	minE:-125.68513899809486
+Saving: 439.pdb	minE:-125.69001538516426
+Saving: 438.pdb	minE:-125.69086144969015
+Saving: 437.pdb	minE:-125.691760385619
+Saving: 436.pdb	minE:-125.69428243250448
+Saving: 435.pdb	minE:-125.6948992809784
+Saving: 434.pdb	minE:-125.6967989893086
+Saving: 433.pdb	minE:-125.70083706928148
+Saving: 432.pdb	minE:-125.70129177825547
+Saving: 431.pdb	minE:-125.70720973362052
+Saving: 430.pdb	minE:-125.7075581184819
+Saving: 429.pdb	minE:-125.71072179346177
+Saving: 428.pdb	minE:-125.71312778352677
+Saving: 427.pdb	minE:-125.71461927530757
+Saving: 426.pdb	minE:-125.7147157043245
+Saving: 425.pdb	minE:-125.71551061759774
+Saving: 424.pdb	minE:-125.71583961213224
+Saving: 423.pdb	minE:-125.71867944635747
+Saving: 422.pdb	minE:-125.72371590684529
+Saving: 421.pdb	minE:-125.72442259328031
+Saving: 420.pdb	minE:-125.72668023410446
+Saving: 419.pdb	minE:-125.72798979458076
+Saving: 418.pdb	minE:-125.72924527432184
+Saving: 417.pdb	minE:-125.72959829892386
+Saving: 416.pdb	minE:-125.72973160184779
+Saving: 415.pdb	minE:-125.73182419847927
+Saving: 414.pdb	minE:-125.7362196419543
+Saving: 413.pdb	minE:-125.73896537522506
+Saving: 412.pdb	minE:-125.74282217084195
+Saving: 411.pdb	minE:-125.74332162741092
+Saving: 410.pdb	minE:-125.74417865424573
+Saving: 409.pdb	minE:-125.74494662883754
+Saving: 408.pdb	minE:-125.74961710824564
+Saving: 407.pdb	minE:-125.75095025463435
+Saving: 406.pdb	minE:-125.7535896844241
+Saving: 405.pdb	minE:-125.75706557992578
+Saving: 404.pdb	minE:-125.76073689770814
+Saving: 403.pdb	minE:-125.76267213648725
+Saving: 402.pdb	minE:-125.76522367062617
+Saving: 401.pdb	minE:-125.76543208893867
+Saving: 400.pdb	minE:-125.76745783105844
+Saving: 399.pdb	minE:-125.76774891537713
+Saving: 398.pdb	minE:-125.7725931935222
+Saving: 397.pdb	minE:-125.77683490797327
+Saving: 396.pdb	minE:-125.78093914241575
+Saving: 395.pdb	minE:-125.78748376716317
+Saving: 394.pdb	minE:-125.78888091397201
+Saving: 393.pdb	minE:-125.78982450048662
+Saving: 392.pdb	minE:-125.80031062912585
+Saving: 391.pdb	minE:-125.80106703751235
+Saving: 390.pdb	minE:-125.8059501192727
+Saving: 389.pdb	minE:-125.80690180231514
+Saving: 388.pdb	minE:-125.81025387507191
+Saving: 387.pdb	minE:-125.81715800234721
+Saving: 386.pdb	minE:-125.82080727219903
+Saving: 385.pdb	minE:-125.82853030857817
+Saving: 384.pdb	minE:-125.83277950282161
+Saving: 383.pdb	minE:-125.84355703980634
+Saving: 382.pdb	minE:-125.85965071488755
+Saving: 381.pdb	minE:-125.86383992170377
+Saving: 380.pdb	minE:-125.8641667764085
+Saving: 379.pdb	minE:-125.87504123626948
+Saving: 378.pdb	minE:-125.8750725692912
+Saving: 377.pdb	minE:-125.87587036597654
+Saving: 376.pdb	minE:-125.88355716182915
+Saving: 375.pdb	minE:-125.88920409442835
+Saving: 374.pdb	minE:-125.89157239978076
+Saving: 373.pdb	minE:-125.89609473038516
+Saving: 372.pdb	minE:-125.89746027076268
+Saving: 371.pdb	minE:-125.89805845439113
+Saving: 370.pdb	minE:-125.89851377570457
+Saving: 369.pdb	minE:-125.90100795293074
+Saving: 368.pdb	minE:-125.90384436841734
+Saving: 367.pdb	minE:-125.91074993793052
+Saving: 366.pdb	minE:-125.91671697271644
+Saving: 365.pdb	minE:-125.91714094651513
+Saving: 364.pdb	minE:-125.91731526191398
+Saving: 363.pdb	minE:-125.91882354610186
+Saving: 362.pdb	minE:-125.92592227505665
+Saving: 361.pdb	minE:-125.93258519780252
+Saving: 360.pdb	minE:-125.94042440417738
+Saving: 359.pdb	minE:-125.94045754322303
+Saving: 358.pdb	minE:-125.95231595266586
+Saving: 357.pdb	minE:-125.95605954465489
+Saving: 356.pdb	minE:-125.95729993628225
+Saving: 355.pdb	minE:-125.95782589313998
+Saving: 354.pdb	minE:-125.96371601985987
+Saving: 353.pdb	minE:-125.96589443294675
+Saving: 352.pdb	minE:-125.96813430323533
+Saving: 351.pdb	minE:-125.97215588687277
+Saving: 350.pdb	minE:-125.97534230298984
+Saving: 349.pdb	minE:-125.97677358294311
+Saving: 348.pdb	minE:-125.98060221575645
+Saving: 347.pdb	minE:-125.98074363574952
+Saving: 346.pdb	minE:-125.99006615260191
+Saving: 345.pdb	minE:-125.99051858142346
+Saving: 344.pdb	minE:-125.99103559780838
+Saving: 343.pdb	minE:-125.99206289989343
+Saving: 342.pdb	minE:-125.9955990292971
+Saving: 341.pdb	minE:-125.99812428581853
+Saving: 340.pdb	minE:-125.99860710922556
+Saving: 339.pdb	minE:-125.99863843227016
+Saving: 338.pdb	minE:-125.99870975325103
+Saving: 337.pdb	minE:-126.00209703683191
+Saving: 336.pdb	minE:-126.00514737171929
+Saving: 335.pdb	minE:-126.00732492546081
+Saving: 334.pdb	minE:-126.01081121353533
+Saving: 333.pdb	minE:-126.01403313868005
+Saving: 332.pdb	minE:-126.01419785278583
+Saving: 331.pdb	minE:-126.0183200191106
+Saving: 330.pdb	minE:-126.01924192051806
+Saving: 329.pdb	minE:-126.01950698164657
+Saving: 328.pdb	minE:-126.02248463914614
+Saving: 327.pdb	minE:-126.02250764145057
+Saving: 326.pdb	minE:-126.02376868030208
+Saving: 325.pdb	minE:-126.02417759619715
+Saving: 324.pdb	minE:-126.03306040288061
+Saving: 323.pdb	minE:-126.03390464740349
+Saving: 322.pdb	minE:-126.03573497726714
+Saving: 321.pdb	minE:-126.03924408761765
+Saving: 320.pdb	minE:-126.04807815273679
+Saving: 319.pdb	minE:-126.05355869522361
+Saving: 318.pdb	minE:-126.0574145741088
+Saving: 317.pdb	minE:-126.05772948802093
+Saving: 316.pdb	minE:-126.057986561593
+Saving: 315.pdb	minE:-126.0602188278647
+Saving: 314.pdb	minE:-126.07182800167027
+Saving: 313.pdb	minE:-126.07323109920628
+Saving: 312.pdb	minE:-126.08088602969534
+Saving: 311.pdb	minE:-126.0825262372592
+Saving: 310.pdb	minE:-126.08951057060733
+Saving: 309.pdb	minE:-126.10136288224805
+Saving: 308.pdb	minE:-126.10156983871241
+Saving: 307.pdb	minE:-126.10164402111522
+Saving: 306.pdb	minE:-126.10357060815005
+Saving: 305.pdb	minE:-126.11243770598864
+Saving: 304.pdb	minE:-126.11294402705181
+Saving: 303.pdb	minE:-126.11707567111449
+Saving: 302.pdb	minE:-126.12087033242238
+Saving: 301.pdb	minE:-126.13695861499875
+Saving: 300.pdb	minE:-126.13815543283613
+Saving: 299.pdb	minE:-126.13918372753056
+Saving: 298.pdb	minE:-126.13935416141481
+Saving: 297.pdb	minE:-126.14008441124935
+Saving: 296.pdb	minE:-126.141674806883
+Saving: 295.pdb	minE:-126.15384251242011
+Saving: 294.pdb	minE:-126.15422330549237
+Saving: 293.pdb	minE:-126.1666364043846
+Saving: 292.pdb	minE:-126.18656624147019
+Saving: 291.pdb	minE:-126.19726346978399
+Saving: 290.pdb	minE:-126.20888336805538
+Saving: 289.pdb	minE:-126.2097767968001
+Saving: 288.pdb	minE:-126.2098123338287
+Saving: 287.pdb	minE:-126.21597322753246
+Saving: 286.pdb	minE:-126.23355351884021
+Saving: 285.pdb	minE:-126.2393027416924
+Saving: 284.pdb	minE:-126.2430856387873
+Saving: 283.pdb	minE:-126.24376458117075
+Saving: 282.pdb	minE:-126.25483655031803
+Saving: 281.pdb	minE:-126.26075505669775
+Saving: 280.pdb	minE:-126.26122140976577
+Saving: 279.pdb	minE:-126.26288407977697
+Saving: 278.pdb	minE:-126.26332733359243
+Saving: 277.pdb	minE:-126.26828642306839
+Saving: 276.pdb	minE:-126.27121654503006
+Saving: 275.pdb	minE:-126.27465812334546
+Saving: 274.pdb	minE:-126.28888562161484
+Saving: 273.pdb	minE:-126.30593912711737
+Saving: 272.pdb	minE:-126.3069120355091
+Saving: 271.pdb	minE:-126.30748221322747
+Saving: 270.pdb	minE:-126.31454742754349
+Saving: 269.pdb	minE:-126.3182323060336
+Saving: 268.pdb	minE:-126.3204837499224
+Saving: 267.pdb	minE:-126.3218543790627
+Saving: 266.pdb	minE:-126.32918588259471
+Saving: 265.pdb	minE:-126.33250261689852
+Saving: 264.pdb	minE:-126.33306998609598
+Saving: 263.pdb	minE:-126.34089010001503
+Saving: 262.pdb	minE:-126.3431494133703
+Saving: 261.pdb	minE:-126.34746872938234
+Saving: 260.pdb	minE:-126.34992376413436
+Saving: 259.pdb	minE:-126.35183102717556
+Saving: 258.pdb	minE:-126.35257403691173
+Saving: 257.pdb	minE:-126.35872243904143
+Saving: 256.pdb	minE:-126.3629415691839
+Saving: 255.pdb	minE:-126.36398784146687
+Saving: 254.pdb	minE:-126.37062750955354
+Saving: 253.pdb	minE:-126.37127564067526
+Saving: 252.pdb	minE:-126.3721210574302
+Saving: 251.pdb	minE:-126.37656712690844
+Saving: 250.pdb	minE:-126.37971292214417
+Saving: 249.pdb	minE:-126.3802310966336
+Saving: 248.pdb	minE:-126.38205068589807
+Saving: 247.pdb	minE:-126.38232809767004
+Saving: 246.pdb	minE:-126.38470694271746
+Saving: 245.pdb	minE:-126.39192173288254
+Saving: 244.pdb	minE:-126.39213744028206
+Saving: 243.pdb	minE:-126.39415240761738
+Saving: 242.pdb	minE:-126.3942067639959
+Saving: 241.pdb	minE:-126.40835118770889
+Saving: 240.pdb	minE:-126.41228596502307
+Saving: 239.pdb	minE:-126.41509113805273
+Saving: 238.pdb	minE:-126.42257895143564
+Saving: 237.pdb	minE:-126.42387839239086
+Saving: 236.pdb	minE:-126.43014627094763
+Saving: 235.pdb	minE:-126.43205600564997
+Saving: 234.pdb	minE:-126.43542816604722
+Saving: 233.pdb	minE:-126.44155283395486
+Saving: 232.pdb	minE:-126.44759738032863
+Saving: 231.pdb	minE:-126.45095688689347
+Saving: 230.pdb	minE:-126.45525343235815
+Saving: 229.pdb	minE:-126.45531784765359
+Saving: 228.pdb	minE:-126.4711763209555
+Saving: 227.pdb	minE:-126.47287012910684
+Saving: 226.pdb	minE:-126.48319712774588
+Saving: 225.pdb	minE:-126.49238757287034
+Saving: 224.pdb	minE:-126.49651500813894
+Saving: 223.pdb	minE:-126.4968491903241
+Saving: 222.pdb	minE:-126.50085156953705
+Saving: 221.pdb	minE:-126.5019917300709
+Saving: 220.pdb	minE:-126.50415192679407
+Saving: 219.pdb	minE:-126.50803970640035
+Saving: 218.pdb	minE:-126.51645620639965
+Saving: 217.pdb	minE:-126.53916360161267
+Saving: 216.pdb	minE:-126.54015004205098
+Saving: 215.pdb	minE:-126.54933128793411
+Saving: 214.pdb	minE:-126.55990341365458
+Saving: 213.pdb	minE:-126.55996739694663
+Saving: 212.pdb	minE:-126.56252004362253
+Saving: 211.pdb	minE:-126.57907790766967
+Saving: 210.pdb	minE:-126.57971173527531
+Saving: 209.pdb	minE:-126.59306976914971
+Saving: 208.pdb	minE:-126.59829809603846
+Saving: 207.pdb	minE:-126.60546057522564
+Saving: 206.pdb	minE:-126.60598643922168
+Saving: 205.pdb	minE:-126.6092209513306
+Saving: 204.pdb	minE:-126.61715666974675
+Saving: 203.pdb	minE:-126.63586295466948
+Saving: 202.pdb	minE:-126.63915065844427
+Saving: 201.pdb	minE:-126.64334343196603
+Saving: 200.pdb	minE:-126.64782236584887
+Saving: 199.pdb	minE:-126.6516440549828
+Saving: 198.pdb	minE:-126.65396214484099
+Saving: 197.pdb	minE:-126.65617015123357
+Saving: 196.pdb	minE:-126.65732454915064
+Saving: 195.pdb	minE:-126.66848834980473
+Saving: 194.pdb	minE:-126.66865808286667
+Saving: 193.pdb	minE:-126.66897779567097
+Saving: 192.pdb	minE:-126.67370438389324
+Saving: 191.pdb	minE:-126.68040592584902
+Saving: 190.pdb	minE:-126.68122024154752
+Saving: 189.pdb	minE:-126.6826211843582
+Saving: 188.pdb	minE:-126.68629555023952
+Saving: 187.pdb	minE:-126.68951487944369
+Saving: 186.pdb	minE:-126.69309386570652
+Saving: 185.pdb	minE:-126.70010019364301
+Saving: 184.pdb	minE:-126.7010953904306
+Saving: 183.pdb	minE:-126.70487821586417
+Saving: 182.pdb	minE:-126.70579551748773
+Saving: 181.pdb	minE:-126.71288350566914
+Saving: 180.pdb	minE:-126.71344086901237
+Saving: 179.pdb	minE:-126.7138543351482
+Saving: 178.pdb	minE:-126.7198852058323
+Saving: 177.pdb	minE:-126.72146706105761
+Saving: 176.pdb	minE:-126.72613230732622
+Saving: 175.pdb	minE:-126.73319413047813
+Saving: 174.pdb	minE:-126.77550964919843
+Saving: 173.pdb	minE:-126.78891292519094
+Saving: 172.pdb	minE:-126.78902598751287
+Saving: 171.pdb	minE:-126.8084112284917
+Saving: 170.pdb	minE:-126.80862684515103
+Saving: 169.pdb	minE:-126.81861907990128
+Saving: 168.pdb	minE:-126.82098696128875
+Saving: 167.pdb	minE:-126.82335858475267
+Saving: 166.pdb	minE:-126.82369234638614
+Saving: 165.pdb	minE:-126.82425882797506
+Saving: 164.pdb	minE:-126.8287783642742
+Saving: 163.pdb	minE:-126.82924768969465
+Saving: 162.pdb	minE:-126.82932774342899
+Saving: 161.pdb	minE:-126.82975274816087
+Saving: 160.pdb	minE:-126.83922102042911
+Saving: 159.pdb	minE:-126.87189838042377
+Saving: 158.pdb	minE:-126.87701768998241
+Saving: 157.pdb	minE:-126.88543141042595
+Saving: 156.pdb	minE:-126.89374502534767
+Saving: 155.pdb	minE:-126.91435816189855
+Saving: 154.pdb	minE:-126.91609572737872
+Saving: 153.pdb	minE:-126.91646155324148
+Saving: 152.pdb	minE:-126.9229972993806
+Saving: 151.pdb	minE:-126.9243147875676
+Saving: 150.pdb	minE:-126.92435264277773
+Saving: 149.pdb	minE:-126.93045704364013
+Saving: 148.pdb	minE:-126.93248011731123
+Saving: 147.pdb	minE:-126.93617006956174
+Saving: 146.pdb	minE:-126.93653865416292
+Saving: 145.pdb	minE:-126.940910918224
+Saving: 144.pdb	minE:-126.94531405882333
+Saving: 143.pdb	minE:-126.9767730290462
+Saving: 142.pdb	minE:-126.98410022582479
+Saving: 141.pdb	minE:-126.98716454422734
+Saving: 140.pdb	minE:-126.98786112502785
+Saving: 139.pdb	minE:-126.99606039561064
+Saving: 138.pdb	minE:-126.99749280708511
+Saving: 137.pdb	minE:-126.99827690205143
+Saving: 136.pdb	minE:-126.99974612691622
+Saving: 135.pdb	minE:-127.00169493221614
+Saving: 134.pdb	minE:-127.00812194449813
+Saving: 133.pdb	minE:-127.00954585189561
+Saving: 132.pdb	minE:-127.00963004713992
+Saving: 131.pdb	minE:-127.02023562242985
+Saving: 130.pdb	minE:-127.02240665081837
+Saving: 129.pdb	minE:-127.02456322994709
+Saving: 128.pdb	minE:-127.03593495490733
+Saving: 127.pdb	minE:-127.03826020971528
+Saving: 126.pdb	minE:-127.04055320539112
+Saving: 125.pdb	minE:-127.04842229842933
+Saving: 124.pdb	minE:-127.05583514590367
+Saving: 123.pdb	minE:-127.05685281054554
+Saving: 122.pdb	minE:-127.06345833039046
+Saving: 121.pdb	minE:-127.06671158767128
+Saving: 120.pdb	minE:-127.07070813793624
+Saving: 119.pdb	minE:-127.07558992471965
+Saving: 118.pdb	minE:-127.07886848886218
+Saving: 117.pdb	minE:-127.08539898233519
+Saving: 116.pdb	minE:-127.09744237984461
+Saving: 115.pdb	minE:-127.10405668802699
+Saving: 114.pdb	minE:-127.10477625958507
+Saving: 113.pdb	minE:-127.10554913919711
+Saving: 112.pdb	minE:-127.12938077594544
+Saving: 111.pdb	minE:-127.14274361606516
+Saving: 110.pdb	minE:-127.1791664770326
+Saving: 109.pdb	minE:-127.18879159768926
+Saving: 108.pdb	minE:-127.1928870122247
+Saving: 107.pdb	minE:-127.19448847983205
+Saving: 106.pdb	minE:-127.19693690747124
+Saving: 105.pdb	minE:-127.20903877634265
+Saving: 104.pdb	minE:-127.21325910606342
+Saving: 103.pdb	minE:-127.21643104202411
+Saving: 102.pdb	minE:-127.24422419269084
+Saving: 101.pdb	minE:-127.25468748061235
+Saving: 100.pdb	minE:-127.26200775913054
+Saving: 99.pdb	minE:-127.2659923579672
+Saving: 98.pdb	minE:-127.29120167029066
+Saving: 97.pdb	minE:-127.29173925726835
+Saving: 96.pdb	minE:-127.30376282433966
+Saving: 95.pdb	minE:-127.30378931126896
+Saving: 94.pdb	minE:-127.30626973303907
+Saving: 93.pdb	minE:-127.31015042884238
+Saving: 92.pdb	minE:-127.32870433867458
+Saving: 91.pdb	minE:-127.32904947783192
+Saving: 90.pdb	minE:-127.33013572832172
+Saving: 89.pdb	minE:-127.33272164898952
+Saving: 88.pdb	minE:-127.33496270473117
+Saving: 87.pdb	minE:-127.33946044302155
+Saving: 86.pdb	minE:-127.34057744247221
+Saving: 85.pdb	minE:-127.35411789119709
+Saving: 84.pdb	minE:-127.36434825715531
+Saving: 83.pdb	minE:-127.38882615912175
+Saving: 82.pdb	minE:-127.39302566485262
+Saving: 81.pdb	minE:-127.40662793378104
+Saving: 80.pdb	minE:-127.40727895601825
+Saving: 79.pdb	minE:-127.4497036386847
+Saving: 78.pdb	minE:-127.45147072574636
+Saving: 77.pdb	minE:-127.52658307555143
+Saving: 76.pdb	minE:-127.53530962912004
+Saving: 75.pdb	minE:-127.57100239115621
+Saving: 74.pdb	minE:-127.58386052430416
+Saving: 73.pdb	minE:-127.58558465761601
+Saving: 72.pdb	minE:-127.5863366197606
+Saving: 71.pdb	minE:-127.60110056406643
+Saving: 70.pdb	minE:-127.62125923234629
+Saving: 69.pdb	minE:-127.62620736741678
+Saving: 68.pdb	minE:-127.62829243070203
+Saving: 67.pdb	minE:-127.63079587186866
+Saving: 66.pdb	minE:-127.63944632854188
+Saving: 65.pdb	minE:-127.63976455590051
+Saving: 64.pdb	minE:-127.6399754079385
+Saving: 63.pdb	minE:-127.65210605440231
+Saving: 62.pdb	minE:-127.66227233025992
+Saving: 61.pdb	minE:-127.67578762825673
+Saving: 60.pdb	minE:-127.68658684651024
+Saving: 59.pdb	minE:-127.68679648873396
+Saving: 58.pdb	minE:-127.68742034387253
+Saving: 57.pdb	minE:-127.69397530401667
+Saving: 56.pdb	minE:-127.70773583126376
+Saving: 55.pdb	minE:-127.74183382084334
+Saving: 54.pdb	minE:-127.77591320758933
+Saving: 53.pdb	minE:-127.80193775470468
+Saving: 52.pdb	minE:-127.85304316915256
+Saving: 51.pdb	minE:-127.86963705961347
+Saving: 50.pdb	minE:-127.88819817488618
+Saving: 49.pdb	minE:-127.90712327716793
+Saving: 48.pdb	minE:-127.90933519426176
+Saving: 47.pdb	minE:-127.92030477563765
+Saving: 46.pdb	minE:-127.92455541472037
+Saving: 45.pdb	minE:-127.9555944717604
+Saving: 44.pdb	minE:-127.96504737681127
+Saving: 43.pdb	minE:-127.98739012562919
+Saving: 42.pdb	minE:-127.99329145404494
+Saving: 41.pdb	minE:-128.02260020416728
+Saving: 40.pdb	minE:-128.02724101869353
+Saving: 39.pdb	minE:-128.03189237445872
+Saving: 38.pdb	minE:-128.09479357389085
+Saving: 37.pdb	minE:-128.1704612711533
+Saving: 36.pdb	minE:-128.22842283690395
+Saving: 35.pdb	minE:-128.22938485315086
+Saving: 34.pdb	minE:-128.23161066651997
+Saving: 33.pdb	minE:-128.23179295388388
+Saving: 32.pdb	minE:-128.25951222441287
+Saving: 31.pdb	minE:-128.30073004535845
+Saving: 30.pdb	minE:-128.31868327435464
+Saving: 29.pdb	minE:-128.32852052731886
+Saving: 28.pdb	minE:-128.36069970703963
+Saving: 27.pdb	minE:-128.4336106996775
+Saving: 26.pdb	minE:-128.46678256404422
+Saving: 25.pdb	minE:-128.51001914574454
+Saving: 24.pdb	minE:-128.51226267575856
+Saving: 23.pdb	minE:-128.55273193017487
+Saving: 22.pdb	minE:-128.56631702604736
+Saving: 21.pdb	minE:-128.59258118878614
+Saving: 20.pdb	minE:-128.62603607981848
+Saving: 19.pdb	minE:-128.67027284897364
+Saving: 18.pdb	minE:-128.8165788918448
+Saving: 17.pdb	minE:-128.85935388926083
+Saving: 16.pdb	minE:-128.89208912124528
+Saving: 15.pdb	minE:-128.90617422769023
+Saving: 14.pdb	minE:-128.9446921873522
+Saving: 13.pdb	minE:-128.94483229136307
+Saving: 12.pdb	minE:-128.95749491921558
+Saving: 11.pdb	minE:-128.99161818990737
+Saving: 10.pdb	minE:-129.1691380323823
+Saving: 9.pdb	minE:-129.1850601982784
+Saving: 8.pdb	minE:-129.22299252138336
+Saving: 7.pdb	minE:-129.22452273715962
+Saving: 6.pdb	minE:-129.22723002122348
+Saving: 5.pdb	minE:-129.236053143619
+Saving: 4.pdb	minE:-129.27110582419397
+Saving: 3.pdb	minE:-129.5281794935903
+Saving: 2.pdb	minE:-129.79046054649206
+Saving: 1.pdb	minE:-129.87997341525295
+Saving: 0.pdb	minE:-130.15536952835402
+
+
+Parallel2: Completed partition function for HIE-296 GLU-297 ILE-301 SER-302 GLU-317 HIE-319 GLN-322 K04-9 (continuous)
+
+
+K* calculations computed: 2
+Total # sequences: 2
+K* conformations processed: 15152
+Total # of conformations in search space: 520739
+K* running time: 13975 seconds
+
+Total OSPREY execution time: 232 minutes.
+OSPREY finished

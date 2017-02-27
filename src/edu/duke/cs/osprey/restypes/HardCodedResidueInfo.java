@@ -29,7 +29,8 @@ public class HardCodedResidueInfo {
     
     
     public static String[] possibleBBAtoms = new String[] {
-        "N", "H", "CA", "C", "O", "OXT", "H1", "H2", "H3"
+        //"N", "H", "CA", "C", "O", "OXT", "H1", "H2", "H3"
+        "N", "H", "CA", "C", "O", "OXT" // for non AA design
     };
     
     public static Set<String> possibleBBAtomsLookup;
@@ -136,7 +137,9 @@ public class HardCodedResidueInfo {
         int mutAtoms1[] = getTemplateMutAtoms(template1);
         int mutAtoms2[] = getTemplateMutAtoms(template2);
         
-        if(template1.name.equalsIgnoreCase("PRO") || template2.name.equalsIgnoreCase("PRO")){
+        if(template1.name.equalsIgnoreCase("PRO") || template2.name.equalsIgnoreCase("PRO")||
+           template1.name.startsWith("P0")||template2.name.startsWith("P0")||
+           template1.name.startsWith("P1")||template2.name.startsWith("P1")){
             mutAtoms1 = getTemplateProMutAtoms(template1);
             mutAtoms2 = getTemplateProMutAtoms(template2);
         }
@@ -169,7 +172,8 @@ public class HardCodedResidueInfo {
         int N = template.templateRes.getAtomIndexByName("N");
         int CA = template.templateRes.getAtomIndexByName("CA");
         
-        if(template.name.equalsIgnoreCase("PRO")){//the PRO itself...use CD
+        if(template.name.equalsIgnoreCase("PRO")||template.name.startsWith("P0")||
+           template.name.startsWith("P1")){//the PRO itself...use CD
             int CD = template.templateRes.getAtomIndexByName("CD");
             return new int[] {CA,N,CD};
         }
@@ -254,7 +258,7 @@ public class HardCodedResidueInfo {
         if(res1.template==null || res2.template==null) {
             throw new RuntimeException("ERROR: Trying to peptide-bond residue without template");
         }
-        if( (hasAminoAcidBB(res1) && hasAminoAcidBB(res2)) ){//can only peptide-bond amino acids
+        if( ((hasAminoAcidBB(res1)||res1.fullName.startsWith("ACE")) && hasAminoAcidBB(res2)) ){//can only peptide-bond amino acids
             
             int CIndex = res1.getAtomIndexByName("C");
             int NIndex = res2.getAtomIndexByName("N");

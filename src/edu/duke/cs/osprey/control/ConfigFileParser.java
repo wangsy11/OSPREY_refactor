@@ -371,6 +371,7 @@ public class ConfigFileParser {
         //load template coordinates (necessary for all residues we might want to mutate to)
         //these will be matched to templates
         resTemplates.loadTemplateCoords("all_amino_coords.in");
+        resTemplates.loadTemplateCoords("all_nuc94_and_gr_coords.in");
         
         //load rotamer libraries; the names of residues as they appear in the rotamer library file will be matched to templates
         boolean dunbrackRots = params.getBool("UseDunbrackRotamers");

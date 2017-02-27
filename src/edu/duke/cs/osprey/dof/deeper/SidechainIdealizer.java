@@ -35,6 +35,10 @@ public class SidechainIdealizer {
     //This function rotates the sidechain as a rigid body about CA
     public static void idealizeSidechain(Residue res){
 
+      if(!(res.template.name.equalsIgnoreCase("TXP")||res.template.name.equalsIgnoreCase("ACE")||
+           res.template.name.startsWith("P0")||res.template.name.startsWith("P1")))
+        {
+        
         //Coordinates of key atoms in the residue
         double NCoord[] = res.getCoordsByAtomName("N");
         double CACoord[] = res.getCoordsByAtomName("CA");
@@ -141,6 +145,8 @@ public class SidechainIdealizer {
         if(res.template.name.equalsIgnoreCase("PRO"))//Idealize the CG, CD and ring hydrogen positions
             idealizeProRing(res);
         //For proline, the above sidechain idealization operations do not move CD
+        
+        }
     }
     
     

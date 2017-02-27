@@ -1,0 +1,4 @@
+Seq ID	Sequence	K* Score (Log10)	UB(K*) Score (Log10)	Total # Confs.	Complex Partition Function	Complex Epsilon	Complex # Confs.	Protein Partition Function	Protein Epsilon	Protein # Confs.	Ligand Partition Function	Ligand Epsilon	Ligand # Confs.	# Seqs Created	# Seqs Completed	Time (sec)
+
+0	HIE-296 GLU-297 ILE-301 SER-302 GLU-317 HIE-319 GLN-322 ILE-9	9.71683528379752	9.71683528379752	1186	4.2586E89	0.67997348	878	1.0570E75	0.67855071	307	7.7333E4	0.63826335	1	1	1	331
+1	HIE-296 GLU-297 ILE-301 SER-302 GLU-317 HIE-319 GLN-322 K04-9	11.586642760794646	11.586642760794646	14273	1.6048E96	0.6799634	13964	1.0570E75	0.67855071	307	3.9328E9	0.6628746	2	2	2	13975

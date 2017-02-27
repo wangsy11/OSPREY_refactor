@@ -1,0 +1,16 @@
+#!/bin/csh -f
+
+set jdep=/home/home3/sw283/OSPREY_refactor_Goke/OSPREY_refactor-master/lib
+set jars=$jdep/architecture-rules-3.0.0-M1.jar:$jdep/colt-1.2.0.jar:$jdep/commons-beanutils-1.6.jar:$jdep/commons-collections-2.1.jar:$jdep/commons-digester-1.6.jar:$jdep/commons-io-1.4.jar:$jdep/commons-lang-2.5.jar:$jdep/commons-logging-1.1.1.jar:$jdep/commons-math3-3.0.jar:$jdep/commons-math3-3.3.jar:$jdep/jdepend-2.9.1.jar:$jdep/joptimizer.jar:$jdep/junit-3.8.1.jar:$jdep/log4j-1.2.14.jar:$jdep/ojalgo-35.0.jar:$jdep/xml-apis-1.0.b2.jar
+
+set curdir=`pwd`
+set tempdir='/home/home3/sw283/OSPREY_refactor_Goke/OSPREY_refactor-master/siyu/temp'
+rm -r $tempdir/*
+mkdir -p $tempdir
+set javaDir=/home/home3/sw283/OSPREY_refactor_Goke/OSPREY_refactor-master/build/classes
+
+set hostname=`hostname`
+setenv GRB_LICENSE_FILE "/home/home1/kroberts/gurobiLicenses/$hostname/gurobi.lic"
+setenv LD_LIBRARY_PATH /usr/project/dlab/Code/Other-people2/gurobi560/linux64/lib:/usr/pkg/mpiJava-1.2.5-mpich2-smpd/lib:/usr/pkg/mpich2-1.0.7-smpd-shared/lib
+
+java -cp ${javaDir}:$jars -Xms4g -Xmx150g -Xss256m edu.duke.cs.osprey.control.Main -c KStar.cfg findGMEC System.cfg DEE.cfg > $tempdir/log.out

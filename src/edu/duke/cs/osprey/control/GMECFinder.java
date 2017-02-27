@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Set;
 
 import edu.duke.cs.osprey.astar.ConfTree;
+import edu.duke.cs.osprey.astar.conf.RCs;
 import edu.duke.cs.osprey.confspace.ConfSearch;
 import edu.duke.cs.osprey.confspace.ConfSearch.EnergiedConf;
 import edu.duke.cs.osprey.confspace.ConfSearch.ScoredConf;
@@ -77,6 +78,12 @@ public class GMECFinder {
     private boolean logConfsToConsole;
     
     private double lowestBound;
+    
+    private boolean outputRotLib=false;
+    private String RotLibPos;
+    private int RotLibResPos;
+    private String RotLibRes;
+    private String grotFile;
     
     public GMECFinder() {
         
@@ -167,6 +174,18 @@ public class GMECFinder {
         
         // NOTE: we'll change some of these params before actually running pruning
         stericThresh = cfp.params.getDouble("StericThresh");
+        
+        outputRotLib=cfp.params.getBool("OutputRotLib");
+        
+        if(outputRotLib){
+        
+        RotLibPos = cfp.params.getValue("OUTPUTROTLIBPOS");
+        RotLibResPos=Integer.parseInt(RotLibPos);
+        RotLibRes = cfp.getAllowedAAs().get(RotLibResPos).get(0);
+        grotFile = cfp.params.getValue("GROTFILE");
+        
+        }
+        
         
         pruningControl = new PruningControl(
             searchSpace,
@@ -288,6 +307,22 @@ public class GMECFinder {
         } catch (UnsupportedOperationException ex) {
             // conf tree doesn't support it, no big deal
         }
+        
+        
+        RCs rcs = new RCs(searchSpace.pruneMat);
+            
+            
+        if(outputRotLib){     
+            
+            //rotLibWriter.writeRotLibFile("LovellRotamer.dat", rcs.get(RotLibResPos), RotLibRes);
+
+            rotLibWriter.writeRotLibFile(grotFile, rcs.get(RotLibResPos), RotLibRes);
+            //only print out rotamer lib for one kind of side chain at one positioneach time
+            //put generic rotamer list all in the grotfile
+        }
+        //output the rotamer library after pruning (for non-natural side chain)
+        
+        
         ScoredConf minScoreConf = confSearch.nextConf();
         if (minScoreConf == null) {
             
