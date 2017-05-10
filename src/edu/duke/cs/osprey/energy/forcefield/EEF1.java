@@ -98,7 +98,7 @@ public class EEF1 implements Serializable {
 	//Variables to store the EEF1 solvation paramaters;
 	//These values are specific to eef1parm.dat, and may have to be modified for different
 	//		versions of the parameter file
-	final int numAtTypesEEF1 = 17;
+	final int numAtTypesEEF1 = 23;  //Siyu: increased for NNAA design
 	String groupEEF1names[] = new String[numAtTypesEEF1];
 	String atTypeEEF1names[] = new String[numAtTypesEEF1];
 	double atEEF1Vol[] = new double[numAtTypesEEF1];
@@ -206,7 +206,136 @@ public class EEF1 implements Serializable {
                 
                 boolean aromatic = isAromatic(at1);
 		int numBoundH = getNumBoundH(at1);
-		
+                
+                
+                
+                
+                //Siyu: start from here, find solvation group index for special atoms on non-natural AA case by case
+                /************************************************************************************************************************/
+                
+                if ( AAname.equalsIgnoreCase("K02") && 
+					( at1.name.equalsIgnoreCase("C03") || at1.name.equalsIgnoreCase("C04") 
+						 || at1.name.equalsIgnoreCase("C07") ) )
+				return findSolvGroup("CR1E"); 
+                
+                if ( AAname.equalsIgnoreCase("K02") && at1.name.equalsIgnoreCase("C06") ) 
+                                return findSolvGroup("CR"); 
+                
+                if ( AAname.equalsIgnoreCase("K03") && ( at1.name.equalsIgnoreCase("C01") || at1.name.equalsIgnoreCase("C03") 
+						 || at1.name.equalsIgnoreCase("C04") ) ) 
+                                return findSolvGroup("CR"); 
+                
+                if ( AAname.equalsIgnoreCase("K03") && ( at1.name.equalsIgnoreCase("C02") || at1.name.equalsIgnoreCase("C05") 
+						 || at1.name.equalsIgnoreCase("C06") || at1.name.equalsIgnoreCase("C07") 
+                                                 || at1.name.equalsIgnoreCase("C08") ) ) 
+                                return findSolvGroup("CR1E");                 
+                
+                if ( AAname.equalsIgnoreCase("K03") && at1.name.equalsIgnoreCase("O02")  ) 
+                                return findSolvGroup("OA"); 
+                
+                if ( AAname.equalsIgnoreCase("K04") && ( at1.name.equalsIgnoreCase("C01") || at1.name.equalsIgnoreCase("C04") ) ) 
+                                return findSolvGroup("CR");                 
+
+                if ( AAname.equalsIgnoreCase("K04") && ( at1.name.equalsIgnoreCase("C02") || at1.name.equalsIgnoreCase("C03") 
+						 || at1.name.equalsIgnoreCase("C06") || at1.name.equalsIgnoreCase("C05")  ) ) 
+                                return findSolvGroup("CR1E");                   
+                
+                if ( AAname.equalsIgnoreCase("K04") && at1.name.equalsIgnoreCase("N01")  ) 
+                                return findSolvGroup("NR");                 
+                
+                if ( AAname.equalsIgnoreCase("K05") && ( at1.name.equalsIgnoreCase("C01") || at1.name.equalsIgnoreCase("C04") ) ) 
+                                return findSolvGroup("CR");                 
+                
+                if ( AAname.equalsIgnoreCase("K05") && ( at1.name.equalsIgnoreCase("C02") || at1.name.equalsIgnoreCase("C03") 
+						 || at1.name.equalsIgnoreCase("C05") || at1.name.equalsIgnoreCase("C06")  ) ) 
+                                return findSolvGroup("CR1E");      
+
+                if ( AAname.equalsIgnoreCase("K07") && ( at1.name.equalsIgnoreCase("C01") || at1.name.equalsIgnoreCase("C05") 
+                                                 || at1.name.equalsIgnoreCase("C07") || at1.name.equalsIgnoreCase("C12")) ) 
+                                return findSolvGroup("CR"); 
+
+                if ( AAname.equalsIgnoreCase("K07") && ( at1.name.equalsIgnoreCase("C02") || at1.name.equalsIgnoreCase("C03") 
+						 || at1.name.equalsIgnoreCase("C04") || at1.name.equalsIgnoreCase("C06")
+                                                 || at1.name.equalsIgnoreCase("C08") || at1.name.equalsIgnoreCase("C09")
+                                                 || at1.name.equalsIgnoreCase("C10") || at1.name.equalsIgnoreCase("C11")) ) 
+                                return findSolvGroup("CR1E");  
+               
+                if ( AAname.equalsIgnoreCase("K08") && (at1.name.equalsIgnoreCase("C03") || at1.name.equalsIgnoreCase("C06")) )
+                                return findSolvGroup("CR");  
+
+                if ( AAname.equalsIgnoreCase("K08") && (at1.name.equalsIgnoreCase("C04") || at1.name.equalsIgnoreCase("C05")) )
+                                return findSolvGroup("CR1E");  		
+                
+                if ( AAname.equalsIgnoreCase("K08") &&  at1.name.equalsIgnoreCase("O05") ) 
+                                return findSolvGroup("OA");             
+                 
+                if ( AAname.equalsIgnoreCase("K08") && (at1.name.equalsIgnoreCase("O03") || at1.name.equalsIgnoreCase("O04")) )
+                                return findSolvGroup("ON");  		               
+                
+                if ( AAname.equalsIgnoreCase("K08") &&  at1.name.equalsIgnoreCase("N01") ) 
+                                return findSolvGroup("NO");                      
+                
+                if ( AAname.equalsIgnoreCase("K09") && ( at1.name.equalsIgnoreCase("C01") || at1.name.equalsIgnoreCase("C03") 
+						 || at1.name.equalsIgnoreCase("C05")  ) ) 
+                                return findSolvGroup("CR");                  
+                
+                if ( AAname.equalsIgnoreCase("K09") && ( at1.name.equalsIgnoreCase("C02") || at1.name.equalsIgnoreCase("C04") 
+						 || at1.name.equalsIgnoreCase("C06")  ) ) 
+                                return findSolvGroup("CR1E");      
+                
+                if ( AAname.equalsIgnoreCase("K10") &&  at1.name.equalsIgnoreCase("C03")  ) 
+                                return findSolvGroup("C");                      
+                
+                if ( AAname.equalsIgnoreCase("K10") &&  at1.name.equalsIgnoreCase("N01")  ) 
+                                return findSolvGroup("NC");       
+                
+                
+                if ( AAname.equalsIgnoreCase("TXP") &&  ( at1.name.equalsIgnoreCase("C01") || at1.name.equalsIgnoreCase("CD2") 
+						 || at1.name.equalsIgnoreCase("CE2")  || at1.name.equalsIgnoreCase("CH2")  )  ) 
+                                return findSolvGroup("CR");                       
+                
+                if ( AAname.equalsIgnoreCase("TXP") &&  ( at1.name.equalsIgnoreCase("CG") || at1.name.equalsIgnoreCase("CE3") 
+						 || at1.name.equalsIgnoreCase("C06")  || at1.name.equalsIgnoreCase("C11")  )  ) 
+                                return findSolvGroup("CR1E");                      
+                
+                
+                if ( (AAname.equalsIgnoreCase("P01") || AAname.equalsIgnoreCase("P02") ||AAname.equalsIgnoreCase("P04") ) 
+                        &&   at1.name.equalsIgnoreCase("C4")   ) 
+                           return findSolvGroup("CR");                       
+                
+                if ( (AAname.equalsIgnoreCase("P01") || AAname.equalsIgnoreCase("P02") ||AAname.equalsIgnoreCase("P04"))
+                        &&  ( at1.name.equalsIgnoreCase("C1") || at1.name.equalsIgnoreCase("C2") 
+						 || at1.name.equalsIgnoreCase("C3")  || at1.name.equalsIgnoreCase("C5") 
+                                                 || at1.name.equalsIgnoreCase("C6") )  ) 
+                                return findSolvGroup("CR1E");     
+
+                if ( AAname.equalsIgnoreCase("P07") &&   at1.name.equalsIgnoreCase("C2")   ) 
+                           return findSolvGroup("CR");                       
+                
+                if ( AAname.equalsIgnoreCase("P07") &&  ( at1.name.equalsIgnoreCase("C4") || at1.name.equalsIgnoreCase("C5") 
+						 || at1.name.equalsIgnoreCase("C6")  || at1.name.equalsIgnoreCase("C7") 
+                                                 || at1.name.equalsIgnoreCase("C8") )  ) 
+                                return findSolvGroup("CR1E");     
+                
+                if ( AAname.equalsIgnoreCase("P11") &&   at1.name.equalsIgnoreCase("F1")   ) 
+                           return findSolvGroup("F");        
+                
+                if ( AAname.equalsIgnoreCase("P14") &&   at1.name.equalsIgnoreCase("O1")   ) 
+                           return findSolvGroup("OA");
+                
+                if ((AAname.startsWith("P0") ||AAname.startsWith("P1")) && elementType.equalsIgnoreCase("N")) 
+                           return findSolvGroup("N");
+                
+                if (elementType.equalsIgnoreCase("Cl")) 
+                        return findSolvGroup("CL");
+                
+               
+                
+                //non-natural AA case special ends here
+                /************************************************************************************************************************/
+                
+                
+                
 		if (elementType.equalsIgnoreCase("C")) {
 			
 			if ( at1.name.equalsIgnoreCase("CG") && 
@@ -238,7 +367,7 @@ public class EEF1 implements Serializable {
 		}
 		else if (elementType.equalsIgnoreCase("N")) {
 			
-			if (AAname.equalsIgnoreCase("PRO")) // backbone N of PRO, so N group
+			if (AAname.equalsIgnoreCase("PRO")) // backbone N of PRO (or PRO analog), so N group
 				return findSolvGroup("N");
 			
 			else if (numBoundH==1) // any N with 1 H
@@ -277,9 +406,9 @@ public class EEF1 implements Serializable {
 			
 			else // any other S, so S group
 				return findSolvGroup("S");
-		}
+		}                      
 		else //group not found
-			return -1;
+			return -1;             
 	}
 	
 	//Find the solvation group index for the group name grName
@@ -332,7 +461,7 @@ public class EEF1 implements Serializable {
 		}
 		
 		if (numBoundO==2)
-			return true;
+			return true; 
 		else
 			return false;
 	}
