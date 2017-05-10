@@ -28,6 +28,7 @@ public class BigForcefieldEnergy implements EnergyFunction.DecomposableByDof, En
 	public static class ParamInfo {
 		
 		// physical constants and constant params
+		public static boolean printWarnings = true;
 		private static final double coulombConstant = 332.0;
 		private static final double solvCutoff = 9.0;
 		
@@ -41,6 +42,7 @@ public class BigForcefieldEnergy implements EnergyFunction.DecomposableByDof, En
 		public final boolean useDistDependentDielectric;
 		public final boolean useHElectrostatics;
 		public final boolean useHVdw;
+		public final boolean useEEF1;
 		
 		public ParamInfo(ForcefieldParams params) {
 			
@@ -63,6 +65,7 @@ public class BigForcefieldEnergy implements EnergyFunction.DecomposableByDof, En
 			this.useDistDependentDielectric = params.distDepDielect;
 			this.useHElectrostatics = params.hElect;
 			this.useHVdw = params.hVDW;
+			this.useEEF1 = params.doSolvationE;
 		}
 	}
 	
@@ -163,20 +166,23 @@ public class BigForcefieldEnergy implements EnergyFunction.DecomposableByDof, En
 				entries.put(type, build(pinfo, type));
 			}
 			
-			// calc the internal solv energy
-			// ie, add up all the dGref terms for all atoms in internal groups
-			SolvParams solvparams = new SolvParams();
 			internalSolvEnergy = 0;
+			if (pinfo.useEEF1) {
 				
-			if (group1 == group2) {
-				for (Atom atom : group1.getAtoms()) {
-					if (!atom.isHydrogen()) {
-						getSolvParams(pinfo, atom, solvparams);
-						internalSolvEnergy += solvparams.dGref;
+				// calc the internal solv energy
+				// ie, add up all the dGref terms for all atoms in internal groups
+				SolvParams solvparams = new SolvParams();
+					
+				if (group1 == group2) {
+					for (Atom atom : group1.getAtoms()) {
+						if (!atom.isHydrogen()) {
+							getSolvParams(pinfo, atom, solvparams);
+							internalSolvEnergy += solvparams.dGref;
+						}
 					}
 				}
+				internalSolvEnergy *= pinfo.params.solvScale;
 			}
-			internalSolvEnergy *= pinfo.params.solvScale;
 			
 			sequenceNumber1 = group1.getSequenceNumber();
 			sequenceNumber2 = group2.getSequenceNumber();
@@ -655,7 +661,9 @@ public class BigForcefieldEnergy implements EnergyFunction.DecomposableByDof, En
 		if (!success) {
 			
 			// if there's no params, don't crash, use defaults instead
-			System.err.println("WARNING: couldn't find solvation parameters for atom type: " + atom.forceFieldType + ", using default values");
+			if(ParamInfo.printWarnings) {
+				System.err.println("WARNING: couldn't find solvation parameters for atom type: " + atom.forceFieldType + ", using default values");
+			}
 			solvparams.dGref = 0;
 			solvparams.dGfree = 0;
 			solvparams.volume = 0;
@@ -882,7 +890,7 @@ public class BigForcefieldEnergy implements EnergyFunction.DecomposableByDof, En
 					vdwEnergy += Aij/r12 - Bij/r6;
 				}
 				
-				if (bothHeavy && inRangeForSolv) {
+				if (pinfo.useEEF1 && bothHeavy && inRangeForSolv) {
 						
 					// read precomputed params
 					double lambda1 = precomputed.get(i9 + 3);

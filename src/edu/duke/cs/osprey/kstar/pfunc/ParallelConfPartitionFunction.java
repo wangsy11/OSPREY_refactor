@@ -18,24 +18,24 @@ import edu.duke.cs.osprey.tools.Stopwatch;
 
 public class ParallelConfPartitionFunction implements PartitionFunction {
 	
-    private EnergyMatrix emat;
-    private PruningMatrix pmat;
-    private ConfSearchFactory confSearchFactory;
-    private ConfEnergyCalculator.Async ecalc;
+    protected EnergyMatrix emat;
+    protected PruningMatrix pmat;
+    protected ConfSearchFactory confSearchFactory;
+    protected ConfEnergyCalculator.Async ecalc;
     
-	private double targetEpsilon;
-	private Status status;
-	private Values values;
-	private BoltzmannCalculator boltzmann;
-	private ConfSearch.Splitter.Stream scoreConfs;
-	private ConfSearch.Splitter.Stream energyConfs;
-	private int numConfsEvaluated;
-	private BigInteger numConfsToScore;
-	private BigDecimal qprimeUnevaluated;
-	private BigDecimal qprimeUnscored;
-	private Stopwatch stopwatch;
-	private boolean isReportingProgress;
-	private ConfListener confListener;
+	protected double targetEpsilon;
+	protected Status status;
+	protected Values values;
+	protected BoltzmannCalculator boltzmann;
+	protected ConfSearch.Splitter.Stream scoreConfs;
+	protected ConfSearch.Splitter.Stream energyConfs;
+	protected int numConfsEvaluated;
+	protected BigInteger numConfsToScore;
+	protected BigDecimal qprimeUnevaluated;
+	protected BigDecimal qprimeUnscored;
+	protected Stopwatch stopwatch;
+	protected boolean isReportingProgress;
+	protected ConfListener confListener;
 	
 	public ParallelConfPartitionFunction(EnergyMatrix emat, PruningMatrix pmat, ConfSearchFactory confSearchFactory, ConfEnergyCalculator.Async ecalc) {
 		this.emat = emat;
@@ -107,7 +107,7 @@ public class ParallelConfPartitionFunction implements PartitionFunction {
 		stopwatch = new Stopwatch().start();
 	}
 
-	private BigDecimal calcWeightSumUpperBound(ConfSearch tree) {
+	protected BigDecimal calcWeightSumUpperBound(ConfSearch tree) {
 		
 		BigDecimal sum = BigDecimal.ZERO;
 		BigDecimal boundOnAll = BigDecimal.ZERO;
@@ -163,45 +163,57 @@ public class ParallelConfPartitionFunction implements PartitionFunction {
 		int stopAtConf = numConfsEvaluated + maxNumConfs;
 		while (true) {
 			
-			// wait for space to open up Before getting a new conf to minimize
-			ecalc.waitForSpace();
-			
-			// get a conf from the tree
-			// lock though to keep from racing the listener thread on the conf tree
 			ScoredConf conf;
+			
+			// sync to keep from racing the listener thread
 			synchronized (this) {
+			
+				// did we win?
+				boolean hitEpsilonTarget = values.getEffectiveEpsilon() <= targetEpsilon;
+				if (hitEpsilonTarget) {
+					status = Status.Estimated;
+					break;
+				}
 				
-				// should we keep going?
+				// should we stop anyway?
 				if (!status.canContinue() || numConfsEvaluated >= stopAtConf) {
 					break;
 				}
 				
+				// try another conf
 				conf = energyConfs.next();
 				if (conf == null) {
 					status = Status.NotEnoughConformations;
-					return;
+				} else if (Double.isInfinite(conf.getScore())) {
+					status = Status.NotEnoughFiniteEnergies;
+				} else {
+					status = Status.Estimating;
 				}
+			}
+			
+			if (!status.canContinue()) {
+				// we hit a failure condition and need to stop
+				// but wait for current async minimizations to finish in case that pushes over the epsilon target
+				// NOTE: don't wait for finish inside the sync, since that will definitely deadlock
+				ecalc.waitForFinish();
+				continue;
 			}
 			
 			// do the energy calculation asynchronously
 			ecalc.calcEnergyAsync(conf, (EnergiedConf econf) -> {
-					
-				// energy calculation done
 				
-				// this is (potentially) running on a task executor listener thread
-				// so lock to keep from racing the main thread
+				// we're on the listener thread, so sync to keep from racing the main thread
 				synchronized (ParallelConfPartitionFunction.this) {
-				
-					// get the boltzmann weight
-					BigDecimal energyWeight = boltzmann.calc(econf.getEnergy());
-					if (energyWeight.compareTo(BigDecimal.ZERO) == 0) {
-						status = Status.NotEnoughFiniteEnergies;
+					
+					// energy calculation done
+					// if this conf has infinite energy, just ignore it
+					// another later conf could still have finite energy
+					if (Double.isInfinite(econf.getEnergy())) {
 						return;
 					}
 					
 					// update pfunc state
-					numConfsEvaluated++;
-					values.qstar = values.qstar.add(energyWeight);
+					values.qstar = values.qstar.add(boltzmann.calc(econf.getEnergy()));
 					values.qprime = updateQprime(econf);
 					
 					// report progress if needed
@@ -219,10 +231,7 @@ public class ParallelConfPartitionFunction implements PartitionFunction {
 						confListener.onConf(econf);
 					}
 					
-					// update status if needed
-					if (values.getEffectiveEpsilon() <= targetEpsilon) {
-						status = Status.Estimated;
-					}
+					numConfsEvaluated++;
 				}
 			});
 		}
@@ -255,8 +264,8 @@ public class ParallelConfPartitionFunction implements PartitionFunction {
 			qprimeUnscored = scoreWeight.multiply(new BigDecimal(numConfsToScore));
 			
 			// stop if the bound on q' is tight enough
-			double effectiveEpsilon = qprimeUnscored.divide(qprimeUnevaluated.add(qprimeUnscored), RoundingMode.HALF_UP).doubleValue();
-			if (effectiveEpsilon <= 0.01) {
+			double tightness = qprimeUnscored.divide(qprimeUnevaluated.add(qprimeUnscored), RoundingMode.HALF_UP).doubleValue();
+			if (tightness <= 0.01) {
 				break;
 			}
 		}

@@ -1,5 +1,6 @@
 package edu.duke.cs.osprey.multistatekstar;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -12,24 +13,43 @@ import edu.duke.cs.osprey.structure.PDBFileReader;
 import edu.duke.cs.osprey.structure.Residue;
 import edu.duke.cs.osprey.tools.StringParsing;
 
+/**
+ * @author Adegoke Ojewole (ao68@duke.edu)
+ * 
+ */
 public class InputValidation {
 
 	ArrayList<ArrayList<ArrayList<ArrayList<String>>>> AATypeOptions;
-	ArrayList<ArrayList<ArrayList<Integer>>> mutable2StateResNums;
+	ArrayList<ArrayList<ArrayList<Integer>>> state2MutableResNums;
 	
 	public InputValidation(ArrayList<ArrayList<ArrayList<ArrayList<String>>>> AATypeOptions,
-			ArrayList<ArrayList<ArrayList<Integer>>> mutable2StateResNums) {
+			ArrayList<ArrayList<ArrayList<Integer>>> state2MutableResNums) {
 		this.AATypeOptions = AATypeOptions;
-		this.mutable2StateResNums = mutable2StateResNums;
+		this.state2MutableResNums = state2MutableResNums;
 	}
 	
-	public void handleAATypeOptions(int state, int subState, MultiStateConfigFileParser stateCfp) {
+	public void handleObjFcn(ParamSet msParams, LMB objFcn) {
+		if(objFcn.getCoeffs().length != msParams.getInt("NUMSTATES"))
+			throw new RuntimeException("ERROR: the number of OBJFCN coefficients must equal NUMSTATES");
+		for(BigDecimal coeff : objFcn.getCoeffs())
+			if(coeff.compareTo(BigDecimal.ZERO)==0)
+				throw new RuntimeException("ERROR: objective function coefficient cannot be 0");
+	}
+	
+	public void handleConstraints(ParamSet msParams, LMB[] constraints) {
+		for(LMB constr : constraints) {
+			if(constr.getCoeffs().length != msParams.getInt("NUMSTATES"))
+				throw new RuntimeException("ERROR: the number of constraint coefficients must equal NUMSTATES");
+		}
+	}
+	
+	public void handleAATypeOptions(int state, int subState, MSConfigFileParser stateCfp) {
 		//Given the config file parser for a state, make sure AATypeOptions
 		//matches the allowed AA types for this state
 
 		Molecule wtMolec = PDBFileReader.readPDBFile( stateCfp.getParams().getValue("PDBName"), null );
 
-		ArrayList<Integer> mutRes = mutable2StateResNums.get(state).get(subState);
+		ArrayList<Integer> mutRes = state2MutableResNums.get(state).get(subState);
 		ArrayList<ArrayList<String>> subStateAAOptions = stateCfp.getAllowedAAs(mutRes);
 
 		if(AATypeOptions==null) 
@@ -78,57 +98,94 @@ public class InputValidation {
 		}
 	}
 	
+	/**
+	 * must use the same value of DOMINIMIZE for all states
+	 * @param cfps
+	 */
+	public void handleDoMinimize(MSConfigFileParser[] cfps) {
+		boolean doMinimize = cfps[0].getParams().getBool("DOMINIMIZE");
+		for(int state=0;state<cfps.length;++state) {
+			MSConfigFileParser sCfp = cfps[state];
+			if(sCfp==null) continue;
+			ParamSet sParams = sCfp.getParams();
+			
+			boolean imindee = sParams.getBool("IMINDEE");
+			boolean sDoMinimize = sParams.getBool("DOMINIMIZE");
+			if(imindee != sDoMinimize)
+				throw new RuntimeException("ERROR: IMINDEE must have the same value as DOMINIMIZE");
+			
+			if(doMinimize!=sDoMinimize)
+				throw new RuntimeException("ERROR: DOMINIMIZE must have the same value in all states");
+		}
+	}
+	
 	public void handleStateParams(int state, ParamSet sParams, ParamSet msParams) {
 		//parameter sanity check
+		double epsilon = sParams.getDouble("EPSILON");
+		if(epsilon >= 1 || epsilon < 0) 
+			throw new RuntimeException("ERROR: EPSILON must be >= 0 and < 1"); 
+		
 		//check number of constraints
-		int numUbConstr = sParams.getInt("NUMUBCONSTR");
-		ArrayList<String> ubConstr = sParams.searchParams("UBCONSTR");
-		ubConstr.remove("NUMUBCONSTR");
+		int numUbConstr = sParams.getInt("NUMSTRANDCONSTR");
+		ArrayList<String> ubConstr = sParams.searchParams("STRANDCONSTR");
+		ubConstr.remove("NUMSTRANDCONSTR");
 		if(numUbConstr != ubConstr.size())
-			throw new RuntimeException("ERROR: NUMUBCONSTR != number of listed constraints");
+			throw new RuntimeException("ERROR: NUMSTRANDCONSTR != number of listed constraints");
 
-		int numUbStates = sParams.getInt("NUMUBSTATES");
-		if(numUbStates<2) throw new RuntimeException("ERROR: NUMUBSTATES must be >=2");
+		int numUbStates = sParams.getInt("NUMOFSTRANDS");
+		if(numUbStates<2) throw new RuntimeException("ERROR: NUMOFSTRANDS must be >=2");
 
-		String ubStateMutNums = sParams.getValue("UBSTATEMUTNUMS");
+		String ubStateMutNums = sParams.getValue("STRANDMUTNUMS");
 		StringTokenizer st = new StringTokenizer(ubStateMutNums);
 		if(st.countTokens() != numUbStates) throw new RuntimeException("ERROR: "
-				+ "the number of tokens in UBSTATEMUTNUMS should be the same as "
-				+ "NUMUBSTATES");
+				+ "the number of tokens in STRANDMUTNUMS should be the same as "
+				+ "NUMOFSTRANDS");
 
-		if(numUbStates!=sParams.searchParams("UBSTATELIMITS").size())
-			throw new RuntimeException("ERROR: need an UBSTATELIMITS line for each NUMUBSTATES");
+		ArrayList<String> strandInfo = sParams.searchParams("STRAND");
+		ArrayList<String> remove = new ArrayList<>();
+		for(String str : strandInfo) {
+			Integer val = -1;
+			try {
+				val = Integer.valueOf(str.replace("STRAND", ""));
+			} catch (Exception e) {
+			} finally {
+				if(val == -1) remove.add(str);
+			}
+		}
+		strandInfo.removeAll(remove);
+		if(numUbStates!=strandInfo.size())
+			throw new RuntimeException("ERROR: need a STRAND line for each NUMOFSTRANDS");
 
 		int numMutsRes = 0;
 		while(st.hasMoreTokens()) numMutsRes += Integer.valueOf(st.nextToken());
 		if(numMutsRes != msParams.getInt("NUMMUTRES")) throw new RuntimeException("ERROR: "
-				+"UBSTATEMUTNUMS does not sum up to NUMMUTRES");
+				+"STRANDMUTNUMS does not sum up to NUMMUTRES");
 
 		ArrayList<Integer> globalMutList = new ArrayList<>();
 		for(int ubState=0;ubState<numUbStates;++ubState) {
 			//num unbound state residues must match number of listed residues
 			int numUbMutRes = Integer.valueOf(StringParsing.getToken(ubStateMutNums, ubState+1));
-			String ubMutRes = sParams.getValue("UBSTATEMUT"+ubState);
+			String ubMutRes = sParams.getValue("STRANDMUT"+ubState);
 			st = new StringTokenizer(ubMutRes);
 			ArrayList<Integer> ubStateMutList = new ArrayList<>();
 			while(st.hasMoreTokens()) ubStateMutList.add(Integer.valueOf(st.nextToken()));
 			ubStateMutList = new ArrayList<>(new HashSet<>(ubStateMutList));
 			if(ubStateMutList.size()!=numUbMutRes) throw new RuntimeException("ERROR: the "
-					+"number of distinct mutable residues in UBSTATEMUT"+ubState+
-					" is not equal to the value specified in UBSTATEMUTNUMS");
+					+"number of distinct mutable residues in STRANDMUT"+ubState+
+					" is not equal to the value specified in STRANDMUTNUMS");
 
 			globalMutList.addAll(ubStateMutList);
 
 			//listed unbound state residues must be within limits
 			ArrayList<Integer> ubStateLims = new ArrayList<>();
-			st = new StringTokenizer(sParams.getValue("UBSTATELIMITS"+state));
-			if(st.countTokens()!=2) throw new RuntimeException("ERROR: UBSTATELIMITS"+state
+			st = new StringTokenizer(sParams.getValue("STRAND"+state));
+			if(st.countTokens()!=2) throw new RuntimeException("ERROR: STRAND"+state
 					+" must have 2 tokens");
 			while(st.hasMoreTokens()) ubStateLims.add(Integer.valueOf(st.nextToken()));
 			Collections.sort(ubStateLims);
 			for(int res : ubStateMutList){
 				if(res<ubStateLims.get(0) && res>ubStateLims.get(1)) throw new RuntimeException("ERROR: "
-						+"mutable residue "+res+" exceeds the boundaries of UBSTATELIMITS"+state);
+						+"mutable residue "+res+" exceeds the boundaries of STRAND"+state);
 			}
 
 			//ResAllowed must exist for each mutable residue
@@ -144,14 +201,14 @@ public class InputValidation {
 			for(String raVal : raKeys) {
 				raVal = raVal.replaceAll("RESALLOWED", "").trim();
 				if(!globalMutList.contains(Integer.valueOf(raVal)))
-					throw new RuntimeException("ERROR: RESALLOWED"+raVal+" is not in the list of UBSTATEMUT");
+					throw new RuntimeException("ERROR: RESALLOWED"+raVal+" is not in the list of STRANDMUT");
 			}
 		}
 
 		//check that ubState limits are mutually exclusive 
 		ArrayList<ArrayList<Integer>> ubStateLimits = new ArrayList<>();
 		for(int ubState=0;ubState<numUbStates;++ubState) {
-			st = new StringTokenizer(sParams.getValue("UBSTATELIMITS"+ubState));
+			st = new StringTokenizer(sParams.getValue("STRAND"+ubState));
 			ArrayList<Integer> tmp = new ArrayList<Integer>();
 			while(st.hasMoreTokens()) tmp.add(Integer.valueOf(st.nextToken()));
 			Collections.sort(tmp);
@@ -159,7 +216,7 @@ public class InputValidation {
 		}
 		if(ubStateLimits.get(0).get(0) <= ubStateLimits.get(1).get(1) && 
 				ubStateLimits.get(1).get(0) <= ubStateLimits.get(0).get(1))
-			throw new RuntimeException("ERROR: UBSTATELIMITS are not disjoint");
+			throw new RuntimeException("ERROR: STRAND are not disjoint");
 	}
 	
 }

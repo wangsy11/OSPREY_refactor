@@ -40,7 +40,11 @@ public class AStarProgress implements Serializable {
 	
 	public void reportInternalNode(int level, double gscore, double hscore, int numNodesInQueue, int numAddedToQueue) {
 		
-		// if we've moved to leaf node, don't report internal node progress
+		this.numNodesExpanded++;
+		this.numNodesInQueue = numNodesInQueue;
+		this.numNodesQueuedThisReport += numAddedToQueue;
+	
+		// if we've hit a leaf node, only track node expansion stats
 		if (numLeafNodes > 0) {
 			return;
 		}
@@ -49,10 +53,7 @@ public class AStarProgress implements Serializable {
 		this.deepestLevel = Math.max(this.deepestLevel, this.level);
 		this.gscore = gscore;
 		this.hscore = hscore;
-		this.numNodesExpanded++;
-		this.numNodesInQueue = numNodesInQueue;
-		this.numNodesQueuedThisReport += numAddedToQueue;
-	
+		
 		if (!stopwatch.isRunning()) {
 			stopwatch.start();
 			msRunning = 0;
@@ -75,8 +76,8 @@ public class AStarProgress implements Serializable {
 	public String makeProgressReport() {
 		double diffMs = stopwatch.getTimeMs() - this.msRunning;
 		MemoryUsage heapMem = ManagementFactory.getMemoryMXBean().getHeapMemoryUsage();
-		return String.format("A* gscore:%14.8f, hscore:%14.8f, level:%4d/%4d/%4d, expanded:%10d, queued:%10d, scored/sec:%5d, time:%s, heapMem:%.0f%%",
-			gscore, hscore,
+		return String.format("A* g:%10.4f, h:%10.4f, f:%10.4f, level:%4d/%4d/%4d, expanded:%10d, queued:%10d, scored/sec:%5d, time:%s, heapMem:%.0f%%",
+			gscore, hscore, gscore + hscore,
 			level, deepestLevel, numLevels - 1,
 			numNodesExpanded, numNodesInQueue,
 			(int)(numNodesQueuedThisReport*1000/diffMs),
@@ -89,7 +90,20 @@ public class AStarProgress implements Serializable {
 		goalScore = val;
 	}
 	
-	public void reportLeafNode(double gscore) {
+	public void reportLeafNode(double gscore, int numNodesInQueue) {
+		
+		this.numNodesInQueue = numNodesInQueue;
+		
+		// if this is the first leaf node, print one last progress report
+		if (this.numLeafNodes == 0) {
+			
+			this.level = numLevels - 1;
+			this.deepestLevel = numLevels - 1;
+			this.gscore = gscore;
+			this.hscore = 0;
+			
+			printProgressReport();
+		}
 		
 		this.gscore = gscore;
 		this.numLeafNodes++;
@@ -109,10 +123,13 @@ public class AStarProgress implements Serializable {
 	}
 
 	private String makeLeafProgressReport() {
+		double diffMs = stopwatch.getTimeMs() - this.msRunning;
 		MemoryUsage heapMem = ManagementFactory.getMemoryMXBean().getHeapMemoryUsage();
-		return String.format("A* leaf nodes:%10d, score:%14.8f, remaining:%14.8f, time:%s, heapMem:%.0f%%",
+		return String.format("A* leaf nodes:%10d, score:%14.8f, remaining:%14.8f, expanded:%10d, queued:%10d, scored/sec:%5d, time:%s, heapMem:%.0f%%",
 			numLeafNodes,
 			gscore, goalScore - gscore,
+			numNodesExpanded, numNodesInQueue,
+			(int)(numNodesQueuedThisReport*1000/diffMs),
 			stopwatch.getTime(2),
 			100f*heapMem.getUsed()/heapMem.getMax()
 		);

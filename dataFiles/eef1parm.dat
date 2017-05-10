@@ -1,4 +1,4 @@
-% Each line is in the format: GroupName AtomType Volume DGi(ref) DGi(free) DHi(ref) DCpi(ref) vdWradius
+% Each line is in the format: GroupName AtomType Volume DGi(ref) DGi(free) DHi(ref) DCpi(ref) vdWradius Siyu(05/03/17): add some new parameters (last 6 lines) based on KARPLUS 1999, Makhatadze 1993 and Lepori 1981
 C     C  14.7    0.000    0.00    0.000    0.00  3.5  2.1
 CR    C   8.3   -0.890   -1.40    2.220    6.90  3.5  2.1
 CH1E  C  23.7   -0.187   -0.25    0.876    0.00  3.5  2.365
@@ -16,3 +16,9 @@ O     O  10.8   -5.330   -5.85   -5.787   -8.80  3.5  1.6
 OC    O  10.8  -10.000  -10.00  -12.000   -9.40  6.0  1.6
 S     S  14.7   -3.240   -4.10   -4.475  -39.90  3.5  1.89
 SH1E  S  21.4   -2.050   -2.70   -4.475  -39.90  3.5  1.89
+OA    O  10.8   -3.569   -4.40  -14.761  -12.40  3.5  1.6
+CL    Cl 16.0   -1.535   -2.20   -1.449   -8.46  3.5  1.75
+ON    O  10.8   -0.928   -1.10   -1.000   -5.00  3.5  1.6
+NO    N  11.2    0.000    0.00    0.000    0.00  3.5  1.6
+NC    N  11.2   -4.778   -6.00   -4.415  -10.00  3.5  1.6
+F     F  12.6   -1.428   -2.00   -0.400   -0.10  3.5  1.65
